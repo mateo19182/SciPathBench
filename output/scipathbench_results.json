@@ -1,46 +1,20 @@
 [
     {
         "task_index": 1,
-        "timestamp": "2025-08-02 19:46:59",
+        "timestamp": "2025-08-02 19:51:05",
         "benchmark_pair": {
-            "start_paper_id": "W2618530766",
-            "end_paper_id": "W1995875735"
+            "start_paper_id": "W2126466006",
+            "end_paper_id": "W2028590532"
         },
         "ground_truth": {
             "path": [
-                "W2618530766",
-                "W2734776202",
-                "W1545791100",
-                "W1995875735"
-            ],
-            "path_length": 3
-        },
-        "agent_run": {
-            "model": "mistralai/ministral-8b",
-            "path": null,
-            "path_length": 0
-        },
-        "scorecard": {
-            "path_success": 0,
-            "path_optimality": 0,
-            "reasoning_faithfulness": 0
-        }
-    },
-    {
-        "task_index": 2,
-        "timestamp": "2025-08-02 19:47:04",
-        "benchmark_pair": {
-            "start_paper_id": "W2064675550",
-            "end_paper_id": "W2046533349"
-        },
-        "ground_truth": {
-            "path": [
-                "W2064675550",
+                "W2126466006",
+                "W1993322307",
                 "W4285719527",
-                "W2100172689",
-                "W2046533349"
+                "W2803573210",
+                "W2028590532"
             ],
-            "path_length": 3
+            "path_length": 4
         },
         "agent_run": {
             "model": "mistralai/ministral-8b",
