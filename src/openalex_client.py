@@ -1,36 +1,40 @@
 # openalex_client.py
-# Client for interacting with the OpenAlex API.
+# Client for interacting with the OpenAlex API, with requests-cache.
 
 import requests
+import requests_cache
 import logging
 from config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL
 
+# Install a global cache for all requests. Responses will be cached for 1 day.
+# The cache will be stored in a file named 'api_cache.sqlite'.
+requests_cache.install_cache('api_cache', backend='sqlite', expire_after=86400)
 
 class OpenAlexClient:
     """
     Handles all interactions with the OpenAlex API.
-    This class is responsible for fetching paper data and tracking API calls.
+    Caching is handled automatically by requests-cache.
     """
-
     def __init__(self):
-        self.api_call_count = 0
-        self.headers = {
-            "User-Agent": f"SciPathBench/1.0 (mailto:{OPENALEX_USER_EMAIL})"
-        }
+        self.headers = {'User-Agent': f'SciPathBench/1.0 (mailto:{OPENALEX_USER_EMAIL})'}
 
     def _make_request(self, endpoint, params=None):
         """Internal method to handle API requests and count them."""
-        self.api_call_count += 1
         try:
             if params is None:
                 params = {}
-            params["mailto"] = OPENALEX_USER_EMAIL
+            params['mailto'] = OPENALEX_USER_EMAIL
 
-            response = requests.get(
-                f"{OPENALEX_API_BASE_URL}{endpoint}",
-                params=params,
-                headers=self.headers,
-            )
+            response = requests.get(f"{OPENALEX_API_BASE_URL}{endpoint}", params=params, headers=self.headers)
+            
+            # Log whether the response came from the cache
+            # if response.from_cache:
+            #     # logging.info(f"CACHE HIT: Response for {response.url} loaded from cache.")
+            #     # We don't count cached responses as new API calls
+            #     self.api_call_count -= 1
+            # else:
+            #     logging.info(f"CACHE MISS: Making live API call to {response.url}")
+
             response.raise_for_status()
             return response.json()
         except requests.exceptions.HTTPError as e:
@@ -41,46 +45,19 @@ class OpenAlexClient:
             return None
 
     def get_paper_by_id(self, openalex_id: str):
-        """Retrieves a single paper's full metadata by its OpenAlex ID."""
-        logging.info(
-            f"API CALL {self.api_call_count + 1}: Getting details for paper ID {openalex_id}"
-        )
+        """
+        Retrieves a single paper's metadata. The request will be cached automatically.
+        """
         return self._make_request(f"/works/{openalex_id}")
 
     def get_neighbors(self, openalex_id: str):
         """
-        Gets all papers that a given paper cites (outgoing) and that cite it (incoming).
-        This treats the graph as undirected. Returns a list of neighbor IDs.
-        This costs 2 API calls.
+        Gets all papers that a given paper cites (outgoing).
+        This is a forward-only search.
         """
-        logging.info(
-            f"API CALLS ~{self.api_call_count + 1}-{self.api_call_count + 2}: Getting all neighbors for {openalex_id}"
-        )
-
-        # This first call is counted by get_paper_by_id
-        work = self.get_paper_by_id(openalex_id)
+        work = self._make_request(f"/works/{openalex_id}")
         if not work:
             return []
-
-        # Get outgoing citations (already part of the 'work' object)
-        citations = work.get("referenced_works", [])
-
-        # Get incoming citations (this is the second API call)
-        references_data = self._make_request(
-            "/works", params={"filter": f"cites:{openalex_id}", "select": "id"}
-        )
-        references = (
-            [item["id"].split("/")[-1] for item in references_data.get("results", [])]
-            if references_data
-            else []
-        )
-
-        return list(set(citations + references))
-
-    def reset_api_call_count(self):
-        """Resets the counter for a new run."""
-        self.api_call_count = 0
-
-    def get_api_call_count(self):
-        """Returns the total number of API calls made."""
-        return self.api_call_count
+        
+        # Return only outgoing citations (referenced_works)
+        return work.get('referenced_works', [])

@@ -9,6 +9,6 @@ wheels/
 .env
 
 *.log
-
+*.sqlite
 # Virtual environments
 .venv

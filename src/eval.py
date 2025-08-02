@@ -18,7 +18,6 @@ class EvaluationHarness:
         logging.info("--- Running Evaluation ---")
         self._calculate_path_success()
         self._calculate_path_optimality()
-        self._calculate_step_efficiency()
         self._calculate_reasoning_faithfulness()
         return self.scorecard
 
@@ -36,12 +35,6 @@ class EvaluationHarness:
                 len_true / len_agent if len_agent > 0 else 1.0
             )
         logging.info(f"Path Optimality: {self.scorecard['path_optimality']:.2f}")
-
-    def _calculate_step_efficiency(self):
-        self.scorecard["step_efficiency"] = self.agent_steps
-        logging.info(
-            f"Step Efficiency (API Calls): {self.scorecard['step_efficiency']}"
-        )
 
     def _calculate_reasoning_faithfulness(self):
         # TODO: Implement a function to verify each link in the agent's path

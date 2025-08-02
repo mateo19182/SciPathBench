@@ -68,7 +68,6 @@ def get_benchmark_tasks():
     
     raise ValueError(f"Unknown BENCHMARK_MODE: {config.BENCHMARK_MODE}")
 
-
 def get_runtime_task():
     """Generates a single task by finding a path at runtime."""
     for _ in range(config.MAX_RUNTIME_RETRIES): # Retry loop to avoid getting stuck
@@ -158,7 +157,6 @@ def run_single_task(task, task_index=1):
     }
     return results_data
 
-
 def log_summary(all_results):
     """Calculates and logs a summary of metrics from all task results."""
     if not all_results:
@@ -192,11 +190,12 @@ def log_summary(all_results):
     logging.info("Benchmark Run Summary")
     logging.info("==================================================")
     logging.info(json.dumps(summary, indent=4))
+
 def main():
     """Main function to run the entire benchmark process for one or more tasks."""
     setup_logging(config.LOG_FILE)
     logging.info("==================================================")
-    logging.info("Starting New SciPathBench Run")
+    logging.info(f"Starting New SciPathBench Run {time.strftime('%Y-%m-%d %H:%M:%S')}")
     logging.info("==================================================")
 
     # 1. Get a list of all benchmark tasks
@@ -207,20 +206,19 @@ def main():
         return
 
     all_results = []
-    total_tasks = len(tasks)
-    logging.info(f"Beginning benchmark run with {total_tasks} task(s).")
+    logging.info(f"Beginning benchmark run with {len(tasks)} task(s).")
 
     # Process each task in a loop
     for i, task in enumerate(tasks):
         task_num = i + 1
-        logging.info(f"----------------- Running Task {task_num}/{total_tasks} -----------------")
+        logging.info(f"----------------- Running Task {task_num}/{len(tasks)} -----------------")
         try:
             result = run_single_task(task, task_index=task_num)
             if result:
                 all_results.append(result)
         except Exception as e:
             logging.error(f"An unexpected error occurred during task {task_num}: {e}", exc_info=True)
-        logging.info(f"----------------- Finished Task {task_num}/{total_tasks} -----------------\n")
+        logging.info(f"----------------- Finished Task {task_num}/{len(tasks)} -----------------\n")
 
     # Save all collected results to a single file
     if all_results:
@@ -236,7 +234,6 @@ def main():
     logging.info("==================================================")
     logging.info("SciPathBench Run Finished.")
     logging.info("==================================================")
-
 
 if __name__ == "__main__":
     main()

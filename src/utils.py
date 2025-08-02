@@ -10,7 +10,7 @@ def setup_logging(log_file):
     """
     # Get the root logger
     logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
 
     # Clear any existing handlers to avoid duplicate logs
     if logger.hasHandlers():
@@ -30,7 +30,10 @@ def setup_logging(log_file):
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
-
+    
+    logging.getLogger('requests_cache').setLevel(logging.WARNING)
+    logging.getLogger('requests').setLevel(logging.WARNING)
+    logging.getLogger('urllib3').setLevel(logging.WARNING)
 
 def reconstruct_abstract(inverted_index: dict) -> str:
     """

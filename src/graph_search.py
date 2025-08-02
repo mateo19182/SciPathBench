@@ -23,20 +23,19 @@ class GraphSearch:
         q_bwd = deque([end_id])
         visited_bwd = {end_id: [end_id]}
 
-        self.api_client.reset_api_call_count()
         logging.info("--- Starting BFS Ground Truth Calculation ---")
 
         for i in range(BFS_MAX_DEPTH):
             logging.info(f"BFS Depth: {i + 1}")
             path_found = self._bfs_step(q_fwd, visited_fwd, visited_bwd)
             if path_found:
-                return path_found, self.api_client.get_api_call_count()
+                return path_found
 
             path_found = self._bfs_step(q_bwd, visited_bwd, visited_fwd, backward=True)
             if path_found:
-                return path_found, self.api_client.get_api_call_count()
+                return path_found
 
-        return None, self.api_client.get_api_call_count()
+        return None
 
     def _bfs_step(self, queue, visited_self, visited_other, backward=False):
         """Helper for a single expansion step in BFS."""

@@ -50,7 +50,7 @@ def generate_data():
     Finds shortest paths for unique pairs from LANDMARK_PAPERS, ensuring start/end
     papers are not reused, and saves the simplified results to a JSON file.
     """
-    setup_logging("benchmark_generator.log")
+    setup_logging("output/benchmark_generator.log")
     logging.info(
         "Starting benchmark data generation using Inciteful.xyz connector API."
     )
@@ -110,7 +110,7 @@ def generate_data():
     # Sort the results by difficulty
     benchmark_pairs.sort(key=lambda x: x["difficulty"])
 
-    output_filename = "benchmark_pairs.json"
+    output_filename = "output/benchmark_pairs.json"
     with open(output_filename, "w") as f:
         json.dump(benchmark_pairs, f, indent=4)
 
