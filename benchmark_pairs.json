@@ -1,0 +1,157 @@
+[
+    {
+        "difficulty": 2,
+        "start_id": "W4298289240",
+        "end_id": "W4385245566",
+        "path_ids": [
+            "W4298289240",
+            "W2766892611",
+            "W4385245566"
+        ],
+        "path_titles": [
+            "Generative Adversarial Networks",
+            "Neural Networks for Document Image and Text Processing",
+            "Attention Is All You Need"
+        ]
+    },
+    {
+        "difficulty": 2,
+        "start_id": "W2169528473",
+        "end_id": "W2036265926",
+        "path_ids": [
+            "W2169528473",
+            "W1773233",
+            "W2036265926"
+        ],
+        "path_titles": [
+            "A note on two problems in connexion with graphs",
+            "Scalable QoS routing in MPLS networks using mobile code",
+            "The complexity of theorem-proving procedures"
+        ]
+    },
+    {
+        "difficulty": 3,
+        "start_id": "W2618530766",
+        "end_id": "W1995875735",
+        "path_ids": [
+            "W2618530766",
+            "W2734776202",
+            "W1545791100",
+            "W1995875735"
+        ],
+        "path_titles": [
+            "ImageNet classification with deep convolutional neural networks",
+            "An Automatic Detection System of Lung Nodule Based on Multigroup Patch-Based Deep Learning Network",
+            "Vessel enhancing diffusionA scale space representation of vessel structures",
+            "A Mathematical Theory of Communication"
+        ]
+    },
+    {
+        "difficulty": 3,
+        "start_id": "W2001771035",
+        "end_id": "W2949650786",
+        "path_ids": [
+            "W2001771035",
+            "W2937037822",
+            "W2592929672",
+            "W2949650786"
+        ],
+        "path_titles": [
+            "I.\u2014COMPUTING MACHINERY AND INTELLIGENCE",
+            "Artificial intelligence in medical education",
+            "A survey on deep learning in medical image analysis",
+            "Deep Residual Learning for Image Recognition"
+        ]
+    },
+    {
+        "difficulty": 3,
+        "start_id": "W2185907055",
+        "end_id": "W4239510810",
+        "path_ids": [
+            "W2185907055",
+            "W2092025391",
+            "W1996988468",
+            "W4239510810"
+        ],
+        "path_titles": [
+            "A relational model of data for large shared data banks",
+            "The Database for Aggregate Analysis of ClinicalTrials.gov (AACT) and Subsequent Regrouping by Clinical Specialty",
+            "A Machine Learning Approach to Identify Clinical Trials Involving Nanodrugs and Nanodevices from ClinicalTrials.gov",
+            "Support-vector networks"
+        ]
+    },
+    {
+        "difficulty": 3,
+        "start_id": "W2064675550",
+        "end_id": "W2046533349",
+        "path_ids": [
+            "W2064675550",
+            "W4285719527",
+            "W2100172689",
+            "W2046533349"
+        ],
+        "path_titles": [
+            "Long Short-Term Memory",
+            "Deleted Work",
+            "Analysis of Several Task-Scheduling Algorithms for a Model of Multiprogramming Computer Systems",
+            "Job scheduling in multiprogrammed computer systems"
+        ]
+    },
+    {
+        "difficulty": 4,
+        "start_id": "W4300912893",
+        "end_id": "W2173213060",
+        "path_ids": [
+            "W4300912893",
+            "W4392580998",
+            "W2618530766",
+            "W1756175326",
+            "W2173213060"
+        ],
+        "path_titles": [
+            "Image-to-Image Translation with Conditional Adversarial Networks",
+            "ENHANCEMENT OF UNDERWATER IMAGES WITH ARTIFICIAL INTELLIGENCE",
+            "ImageNet classification with deep convolutional neural networks",
+            "MLitB: machine learning in the browser",
+            "MapReduce"
+        ]
+    },
+    {
+        "difficulty": 4,
+        "start_id": "W4299608875",
+        "end_id": "W4206489165",
+        "path_ids": [
+            "W4299608875",
+            "W4312550351",
+            "W4302423442",
+            "W55028352",
+            "W4206489165"
+        ],
+        "path_titles": [
+            "Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+            "Formation of dynamic cause-and-effect relationships when controlling the behavior of an intelligent agent based on the multi-agent neurocognitive architectures formalism",
+            "Causation, Prediction, and Search",
+            "A disposition-based process-theory of causation",
+            "The Structure of Scientific Revolutions"
+        ]
+    },
+    {
+        "difficulty": 4,
+        "start_id": "W2126466006",
+        "end_id": "W2028590532",
+        "path_ids": [
+            "W2126466006",
+            "W1993322307",
+            "W4285719527",
+            "W2803573210",
+            "W2028590532"
+        ],
+        "path_titles": [
+            "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid",
+            "The first calixarenequinhydrone: syntheses, self-organized films and solvatochromism",
+            "Deleted Work",
+            "A Typology of Mathematical Diagrams",
+            "Faisceaux Algebriques Coherents"
+        ]
+    }
+]
