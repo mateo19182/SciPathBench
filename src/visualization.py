@@ -23,6 +23,8 @@ def create_vosviewer_files(
         logging.warning("No paths provided for visualization. Skipping.")
         return
 
+    print(f"Ground Truth Path: {ground_truth_path}")
+    print(f"Agent Path: {agent_path}")
     logging.info(f"Generating combined NetworkX graph for VOSviewer visualization...")
 
     G = nx.Graph()

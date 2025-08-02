@@ -28,7 +28,7 @@ class LLMAgent:
         
         if not start_paper or not end_paper:
             logging.error("Could not retrieve start or end paper.")
-            return None
+            return None, None
 
         # --- Initial Step Optimization ---
         # Automatically expand the start node as the first step is always redundant.
@@ -78,12 +78,13 @@ class LLMAgent:
 
             neighbors = self.api_client.get_neighbors(paper_id_to_expand)
             for neighbor_id in neighbors:
+                #TODO if neighbor_id == #Deleted Work
                 neighbor_id = neighbor_id.split('/')[-1]
                 if neighbor_id == end_id:
                     logging.info(f"Path found! Target paper {end_id} reached.")
                     # Reconstruct the final path using the parent map
                     final_path = self._reconstruct_final_path(paper_id_to_expand, end_id)
-                    return final_path
+                    return final_path, None
                 
                 if neighbor_id not in self.visited_nodes:
                     self.visited_nodes.add(neighbor_id)
@@ -93,7 +94,7 @@ class LLMAgent:
                         self.frontier[neighbor_id] = self._extract_metadata(neighbor_paper)
         
         logging.info("Agent failed to find a path within the turn limit.")
-        return None
+        return None, self._reconstruct_failed_path(self.current_path_ids[-1])
 
     def _reconstruct_final_path(self, last_node, end_node):
         """Reconstructs the full path from the parent map after finding the end node."""
@@ -104,7 +105,16 @@ class LLMAgent:
             path.append(curr)
             curr = self.parent_map.get(curr)
         return path[::-1] # Reverse to get start -> end order
-
+    
+    def _reconstruct_failed_path(self, last_node):
+        """Reconstructs the path when the agent fails to find the end node."""
+        path = []
+        curr = last_node
+        while curr is not None:
+            path.append(curr)
+            curr = self.parent_map.get(curr)
+        return path[::-1]
+    
     def _extract_metadata(self, paper_json: dict) -> dict:
         """Extracts key info for the agent's context."""
         return {

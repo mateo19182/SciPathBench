@@ -38,29 +38,20 @@ The agent's performance is scored on its ability to find the path (Success) and 
 
 - improve prompt, let them go abck to previous papers?
 
-- get human baseline, ui?
-
 - speed up api calls
-- dont redo api calls, use cache!
+- better cache
 
 - make resilient to error: "message":"Provider returned error","code":429,"
+- manage W4285719527 (Deleted Work)
 
-- better eval, steps are counted badly...
-
-- improve visualization, weights, attributes...
-
-- get better dataset
-
+- improve visualization, weights, attributes, names, full paths
 - cli interface?
 
-- take a list of problems
+- get human baseline, ui?
+- get better dataset
 
 - actually verify agent path is correct
-
-- get openalex id from doi/name directly
-
 - traverse by authors?
-
-- manage W4285719527 (Deleted Work)
+- get openalex id from doi/name directly
 
 - leaderboard

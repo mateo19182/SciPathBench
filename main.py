@@ -116,14 +116,12 @@ def run_single_task(task, task_index=1):
     logging.info(f"Ground Truth Path: {ground_truth_titles} (Length: {len(ground_truth)-1})")
 
     
-    agent_found_path = agent.find_path(
+    agent_found_path, path = agent.find_path(
         start_paper_id, end_paper_id, max_turns=config.AGENT_MAX_TURNS
     )
 
     if agent_found_path:
         logging.info(f"Agent Path: {agent_found_path} (Length: {len(agent_found_path)-1})")
-    else:
-        logging.warning("Agent did not find a path.")
 
     # 3. Evaluate Performance
     evaluator = EvaluationHarness(
@@ -136,9 +134,10 @@ def run_single_task(task, task_index=1):
     # 4. Generate VOSviewer Visualization Files
     create_vosviewer_files(
         ground_truth_path=ground_truth,
-        agent_path=agent_found_path,
+        agent_path=agent_found_path if agent_found_path is not None else path,
         output_prefix=f"visualization_task_{task_index}",
     )
+
     logging.info(f"VOSviewer files created for task {task_index}.")
 
     # 5. Collate results for this single task
