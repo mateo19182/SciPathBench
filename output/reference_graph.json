@@ -1,716 +1,256 @@
 {
   "nodes": {
-    "W2185907055": {
-      "title": "A relational model of data for large shared data banks",
-      "year": 1970,
+    "W2064675550": {
+      "title": "Long Short-Term Memory",
+      "year": 1997,
       "concepts": [
+        "Term (time)",
+        "Short-term memory",
         "Computer science",
-        "Sublanguage",
-        "Logical data model",
-        "Representation (politics)",
-        "Relational database",
-        "External Data Representation",
-        "Data redundancy",
-        "Data mining",
-        "Data model (GIS)",
-        "Inference",
-        "Theoretical computer science",
-        "Information retrieval",
-        "Database",
-        "Data modeling",
-        "Programming language",
-        "Artificial intelligence",
-        "Politics",
-        "Political science",
-        "Law"
-      ],
-      "doi": "https://doi.org/10.1145/362384.362685",
-      "node_type": "start"
-    },
-    "W4239510810": {
-      "title": "Support-vector networks",
-      "year": 1995,
-      "concepts": [
-        "Feature vector",
-        "Generalization",
-        "Support vector machine",
-        "Artificial intelligence",
-        "Computer science",
-        "Relevance vector machine",
-        "Structured support vector machine",
-        "Dimension (graph theory)",
-        "Benchmark (surveying)",
-        "Vector space",
-        "Feature (linguistics)",
-        "Machine learning",
-        "Artificial neural network",
-        "Decision boundary",
-        "Pattern recognition (psychology)",
         "Mathematics",
-        "Mathematical analysis",
-        "Linguistics",
-        "Philosophy",
-        "Geometry",
-        "Geodesy",
-        "Pure mathematics",
-        "Geography"
-      ],
-      "doi": "https://doi.org/10.1007/bf00994018",
-      "node_type": "end"
-    },
-    "W1984820433": {
-      "title": "An Introduction to Mathematical Logic",
-      "year": 2005,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1201/b13782-17",
-      "node_type": "agent_path"
-    },
-    "W2022843269": {
-      "title": "A computer system for inference execution and data retrieval",
-      "year": 1967,
-      "concepts": [
-        "Computer science",
-        "Relational database",
-        "File system",
-        "Inference",
-        "Logical data model",
-        "Information retrieval",
-        "Relational database management system",
-        "Database",
-        "Programming language",
-        "Data mining",
-        "Data modeling",
-        "Operating system",
-        "Artificial intelligence"
-      ],
-      "doi": "https://doi.org/10.1145/363790.363817",
-      "node_type": "agent_path"
-    },
-    "W2044618373": {
-      "title": "Treating hierarchical data structures in the SDC Time-Shared Data Management System (TDMS)",
-      "year": 1967,
-      "concepts": [
-        "Computer science",
-        "Scope (computer science)",
-        "Construct (python library)",
-        "Data management",
-        "Data integrity",
-        "Logical data model",
-        "Data structure",
-        "Data modeling",
-        "Language construct",
-        "Computer data storage",
-        "Distributed computing",
-        "Database",
-        "Programming language",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1145/800196.805973",
-      "node_type": "referenced"
-    },
-    "W2082763279": {
-      "title": "Annual review in automatic programming",
-      "year": 1976,
-      "concepts": [
-        "Computer science",
-        "Programming language",
-        "Artificial intelligence"
-      ],
-      "doi": "https://doi.org/10.1016/0031-3203(76)90021-2",
-      "node_type": "agent_path"
-    },
-    "W2088549934": {
-      "title": "Generalized file processing",
-      "year": 1969,
-      "concepts": [
-        "Computer science",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1016/0066-4138(69)90003-2",
-      "node_type": "agent_path"
-    },
-    "W2104880663": {
-      "title": "An ALGOL-based associative language",
-      "year": 1969,
-      "concepts": [
-        "Computer science",
-        "Associative property",
-        "Programming language",
-        "Coding (social sciences)",
-        "Low-level programming language",
-        "Programming language implementation",
-        "High-level programming language",
-        "Language primitive",
-        "Hash function",
-        "Data structure",
-        "Theoretical computer science",
-        "Programming domain",
-        "Programming paradigm",
-        "Inductive programming",
-        "Statistics",
-        "Mathematics",
-        "Pure mathematics"
-      ],
-      "doi": "https://doi.org/10.1145/363196.363204",
-      "node_type": "referenced"
-    },
-    "W2092025391": {
-      "title": "The Database for Aggregate Analysis of ClinicalTrials.gov (AACT) and Subsequent Regrouping by Clinical Specialty",
-      "year": 2012,
-      "concepts": [
-        "Computer science",
-        "Information retrieval",
-        "Usability",
-        "Clinical trial",
-        "Parsing",
-        "Oracle",
-        "Download",
-        "Database",
-        "Data mining",
-        "Medicine",
-        "World Wide Web",
-        "Pathology",
-        "Artificial intelligence",
-        "Software engineering",
-        "Human–computer interaction"
-      ],
-      "doi": "https://doi.org/10.1371/journal.pone.0033677",
-      "node_type": "ground_truth"
-    },
-    "W142231902": {
-      "title": "A relational model of data for large shared data banks. 1970.",
-      "year": 1998,
-      "concepts": [
-        "Computer science",
-        "Data model (GIS)",
-        "Relational model",
-        "Relational database",
-        "Data science",
-        "Database",
-        "Artificial intelligence"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1529465401": {
-      "title": "Manifesto for agile software development",
-      "year": 2001,
-      "concepts": [
-        "Agile software development",
-        "Software",
-        "Manifesto",
-        "Computer science",
-        "Software development",
-        "Software engineering",
-        "Political science",
-        "Programming language",
-        "Law"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1540771591": {
-      "title": "Global Burden of Disease",
-      "year": 2008,
-      "concepts": [
-        "Comparability",
-        "Burden of disease",
-        "Life expectancy",
-        "Disease",
-        "Disease burden",
-        "Global health",
-        "Actuarial science",
-        "Medicine",
-        "Environmental health",
-        "Economic growth",
-        "Health care",
-        "Population",
-        "Economics",
-        "Mathematics",
-        "Pathology",
-        "Combinatorics"
-      ],
-      "doi": "https://doi.org/10.1016/b978-012373960-5.00335-x",
-      "node_type": "referenced"
-    },
-    "W1993595811": {
-      "title": "The ClinicalTrials.gov Results Database — Update and Key Issues",
-      "year": 2011,
-      "concepts": [
-        "Medicine",
-        "Database",
-        "Key (lock)",
-        "Clinical trial",
-        "Computer science",
-        "Internal medicine",
-        "Computer security"
-      ],
-      "doi": "https://doi.org/10.1056/nejmsa1012065",
-      "node_type": "referenced"
-    },
-    "W2043355327": {
-      "title": "Clinical Trial Registration",
-      "year": 2004,
-      "concepts": [
-        "Medicine",
-        "Otorhinolaryngology",
-        "Family medicine",
-        "Psychiatry"
-      ],
-      "doi": "https://doi.org/10.1001/jama.292.11.1363",
-      "node_type": "referenced"
-    },
-    "W2047150424": {
-      "title": "Trends in the globalization of clinical trials",
-      "year": 2007,
-      "concepts": [
-        "Clinical trial",
-        "Globalization",
-        "Medicine",
-        "MEDLINE",
-        "Intensive care medicine",
-        "Political science",
-        "Internal medicine",
-        "Law"
-      ],
-      "doi": "https://doi.org/10.1038/nrd2441",
-      "node_type": "referenced"
-    },
-    "W2120747541": {
-      "title": "Issues in the Registration of Clinical Trials",
-      "year": 2007,
-      "concepts": [
-        "Medicine",
-        "Clinical trial",
-        "Trial registration",
-        "Psychological intervention",
-        "MEDLINE",
-        "Medical physics",
-        "Pathology",
-        "Nursing",
-        "Political science",
-        "Law"
-      ],
-      "doi": "https://doi.org/10.1001/jama.297.19.2112",
-      "node_type": "referenced"
-    },
-    "W2135010675": {
-      "title": "Clinical Trial Registration: A Statement from the International Committee of Medical Journal Editors",
-      "year": 2004,
-      "concepts": [
-        "Medicine",
-        "Statement (logic)",
-        "Trial registration",
-        "Clinical trial",
-        "Family medicine",
-        "MEDLINE",
-        "Medical physics",
-        "Library science",
-        "Law",
-        "Pathology",
-        "Political science",
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1056/nejme048225",
-      "node_type": "referenced"
-    },
-    "W2232207765": {
-      "title": "Further Normalization of the Data Base Relational Model",
-      "year": 1972,
-      "concepts": [
-        "Normalization (sociology)",
-        "Computer science",
-        "Base (topology)",
-        "Relational database",
-        "Data mining",
-        "Mathematics",
-        "Sociology",
-        "Mathematical analysis",
-        "Anthropology"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1996988468": {
-      "title": "A Machine Learning Approach to Identify Clinical Trials Involving Nanodrugs and Nanodevices from ClinicalTrials.gov",
-      "year": 2014,
-      "concepts": [
-        "Nanomedicine",
-        "Artificial intelligence",
-        "Clinical trial",
-        "Classifier (UML)",
-        "Clinical Practice",
-        "Computer science",
-        "Medicine",
-        "Nanotechnology",
-        "Machine learning",
-        "Nanoparticle",
-        "Materials science",
-        "Family medicine",
-        "Pathology"
-      ],
-      "doi": "https://doi.org/10.1371/journal.pone.0110331",
-      "node_type": "ground_truth"
-    },
-    "W114517082": {
-      "title": "Large-Scale Machine Learning with Stochastic Gradient Descent",
-      "year": 2010,
-      "concepts": [
-        "Stochastic gradient descent",
-        "Computer science",
-        "Scale (ratio)",
-        "Stochastic optimization",
-        "Gradient descent",
-        "Set (abstract data type)",
-        "Online machine learning",
-        "Context (archaeology)",
-        "Sample (material)",
-        "Artificial intelligence",
-        "Algorithm",
-        "Mathematical optimization",
-        "Machine learning",
-        "Mathematics",
-        "Active learning (machine learning)",
-        "Artificial neural network",
-        "Paleontology",
-        "Chemistry",
-        "Physics",
-        "Quantum mechanics",
-        "Chromatography",
-        "Biology",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.1007/978-3-7908-2604-3_16",
-      "node_type": "referenced"
-    },
-    "W128190844": {
-      "title": "Automated disambiguation of acronyms and abbreviations in clinical texts: window and training size considerations.",
-      "year": 2012,
-      "concepts": [
-        "Computer science",
-        "Acronym",
-        "Support vector machine",
-        "Artificial intelligence",
-        "Natural language processing",
-        "Context (archaeology)",
-        "Task (project management)",
-        "Window (computing)",
-        "Naive Bayes classifier",
-        "Sample size determination",
-        "Machine learning",
-        "Sample (material)",
-        "Statistics",
-        "Linguistics",
-        "Mathematics",
-        "Paleontology",
-        "Philosophy",
-        "Chemistry",
-        "Management",
-        "Chromatography",
-        "Economics",
-        "Biology",
-        "Operating system"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1480376833": {
-      "title": "The Elements of Statistical Learning",
-      "year": 2001,
-      "concepts": [
-        "Variety (cybernetics)",
-        "Data science",
-        "Computer science",
-        "Computation",
-        "Artificial intelligence",
-        "Algorithm"
-      ],
-      "doi": "https://doi.org/10.1007/978-0-387-21606-5",
-      "node_type": "referenced"
-    },
-    "W1504694836": {
-      "title": "Programs for Machine Learning",
-      "year": 1994,
-      "concepts": [
-        "Successor cardinal",
-        "Artificial intelligence",
-        "Computer science",
-        "Decision tree",
-        "Machine learning",
-        "Subject (documents)",
-        "ID3 algorithm",
-        "Decision tree learning",
-        "Incremental decision tree",
-        "World Wide Web",
-        "Mathematics",
-        "Mathematical analysis"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1512098439": {
-      "title": "Fast Training of Support Vector Machines Using Sequential Minimal Optimization",
-      "year": 1998,
-      "concepts": [
-        "Training (meteorology)",
-        "Computer science",
-        "Support vector machine",
-        "Artificial intelligence",
-        "Machine learning",
-        "Geography",
-        "Meteorology"
-      ],
-      "doi": "https://doi.org/10.7551/mitpress/1130.003.0016",
-      "node_type": "referenced"
-    },
-    "W1521626219": {
-      "title": "Natural Language Processing with Python",
-      "year": 2009,
-      "concepts": [
-        "Computer science",
-        "Python (programming language)",
-        "WordNet",
-        "Artificial intelligence",
-        "Natural language processing",
-        "Parsing",
-        "Machine translation",
-        "Natural language programming",
-        "Automatic summarization",
-        "Natural language",
-        "Programming language",
-        "World Wide Web",
-        "Universal Networking Language",
-        "Comprehension approach"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1540550673": {
-      "title": "Learning to Classify Text Using Support Vector Machines",
-      "year": 2002,
-      "concepts": [
-        "Support vector machine",
-        "Artificial intelligence",
-        "Computer science",
-        "Relevance vector machine",
-        "Machine learning",
-        "Structured support vector machine",
-        "Natural language processing",
-        "Pattern recognition (psychology)"
-      ],
-      "doi": "https://doi.org/10.1007/978-1-4615-0907-3",
-      "node_type": "referenced"
-    },
-    "W1543357255": {
-      "title": "Nanoinformatics: a new area of research in nanomedicine",
-      "year": 2012,
-      "concepts": [
-        "Nanomedicine",
-        "Informatics",
-        "Health informatics",
-        "Data science",
-        "Computer science",
-        "Nanotechnology",
-        "Knowledge management",
-        "Engineering ethics",
-        "Engineering",
-        "Medicine",
-        "Public health",
-        "Materials science",
-        "Nanoparticle",
-        "Electrical engineering",
-        "Nursing"
-      ],
-      "doi": "https://doi.org/10.2147/ijn.s24582",
-      "node_type": "referenced"
-    },
-    "W1565201084": {
-      "title": "Multinomial Naive Bayes for Text Categorization Revisited",
-      "year": 2004,
-      "concepts": [
-        "Naive Bayes classifier",
-        "Multinomial distribution",
-        "Computer science",
-        "Categorization",
-        "Artificial intelligence",
-        "Machine learning",
-        "Normalization (sociology)",
-        "Classifier (UML)",
-        "Bayes' theorem",
-        "Support vector machine",
-        "Pattern recognition (psychology)",
-        "Mathematics",
-        "Statistics",
-        "Bayesian probability",
-        "Sociology",
-        "Anthropology"
-      ],
-      "doi": "https://doi.org/10.1007/978-3-540-30549-1_43",
-      "node_type": "referenced"
-    },
-    "W1582320196": {
-      "title": "Identifying Nanotechnology in Society",
-      "year": 2007,
-      "concepts": [
-        "Nanotechnology",
-        "Context (archaeology)",
-        "Engineering ethics",
-        "Cover (algebra)",
-        "Field (mathematics)",
-        "Engineering",
-        "Data science",
-        "Epistemology",
-        "Computer science",
-        "History",
-        "Materials science",
-        "Philosophy",
-        "Mathematics",
-        "Mechanical engineering",
-        "Archaeology",
-        "Pure mathematics"
-      ],
-      "doi": "https://doi.org/10.1016/s0065-2458(06)71005-1",
-      "node_type": "referenced"
-    },
-    "W1519043304": {
-      "title": "Relational Data File: A Tool for Mechanized Inference Execution and Data Retrieval",
-      "year": 1965,
-      "concepts": [
-        "Computer science",
-        "Inference",
-        "Information retrieval",
-        "Relational database",
-        "Field (mathematics)",
-        "Data retrieval",
-        "Key (lock)",
-        "Realization (probability)",
-        "Logical data model",
-        "Data mining",
-        "Database",
-        "Data modeling",
-        "Artificial intelligence",
-        "Statistics",
-        "Mathematics",
-        "Computer security",
-        "Pure mathematics"
-      ],
-      "doi": "N/A",
-      "node_type": "agent_path"
-    },
-    "W1979065383": {
-      "title": "Answering English questions by computer",
-      "year": 1965,
-      "concepts": [
-        "Citation",
-        "Computer science",
-        "World Wide Web",
-        "Information retrieval"
-      ],
-      "doi": "https://doi.org/10.1145/363707.363732",
-      "node_type": "referenced"
-    },
-    "W1986949946": {
-      "title": "Fact Retrieval and Deductive Question-Answering Information Retrieval Systems",
-      "year": 1964,
-      "concepts": [
-        "Sublanguage",
-        "Computer science",
-        "Question answering",
-        "Information retrieval",
-        "Document retrieval",
-        "Data retrieval",
-        "Natural language processing",
-        "Natural language",
-        "IBM",
-        "Cognitive models of information retrieval",
-        "Inference",
-        "Human–computer information retrieval",
-        "Artificial intelligence",
-        "Search engine",
-        "Materials science",
-        "Nanotechnology"
-      ],
-      "doi": "https://doi.org/10.1145/321217.321218",
-      "node_type": "referenced"
-    },
-    "W2015720094": {
-      "title": "As We May Think",
-      "year": 1945,
-      "concepts": [
-        "Perfection",
-        "Task (project management)",
-        "Incentive",
-        "Political science",
-        "Epistemology",
-        "Engineering",
-        "Philosophy",
-        "Systems engineering",
-        "Economics",
-        "Microeconomics"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2020289613": {
-      "title": "Information retrieval II",
-      "year": 1962,
-      "concepts": [
-        "Computer science",
-        "Information retrieval"
-      ],
-      "doi": "https://doi.org/10.1145/800198.806138",
-      "node_type": "referenced"
-    },
-    "W2048229624": {
-      "title": "Experiments with a deductive question-answering program",
-      "year": 1965,
-      "concepts": [
-        "Citation",
-        "Question answering",
-        "Computer science",
-        "Information retrieval",
-        "World Wide Web"
-      ],
-      "doi": "https://doi.org/10.1145/365691.365960",
-      "node_type": "agent_path"
-    },
-    "W2119409989": {
-      "title": "Programs with common sense",
-      "year": 1960,
-      "concepts": [
-        "Predicate (mathematical logic)",
-        "Sentence",
-        "Computer science",
-        "Common sense",
-        "Programming language",
-        "Action (physics)",
-        "Process (computing)",
-        "Natural language processing",
-        "Linguistics",
-        "Artificial intelligence",
-        "Philosophy",
-        "Epistemology",
+        "Psychology",
+        "Neuroscience",
+        "Cognition",
+        "Working memory",
         "Physics",
         "Quantum mechanics"
       ],
-      "doi": "N/A",
-      "node_type": "agent_path"
+      "doi": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "node_type": "start"
     },
-    "W2170166939": {
-      "title": "SIR: A COMPUTER PROGRAM FOR SEMANTIC INFORMATION RETRIEVAL",
-      "year": 1964,
+    "W2046533349": {
+      "title": "Job scheduling in multiprogrammed computer systems",
+      "year": 1978,
       "concepts": [
         "Computer science",
-        "Lisp",
-        "Sentence",
-        "Natural language processing",
-        "Artificial intelligence",
-        "Information retrieval",
-        "Programming language"
+        "Deadline-monotonic scheduling",
+        "Distributed computing",
+        "Rate-monotonic scheduling",
+        "Computer multitasking",
+        "Dynamic priority scheduling",
+        "Fair-share scheduling",
+        "Scheduling (production processes)",
+        "Two-level scheduling",
+        "Fixed-priority pre-emptive scheduling",
+        "Round-robin scheduling",
+        "Earliest deadline first scheduling",
+        "Parallel computing",
+        "Operating system",
+        "Mathematical optimization",
+        "Schedule",
+        "Mathematics"
+      ],
+      "doi": "https://doi.org/10.1002/spe.4380080302",
+      "node_type": "end"
+    },
+    "W1674799117": {
+      "title": "Gradient-based learning algorithms for recurrent networks and their computational complexity",
+      "year": 1995,
+      "concepts": [
+        "Computer science",
+        "Algorithm",
+        "Artificial intelligence"
       ],
       "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1881179843": {
+      "title": "A learning rule for asynchronous perceptrons with feedback in a combinatorial environment",
+      "year": 1990,
+      "concepts": [
+        "Perceptron",
+        "Asynchronous communication",
+        "Computer science",
+        "Artificial intelligence",
+        "Machine learning",
+        "Artificial neural network",
+        "Computer network"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1963605035": {
+      "title": "LEARNING SEQUENTIAL STRUCTURE WITH THE REAL-TIME RECURRENT LEARNING ALGORITHM",
+      "year": 1989,
+      "concepts": [
+        "Computer science",
+        "Task (project management)",
+        "Rule-based machine translation",
+        "Simple (philosophy)",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Chaotic",
+        "Limit (mathematics)",
+        "Algorithm",
+        "Set (abstract data type)",
+        "State (computer science)",
+        "Stochastic context-free grammar",
+        "Machine learning",
+        "Artificial neural network",
+        "Context-free grammar",
+        "Mathematics",
+        "L-attributed grammar",
+        "Mathematical analysis",
+        "Philosophy",
+        "Management",
+        "Epistemology",
+        "Economics",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1142/s0129065789000037",
+      "node_type": "referenced"
+    },
+    "W1971129545": {
+      "title": "Generalization of backpropagation with application to a recurrent gas market model",
+      "year": 1988,
+      "concepts": [
+        "Backpropagation",
+        "Generalization",
+        "Artificial neural network",
+        "Computer science",
+        "Artificial intelligence",
+        "Multilayer perceptron",
+        "Machine learning",
+        "Perceptron",
+        "Feedforward neural network",
+        "Mathematics",
+        "Mathematical analysis"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(88)90007-x",
+      "node_type": "referenced"
+    },
+    "W1971209221": {
+      "title": "EXPERIMENTAL COMPARISON OF THE EFFECT OF ORDER IN RECURRENT NEURAL NETWORKS",
+      "year": 1993,
+      "concepts": [
+        "Computer science",
+        "Artificial neural network",
+        "Generalization",
+        "Artificial intelligence",
+        "Recurrent neural network",
+        "Rule-based machine translation",
+        "Grammar induction",
+        "Order (exchange)",
+        "Inference",
+        "Machine learning",
+        "Mathematics",
+        "Mathematical analysis",
+        "Finance",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.1142/s0218001493000431",
+      "node_type": "referenced"
+    },
+    "W1982291194": {
+      "title": "A Local Learning Algorithm for Dynamic Feedforward and Recurrent Networks",
+      "year": 1989,
+      "concepts": [
+        "Computer science",
+        "Artificial neural network",
+        "Feed forward",
+        "Artificial intelligence",
+        "Algorithm",
+        "Computation",
+        "Feedforward neural network",
+        "Classifier (UML)",
+        "Recurrent neural network",
+        "Machine learning",
+        "Control engineering",
+        "Engineering"
+      ],
+      "doi": "https://doi.org/10.1080/09540098908915650",
+      "node_type": "referenced"
+    },
+    "W1984375561": {
+      "title": "Dynamics and architecture for neural computation",
+      "year": 1988,
+      "concepts": [
+        "Attractor",
+        "Backpropagation",
+        "Nonlinear system",
+        "Modular design",
+        "Computation",
+        "Artificial neural network",
+        "Content-addressable memory",
+        "Dynamical systems theory",
+        "Reservoir computing",
+        "Computer science",
+        "Associative property",
+        "Invariant (physics)",
+        "Artificial intelligence",
+        "Mathematics",
+        "Algorithm",
+        "Theoretical computer science",
+        "Recurrent neural network",
+        "Mathematical analysis",
+        "Pure mathematics",
+        "Physics",
+        "Quantum mechanics",
+        "Mathematical physics",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1016/0885-064x(88)90021-0",
+      "node_type": "referenced"
+    },
+    "W2007431958": {
+      "title": "Generalization of back-propagation to recurrent neural networks",
+      "year": 1987,
+      "concepts": [
+        "Generalization",
+        "Hopfield network",
+        "Artificial neural network",
+        "Computer science",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Backpropagation",
+        "Types of artificial neural networks",
+        "Mathematics",
+        "Mathematical analysis"
+      ],
+      "doi": "https://doi.org/10.1103/physrevlett.59.2229",
+      "node_type": "referenced"
+    },
+    "W202296964": {
+      "title": "Guessing can Outperform Many Long Time Lag Algorithms",
+      "year": 1996,
+      "concepts": [
+        "Focus (optics)",
+        "Computer science",
+        "Algorithm",
+        "Lag",
+        "Time lag",
+        "Machine learning",
+        "Artificial intelligence",
+        "Computer network",
+        "Physics",
+        "Optics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2036317923": {
+      "title": "Learning Complex, Extended Sequences Using the Principle of History Compression",
+      "year": 1992,
+      "concepts": [
+        "Hierarchy",
+        "Computer science",
+        "Recurrent neural network",
+        "Simple (philosophy)",
+        "Sequence (biology)",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Computation",
+        "Machine learning",
+        "Theoretical computer science",
+        "Algorithm",
+        "Philosophy",
+        "Epistemology",
+        "Biology",
+        "Economics",
+        "Market economy",
+        "Genetics"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1992.4.2.234",
       "node_type": "referenced"
     },
     "W4285719527": {
@@ -718,1157 +258,2375 @@
       "year": 1955,
       "concepts": [],
       "doi": "N/A",
+      "node_type": "ground_truth"
+    },
+    "W1000149840": {
+      "title": "Glucocorticoids and Cancer",
+      "year": 2015,
+      "concepts": [
+        "Cancer",
+        "Cancer research",
+        "Medicine",
+        "Receptor",
+        "Prostate cancer",
+        "Glucocorticoid receptor",
+        "Steroid hormone receptor",
+        "Hormone",
+        "Steroid hormone",
+        "Estrogen receptor",
+        "Oncogene",
+        "Endocrinology",
+        "Internal medicine",
+        "Breast cancer",
+        "Cell cycle"
+      ],
+      "doi": "https://doi.org/10.1007/978-1-4939-2895-8_14",
       "node_type": "referenced"
     },
-    "W1970001627": {
-      "title": "A Learning Machine: Part I",
-      "year": 1958,
+    "W1002743077": {
+      "title": "Informed consent to breech birth in New Zealand.",
+      "year": 2015,
       "concepts": [
-        "Computer science",
-        "Test (biology)",
-        "Artificial intelligence",
-        "Machine learning",
-        "Paleontology",
+        "External cephalic version",
+        "Medicine",
+        "Breech presentation",
+        "Caesarean section",
+        "Informed consent",
+        "Psychological intervention",
+        "Intervention (counseling)",
+        "Maternity care",
+        "Family medicine",
+        "Presentation (obstetrics)",
+        "Nursing",
+        "Pregnancy",
+        "Medical emergency",
+        "Obstetrics",
+        "Alternative medicine",
+        "Genetics",
+        "Pathology",
         "Biology"
       ],
-      "doi": "https://doi.org/10.1147/rd.21.0002",
+      "doi": "N/A",
       "node_type": "referenced"
     },
-    "W2112161977": {
-      "title": "Empirical explorations of the logic theory machine",
-      "year": 1957,
+    "W100632932": {
+      "title": "New frontiers in the pharmacological prevention of post-ERCP pancreatitis: the cytokines.",
+      "year": 2003,
       "concepts": [
-        "Computer science",
-        "Mathematical proof",
-        "Logic programming",
-        "Mathematical logic",
-        "Process (computing)",
-        "Computational logic",
-        "Theoretical computer science",
-        "Programming language",
-        "Meaning (existential)",
-        "Artificial intelligence",
-        "Mathematics",
-        "Description logic",
+        "Medicine",
+        "Pancreatitis",
+        "Acute pancreatitis",
+        "Sphincter of Oddi dysfunction",
+        "Systemic inflammatory response syndrome",
+        "Acinar cell",
+        "Endoscopic retrograde cholangiopancreatography",
+        "Internal medicine",
+        "Sepsis"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1011232681": {
+      "title": "Hegel",
+      "year": 1975,
+      "concepts": [
+        "Hegelianism",
+        "Subject (documents)",
+        "Relevance (law)",
         "Epistemology",
+        "GRASP",
         "Philosophy",
-        "Geometry"
-      ],
-      "doi": "https://doi.org/10.1145/1455567.1455605",
-      "node_type": "referenced"
-    },
-    "W2479583503": {
-      "title": "The Inversion of Functions Defined by Turing Machines",
-      "year": 1956,
-      "concepts": [
-        "Turing",
-        "Inversion (geology)",
+        "Sociology",
+        "Realization (probability)",
+        "Law",
+        "Political science",
         "Computer science",
         "Mathematics",
-        "Geology",
-        "Programming language",
-        "Paleontology",
-        "Structural basin"
-      ],
-      "doi": "https://doi.org/10.1515/9781400882618-009",
-      "node_type": "referenced"
-    },
-    "W1514436817": {
-      "title": "Some problems of basic organization in problem-solving programs",
-      "year": 1962,
-      "concepts": [
-        "Flexibility (engineering)",
-        "Computer science",
-        "Context (archaeology)",
-        "Management science",
-        "Rest (music)",
-        "Engineering",
-        "Mathematics",
-        "Medicine",
-        "Paleontology",
         "Statistics",
-        "Cardiology",
-        "Biology"
+        "Library science",
+        "Programming language"
       ],
-      "doi": "N/A",
+      "doi": "https://doi.org/10.1017/cbo9781139171465",
       "node_type": "referenced"
     },
-    "W1578539980": {
-      "title": "A heuristic program that solves symbolic integration problems in freshman calculus : symbolic automatic integrator (SAINT)",
-      "year": 1961,
+    "W1012684526": {
+      "title": "Stress, Sleep and Recovery in Elite Soccer: A Critical Review of the Literature",
+      "year": 2015,
       "concepts": [
-        "SAINT",
-        "Heuristic",
-        "Integrator",
-        "The Symbolic",
-        "Computer science",
-        "Calculus (dental)",
-        "Symbolic computation",
-        "Artificial intelligence",
-        "Algebra over a field",
-        "Mathematics",
+        "Sleep deprivation",
+        "Sleep debt",
+        "Stressor",
+        "Sleep (system call)",
+        "Affect (linguistics)",
+        "Cognition",
         "Psychology",
+        "Arousal",
+        "Effects of sleep deprivation on cognitive performance",
         "Medicine",
-        "Psychotherapist",
-        "Pure mathematics",
-        "Computer network",
-        "Mathematical analysis",
-        "Computer security",
-        "Dentistry",
-        "Bandwidth (computing)"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1601555688": {
-      "title": "LISP 1.5 PROGRAMMER'S MANUAL",
-      "year": 1962,
-      "concepts": [
-        "Lisp",
-        "Programmer",
-        "Programming language",
+        "Physical medicine and rehabilitation",
+        "Psychiatry",
+        "Social psychology",
+        "Communication",
         "Computer science",
         "Operating system"
       ],
-      "doi": "https://doi.org/10.21236/ad0406138",
+      "doi": "https://doi.org/10.1007/s40279-015-0358-z",
       "node_type": "referenced"
     },
-    "W1628475528": {
-      "title": "Computers and Thought",
-      "year": 1963,
+    "W101478257": {
+      "title": "[Epidemiological aspects of overweight and obesity in Japan--international comparisons].",
+      "year": 2013,
       "concepts": [
-        "Turing",
-        "Cognitive science",
-        "Artificial intelligence",
-        "Computer science",
-        "Psychology",
-        "Programming language"
+        "Overweight",
+        "Obesity",
+        "Body mass index",
+        "Medicine",
+        "Epidemiology",
+        "National Health and Nutrition Examination Survey",
+        "Environmental health",
+        "Demography",
+        "Gerontology",
+        "Population",
+        "Internal medicine",
+        "Sociology"
       ],
       "doi": "N/A",
       "node_type": "referenced"
     },
-    "W1977384182": {
-      "title": "Experiments with a Heuristic Compiler",
-      "year": 1963,
+    "W1017106669": {
+      "title": "Positionsartikel zum Forschungsprogramm Explizite und implizite geschlechterbezogene Kognitionen heute",
+      "year": 2013,
       "concepts": [
-        "Rand corporation",
-        "Computer science",
-        "Compiler",
-        "Citation",
-        "Corporation",
-        "Heuristic",
-        "Operations research",
-        "Library science",
-        "Management",
-        "Programming language",
-        "Artificial intelligence",
-        "Law",
-        "Engineering",
-        "Political science",
-        "Economics"
-      ],
-      "doi": "https://doi.org/10.1145/321186.321192",
-      "node_type": "agent_path"
-    },
-    "W2035758894": {
-      "title": "A computer program which \"understands\"",
-      "year": 1964,
-      "concepts": [
-        "Computer science",
-        "Conversation",
-        "Human–computer interaction",
-        "Cognition",
-        "Computer program",
-        "Artificial intelligence",
-        "Cognitive science",
-        "Programming language",
         "Psychology",
-        "Communication",
+        "Stereotype (UML)",
+        "Social psychology",
+        "Cognition",
+        "Humanities",
+        "Philosophy",
         "Neuroscience"
       ],
-      "doi": "https://doi.org/10.1145/1464052.1464107",
-      "node_type": "agent_path"
-    },
-    "W2052628540": {
-      "title": "A Heuristic Program that Solves Symbolic Integration Problems in Freshman Calculus",
-      "year": 1963,
-      "concepts": [
-        "Heuristic",
-        "Citation",
-        "Computer science",
-        "Calculus (dental)",
-        "Operations research",
-        "Library science",
-        "Mathematics",
-        "Artificial intelligence",
-        "Medicine",
-        "Dentistry"
-      ],
-      "doi": "https://doi.org/10.1145/321186.321193",
+      "doi": "https://doi.org/10.3224/gender5318092",
       "node_type": "referenced"
     },
-    "W2094815455": {
-      "title": "The Programming Language LISP: Its Operation and Applications",
-      "year": 1967,
+    "W1018796324": {
+      "title": "Regulation of the mesocorticolimbic and mesostriatal dopamine systems by α-melanocyte stimulating hormone and agouti-related protein",
+      "year": 2015,
       "concepts": [
-        "Lisp",
-        "Programming language",
-        "Mathematics",
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.2307/2003282",
-      "node_type": "referenced"
-    },
-    "W2171071458": {
-      "title": "THE LOGIC THEORY MACHINE: A MODEL HEURISTIC PROGRAM,",
-      "year": 1963,
-      "concepts": [
-        "Programming language",
-        "Memorandum",
-        "Computer science",
-        "Listing (finance)",
-        "Rewriting",
-        "Documentation",
-        "Tracing",
-        "CLARITY",
-        "Mathematical proof",
-        "Heuristic",
-        "Theoretical computer science",
-        "Mathematics",
-        "Artificial intelligence",
-        "Biochemistry",
-        "Chemistry",
-        "Geometry",
-        "Archaeology",
-        "Finance",
-        "Economics",
-        "History"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2799867313": {
-      "title": "Self-Organizing Systems",
-      "year": 1962,
-      "concepts": [
-        "Login",
-        "Download",
-        "Service (business)",
-        "World Wide Web",
-        "Computer science",
-        "Internet privacy",
-        "Library science",
+        "Dopamine",
+        "Melanocortin",
+        "Ventral tegmental area",
+        "Dopaminergic",
+        "Endocrinology",
+        "Internal medicine",
+        "Melanocortin receptor",
+        "Melanocortin 4 receptor",
+        "Brain stimulation reward",
+        "Dopamine receptor",
+        "Hypothalamus",
+        "Neuroscience",
         "Psychology",
-        "Business",
-        "Computer security",
-        "Marketing"
+        "Biology",
+        "Hormone",
+        "Medicine",
+        "Nucleus accumbens"
       ],
-      "doi": "https://doi.org/10.1176/appi.psychotherapy.1962.16.2.326",
+      "doi": "https://doi.org/10.1016/j.neubiorev.2015.06.020",
       "node_type": "referenced"
     },
-    "W118880854": {
-      "title": "A Question-Answering Routine",
-      "year": 1960,
+    "W1020659046": {
+      "title": "Novel Multidimensional Models of Opinion Dynamics in Social Networks",
+      "year": 2016,
       "concepts": [
-        "Question answering",
+        "Dynamics (music)",
         "Computer science",
-        "Information retrieval"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1505640990": {
-      "title": "Natural Language Input for a Computer Problem Solving System",
-      "year": 1964,
-      "concepts": [
-        "Computer science",
-        "Natural (archaeology)",
-        "Natural language",
-        "Natural language processing",
-        "Artificial intelligence",
-        "History",
-        "Archaeology"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1604754811": {
-      "title": "Semantics. The Nature of Words and Their Meanings",
-      "year": 1943,
-      "concepts": [
-        "Semantics (computer science)",
-        "Linguistics",
-        "Computer science",
-        "Natural language processing",
-        "Philosophy",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.2307/4341833",
-      "node_type": "referenced"
-    },
-    "W1977190837": {
-      "title": "A comparison of list-processing computer languages",
-      "year": 1964,
-      "concepts": [
-        "Rand corporation",
-        "Corporation",
-        "Lisp",
-        "Citation",
-        "Computer science",
-        "Library science",
-        "Operations research",
-        "Management",
+        "Management science",
+        "Statistical physics",
+        "Psychology",
         "Engineering",
-        "Political science",
-        "Law",
-        "Programming language",
-        "Economics"
+        "Physics",
+        "Pedagogy"
       ],
-      "doi": "https://doi.org/10.1145/364005.364057",
+      "doi": "https://doi.org/10.1109/tac.2016.2613905",
       "node_type": "referenced"
     },
-    "W1979263599": {
-      "title": "Baseball",
+    "W1020798780": {
+      "title": "Management of pain following craniotomy",
+      "year": 2015,
+      "concepts": [
+        "Medicine",
+        "Anesthesia",
+        "Craniotomy",
+        "Intensive care medicine"
+      ],
+      "doi": "https://doi.org/10.12968/bjon.2015.24.14.740",
+      "node_type": "referenced"
+    },
+    "W2100172689": {
+      "title": "Analysis of Several Task-Scheduling Algorithms for a Model of Multiprogramming Computer Systems",
+      "year": 1975,
+      "concepts": [
+        "Citation",
+        "Computer multitasking",
+        "Computer science",
+        "Mathematical sciences",
+        "Scheduling (production processes)",
+        "Task (project management)",
+        "Operations research",
+        "Library science",
+        "Engineering",
+        "Operating system",
+        "Mathematics education",
+        "Mathematics",
+        "Operations management",
+        "Systems engineering"
+      ],
+      "doi": "https://doi.org/10.1145/321906.321917",
+      "node_type": "ground_truth"
+    },
+    "W1503676779": {
+      "title": "Analysis of computer scheduling with memory constraints.",
+      "year": 1973,
+      "concepts": [
+        "Computer science",
+        "Scheduling (production processes)",
+        "Parallel computing",
+        "Mathematical optimization",
+        "Mathematics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1973077637": {
+      "title": "A task-scheduling algorithm for a multiprogramming computer system",
+      "year": 1973,
+      "concepts": [
+        "Computer multitasking",
+        "Computer science",
+        "Scheduling (production processes)",
+        "Parallel computing",
+        "Processor scheduling",
+        "Fixed-priority pre-emptive scheduling",
+        "Task (project management)",
+        "Fair-share scheduling",
+        "Algorithm",
+        "Rate-monotonic scheduling",
+        "Operating system",
+        "Mathematical optimization",
+        "Mathematics",
+        "Engineering",
+        "Schedule",
+        "Systems engineering"
+      ],
+      "doi": "https://doi.org/10.1145/800009.808058",
+      "node_type": "referenced"
+    },
+    "W2014404405": {
+      "title": "Polynomial complete scheduling problems",
+      "year": 1973,
+      "concepts": [
+        "Computer science",
+        "Scheduling (production processes)",
+        "Parallel computing",
+        "Mathematical optimization",
+        "Mathematics"
+      ],
+      "doi": "https://doi.org/10.1145/800009.808055",
+      "node_type": "referenced"
+    },
+    "W2027077493": {
+      "title": "Parallel Sequencing and Assembly Line Problems",
       "year": 1961,
       "concepts": [
-        "Computer science"
+        "Schedule",
+        "Computer science",
+        "Assembly line",
+        "Operations research",
+        "Sequence (biology)",
+        "Line (geometry)",
+        "Mathematical optimization",
+        "Operations management",
+        "Mathematics",
+        "Economics",
+        "Engineering",
+        "Mechanical engineering",
+        "Geometry",
+        "Biology",
+        "Genetics",
+        "Operating system"
       ],
-      "doi": "https://doi.org/10.1145/1460690.1460714",
+      "doi": "https://doi.org/10.1287/opre.9.6.841",
       "node_type": "referenced"
     },
-    "W1980491396": {
-      "title": "Word and Object",
-      "year": 1960,
+    "W2028754841": {
+      "title": "Preemptive Scheduling of Real-Time Tasks on Multiprocessor Systems",
+      "year": 1970,
       "concepts": [
-        "Quine",
-        "Sentence",
-        "Meaning (existential)",
-        "Linguistics",
-        "Object (grammar)",
-        "Semantic theory of truth",
-        "Point (geometry)",
-        "Semantics (computer science)",
-        "Word (group theory)",
-        "Epistemology",
-        "Psychology",
+        "Multiprocessing",
+        "Citation",
+        "Computer science",
+        "Scheduling (production processes)",
+        "Operations research",
+        "Library science",
+        "Operating system",
+        "Engineering",
+        "Operations management"
+      ],
+      "doi": "https://doi.org/10.1145/321574.321586",
+      "node_type": "referenced"
+    },
+    "W2031612682": {
+      "title": "Scheduling independent tasks to reduce mean finishing time",
+      "year": 1974,
+      "concepts": [
+        "Computer science",
+        "Scheduling (production processes)",
+        "Time complexity",
+        "Mathematical optimization",
+        "Time point",
+        "Job shop scheduling",
+        "Algorithm",
+        "Mathematics",
+        "Embedded system",
+        "Philosophy",
+        "Aesthetics",
+        "Routing (electronic design automation)"
+      ],
+      "doi": "https://doi.org/10.1145/361011.361064",
+      "node_type": "referenced"
+    },
+    "W2036265926": {
+      "title": "The complexity of theorem-proving procedures",
+      "year": 1971,
+      "concepts": [
+        "Nondeterministic algorithm",
+        "Mathematics",
+        "Time complexity",
+        "Turing machine",
+        "NP",
+        "Oracle",
+        "Discrete mathematics",
+        "Bounded function",
+        "Time hierarchy theorem",
+        "Predicate (mathematical logic)",
+        "Propositional calculus",
+        "Conjunctive normal form",
+        "Constraint satisfaction problem",
+        "Decision problem",
+        "Computer science",
+        "Algorithm",
+        "Universal Turing machine",
+        "Computation",
+        "Statistics",
+        "Mathematical analysis",
+        "Software engineering",
+        "Probabilistic logic",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1145/800157.805047",
+      "node_type": "referenced"
+    },
+    "W2043862089": {
+      "title": "Worst-Case Performance Bounds for Simple One-Dimensional Packing Algorithms",
+      "year": 1974,
+      "concepts": [
+        "Simple (philosophy)",
+        "Bin",
+        "Bin packing problem",
+        "Algorithm",
+        "Computation",
+        "Mathematics",
+        "Combinatorics",
+        "Order (exchange)",
+        "Upper and lower bounds",
+        "SIMPLE algorithm",
+        "Discrete mathematics",
         "Computer science",
         "Philosophy",
+        "Epistemology",
+        "Mathematical analysis",
+        "Physics",
+        "Finance",
+        "Economics",
+        "Thermodynamics"
+      ],
+      "doi": "https://doi.org/10.1137/0203025",
+      "node_type": "referenced"
+    },
+    "W2052110143": {
+      "title": "Optimal Preemptive Scheduling on Two-Processor Systems",
+      "year": 1969,
+      "concepts": [
+        "Computer science",
+        "Parallel computing",
+        "Computation",
+        "Multiprocessing",
+        "Scheduling (production processes)",
+        "Fixed-priority pre-emptive scheduling",
+        "Multiprocessor scheduling",
+        "Preemption",
+        "Processor scheduling",
+        "Dynamic priority scheduling",
+        "Rate-monotonic scheduling",
+        "Distributed computing",
+        "Fair-share scheduling",
+        "Algorithm",
+        "Operating system",
+        "Schedule",
+        "Mathematical optimization",
+        "Mathematics"
+      ],
+      "doi": "https://doi.org/10.1109/t-c.1969.222573",
+      "node_type": "referenced"
+    },
+    "W2058200712": {
+      "title": "Worst-case analysis of memory allocation algorithms",
+      "year": 1972,
+      "concepts": [
+        "Bounding overwatch",
+        "Computer science",
+        "Range (aeronautics)",
+        "Heuristic",
+        "Algorithm",
+        "Simple (philosophy)",
+        "Bin packing problem",
+        "Bin",
+        "Mathematical optimization",
         "Mathematics",
+        "Artificial intelligence",
+        "Philosophy",
+        "Materials science",
+        "Epistemology",
+        "Composite material"
+      ],
+      "doi": "https://doi.org/10.1145/800152.804907",
+      "node_type": "referenced"
+    },
+    "W2048060899": {
+      "title": "A time-delay neural network architecture for isolated word recognition",
+      "year": 1990,
+      "concepts": [
+        "Computer science",
+        "Speech recognition",
+        "Vocabulary",
+        "Hidden Markov model",
+        "Artificial intelligence",
+        "Task (project management)",
+        "Word (group theory)",
+        "Time delay neural network",
+        "Artificial neural network",
+        "Segmentation",
+        "Architecture",
+        "Natural language processing",
+        "Network architecture",
+        "Pattern recognition (psychology)",
+        "Mathematics",
+        "Art",
+        "Philosophy",
+        "Linguistics",
         "Geometry",
+        "Management",
+        "Computer security",
+        "Economics",
+        "Visual arts"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(90)90044-l",
+      "node_type": "referenced"
+    },
+    "W2057653135": {
+      "title": "An Efficient Gradient-Based Algorithm for On-Line Training of Recurrent Network Trajectories",
+      "year": 1990,
+      "concepts": [
+        "Backpropagation",
+        "Computer science",
+        "Artificial neural network",
+        "Reset (finance)",
+        "Line (geometry)",
+        "Algorithm",
+        "Artificial intelligence",
+        "Training (meteorology)",
+        "Mathematics",
+        "Physics",
+        "Geometry",
+        "Meteorology",
+        "Financial economics",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1990.2.4.490",
+      "node_type": "referenced"
+    },
+    "W2086756055": {
+      "title": "Adaptive neural oscillator using continuous-time back-propagation learning",
+      "year": 1989,
+      "concepts": [
+        "Computer science",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Oscillation (cell signaling)",
+        "Biology",
+        "Genetics"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(89)90022-1",
+      "node_type": "referenced"
+    },
+    "W2103452139": {
+      "title": "Learning long-term dependencies in NARX recurrent neural networks",
+      "year": 1996,
+      "concepts": [
+        "Nonlinear autoregressive exogenous model",
+        "Computer science",
+        "Recurrent neural network",
+        "Artificial neural network",
+        "Inference",
+        "Artificial intelligence",
+        "Term (time)",
+        "Autoregressive model",
+        "Nonlinear system",
+        "Gradient descent",
+        "Deep learning",
+        "Machine learning",
+        "Mathematics",
+        "Physics",
+        "Quantum mechanics",
+        "Econometrics"
+      ],
+      "doi": "https://doi.org/10.1109/72.548162",
+      "node_type": "referenced"
+    },
+    "W2107878631": {
+      "title": "Learning long-term dependencies with gradient descent is difficult",
+      "year": 1994,
+      "concepts": [
+        "Gradient descent",
+        "Computer science",
+        "Term (time)",
+        "Artificial intelligence",
+        "Stochastic gradient descent",
+        "Artificial neural network",
+        "Recurrent neural network",
+        "Deep learning",
+        "Machine learning",
+        "Face (sociological concept)",
+        "Pattern recognition (psychology)",
+        "Social science",
+        "Physics",
+        "Quantum mechanics",
+        "Sociology"
+      ],
+      "doi": "https://doi.org/10.1109/72.279181",
+      "node_type": "referenced"
+    },
+    "W2111871983": {
+      "title": "Learning Sequential Tasks by Incrementally Adding Higher Orders",
+      "year": 1992,
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Connection (principal bundle)",
+        "Grammar",
+        "Theoretical computer science",
+        "Mathematics",
+        "Philosophy",
+        "Linguistics",
+        "Geometry"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2114471683": {
+      "title": "A Fixed Size Storage <i>O</i>(<i>n</i><sup>3</sup>) Time Complexity Learning Algorithm for Fully Recurrent Continually Running Networks",
+      "year": 1992,
+      "concepts": [
+        "Algorithm",
+        "Computation",
+        "Running time",
+        "Time complexity",
+        "Computer science",
+        "Computational complexity theory",
+        "Order (exchange)",
+        "Mathematics",
+        "Discrete mathematics",
+        "Combinatorics",
+        "Finance",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1992.4.2.243",
+      "node_type": "referenced"
+    },
+    "W2118127772": {
+      "title": "Learning Unambiguous Reduced Sequence Descriptions",
+      "year": 1991,
+      "concepts": [
+        "Computer science",
+        "Sequence (biology)",
+        "Hierarchy",
+        "Reinforcement learning",
+        "Recurrent neural network",
+        "Predictability",
+        "Artificial intelligence",
+        "Computation",
+        "Artificial neural network",
+        "Machine learning",
+        "Limit (mathematics)",
+        "Event (particle physics)",
+        "Sequence learning",
+        "Algorithm",
+        "Mathematics",
+        "Mathematical analysis",
+        "Statistics",
+        "Genetics",
+        "Physics",
+        "Quantum mechanics",
+        "Economics",
+        "Market economy",
+        "Biology"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2119216348": {
+      "title": "Holographic Recurrent Networks",
+      "year": 1992,
+      "concepts": [
+        "Computer science",
+        "Content-addressable memory",
+        "Holography",
+        "Recurrent neural network",
+        "Sequence (biology)",
+        "Bidirectional associative memory",
+        "Gradient descent",
+        "Content-addressable storage",
+        "Associative property",
+        "Artificial intelligence",
+        "Theoretical computer science",
+        "Algorithm",
+        "Artificial neural network",
+        "Mathematics",
+        "Physics",
+        "Biology",
+        "Pure mathematics",
+        "Optics",
+        "Genetics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2121553911": {
+      "title": "Finite State Automata and Simple Recurrent Networks",
+      "year": 1989,
+      "concepts": [
+        "Computer science",
+        "Finite-state machine",
+        "Simple (philosophy)",
+        "Set (abstract data type)",
+        "Grammar",
+        "Sequence (biology)",
+        "State (computer science)",
+        "Automaton",
+        "Theoretical computer science",
+        "Element (criminal law)",
+        "Finite set",
+        "Natural language",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Algorithm",
+        "Mathematics",
+        "Linguistics",
+        "Programming language",
+        "Mathematical analysis",
+        "Philosophy",
+        "Epistemology",
+        "Biology",
+        "Political science",
+        "Law",
+        "Genetics"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1989.1.3.372",
+      "node_type": "agent_path"
+    },
+    "W2123716044": {
+      "title": "Neurocontrol of nonlinear dynamical systems with Kalman filter trained recurrent networks",
+      "year": 1994,
+      "concepts": [
+        "Kalman filter",
+        "Computer science",
+        "Extended Kalman filter",
+        "Benchmark (surveying)",
+        "Recurrent neural network",
+        "Controller (irrigation)",
+        "Control theory (sociology)",
+        "Artificial neural network",
+        "Feed forward",
+        "Dynamical systems theory",
+        "Nonlinear system",
+        "Noise (video)",
+        "Artificial intelligence",
+        "Control engineering",
+        "Engineering",
+        "Control (management)",
+        "Physics",
+        "Geodesy",
+        "Quantum mechanics",
+        "Agronomy",
+        "Image (mathematics)",
+        "Biology",
+        "Geography"
+      ],
+      "doi": "https://doi.org/10.1109/72.279191",
+      "node_type": "referenced"
+    },
+    "W2128499899": {
+      "title": "Induction of Multiscale Temporal Structure",
+      "year": 1991,
+      "concepts": [
+        "Computer science",
+        "Phrase",
+        "Sequence (biology)",
+        "Connectionism",
+        "Theoretical computer science",
+        "Net (polyhedron)",
+        "Artificial intelligence",
+        "Fraction (chemistry)",
+        "Scale (ratio)",
+        "Data structure",
+        "Algorithm",
+        "Artificial neural network",
+        "Mathematics",
+        "Chemistry",
+        "Genetics",
+        "Geometry",
+        "Physics",
+        "Organic chemistry",
+        "Quantum mechanics",
+        "Biology",
         "Programming language"
       ],
       "doi": "N/A",
       "node_type": "referenced"
     },
-    "W2025297205": {
-      "title": "Elements of Symbolic Logic.",
-      "year": 1948,
+    "W2129831132": {
+      "title": "The Recurrent Cascade-Correlation Architecture",
+      "year": 1990,
       "concepts": [
-        "Mathematics",
-        "Arithmetic",
-        "Calculus (dental)",
-        "Programming language",
+        "Cascade",
+        "Sequence (biology)",
         "Computer science",
-        "Medicine",
-        "Dentistry"
-      ],
-      "doi": "https://doi.org/10.2307/2305604",
-      "node_type": "referenced"
-    },
-    "W2041225318": {
-      "title": "Toward the synthesis of human language behavior",
-      "year": 2007,
-      "concepts": [
-        "Corporation",
-        "Citation",
-        "Library science",
-        "Computer science",
-        "Sociology",
+        "Generalization",
+        "Correlation",
         "Artificial intelligence",
-        "Political science",
-        "Law"
-      ],
-      "doi": "https://doi.org/10.1002/bs.3830070313",
-      "node_type": "referenced"
-    },
-    "W53732215": {
-      "title": "A revised design for an understanding machine.",
-      "year": 1962,
-      "concepts": [
-        "Computer science",
-        "Artificial intelligence"
+        "Recurrent neural network",
+        "Architecture",
+        "Machine learning",
+        "Pattern recognition (psychology)",
+        "Artificial neural network",
+        "Engineering",
+        "Mathematics",
+        "Art",
+        "Mathematical analysis",
+        "Genetics",
+        "Geometry",
+        "Chemical engineering",
+        "Visual arts",
+        "Biology"
       ],
       "doi": "N/A",
       "node_type": "referenced"
     },
-    "W1971804672": {
-      "title": "RECOL—a retrieval command language",
-      "year": 1963,
+    "W2131387845": {
+      "title": "Credit Assignment through Time: Alternatives to Backpropagation",
+      "year": 1993,
       "concepts": [
-        "Interrogation",
+        "Backpropagation",
         "Computer science",
-        "Scheme (mathematics)",
-        "Programming language",
-        "Information retrieval",
-        "File management",
-        "Data file",
-        "Database",
-        "Mathematics",
-        "History",
-        "Mathematical analysis",
-        "Archaeology"
-      ],
-      "doi": "https://doi.org/10.1145/366274.366342",
-      "node_type": "referenced"
-    },
-    "W1979835740": {
-      "title": "Progress in Some Commercial source languages",
-      "year": 1963,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1016/s0066-4138(63)80010-5",
-      "node_type": "referenced"
-    },
-    "W1985547558": {
-      "title": "AESOP",
-      "year": 1965,
-      "concepts": [
-        "Pencil (optics)",
-        "Computer science",
-        "Control (management)",
-        "Corporation",
-        "Control system",
-        "Information system",
-        "Class (philosophy)",
-        "Line (geometry)",
-        "Management information systems",
-        "Human–computer interaction",
-        "Software engineering",
-        "Engineering",
+        "Artificial neural network",
+        "Context (archaeology)",
         "Artificial intelligence",
-        "Electrical engineering",
-        "Mechanical engineering",
-        "Geometry",
-        "Mathematics",
-        "Finance",
-        "Economics"
+        "Machine learning",
+        "Recurrent neural network",
+        "Paleontology",
+        "Biology"
       ],
-      "doi": "https://doi.org/10.1145/1463891.1463940",
+      "doi": "N/A",
       "node_type": "referenced"
     },
-    "W1992676961": {
-      "title": "Annual review of information science and technology",
+    "W2136939460": {
+      "title": "LSTM can Solve Hard Long Time Lag Problems",
+      "year": 1996,
+      "concepts": [
+        "Computer science",
+        "Lag",
+        "Algorithm",
+        "Time lag",
+        "Artificial intelligence",
+        "Mathematical optimization",
+        "Mathematics",
+        "Computer network"
+      ],
+      "doi": "N/A",
+      "node_type": "agent_path"
+    },
+    "W1547547196": {
+      "title": "Learning long-term dependencies is not as difficult with NARX recurrent neural networks",
+      "year": 1995,
+      "concepts": [
+        "Nonlinear autoregressive exogenous model",
+        "Term (time)",
+        "Artificial neural network",
+        "Computer science",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Physics",
+        "Quantum mechanics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W194249466": {
+      "title": "Deleted Work",
+      "year": 1955,
+      "concepts": [],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2071906671": {
+      "title": "The induction of dynamical recognizers",
+      "year": 1991,
+      "concepts": [
+        "Computer science",
+        "Automaton",
+        "Grammar induction",
+        "Dynamical systems theory",
+        "Chaotic",
+        "Inference",
+        "Limit (mathematics)",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Process (computing)",
+        "Generative grammar",
+        "Theoretical computer science",
+        "Mathematics",
+        "Rule-based machine translation",
+        "Physics",
+        "Programming language",
+        "Mathematical analysis",
+        "Quantum mechanics"
+      ],
+      "doi": "https://doi.org/10.1007/bf00114845",
+      "node_type": "referenced"
+    },
+    "W2099257174": {
+      "title": "Hierarchical Recurrent Neural Networks for Long-Term Dependencies",
       "year": 1995,
       "concepts": [
         "Computer science",
-        "Library science",
-        "Data science"
-      ],
-      "doi": "https://doi.org/10.1016/0099-1333(95)90072-1",
-      "node_type": "referenced"
-    },
-    "W1997542989": {
-      "title": "ADAM",
-      "year": 1966,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1145/1464182.1464204",
-      "node_type": "referenced"
-    },
-    "W1998458210": {
-      "title": "Generalization: Key to Successful Electronic Data Processing",
-      "year": 1959,
-      "concepts": [
-        "Citation",
-        "Key (lock)",
-        "Computer science",
-        "Generalization",
-        "Computer security",
-        "Operations research",
-        "World Wide Web",
-        "Engineering",
+        "A priori and a posteriori",
+        "Hidden Markov model",
+        "Probabilistic logic",
+        "Term (time)",
+        "Artificial intelligence",
+        "Recurrent neural network",
+        "Context (archaeology)",
+        "Machine learning",
+        "Markov process",
+        "Domain (mathematical analysis)",
+        "Artificial neural network",
+        "Data mining",
         "Mathematics",
-        "Mathematical analysis"
-      ],
-      "doi": "https://doi.org/10.1145/320954.320955",
-      "node_type": "referenced"
-    },
-    "W1999667176": {
-      "title": "The Theory of Graphs and Its Applications",
-      "year": 1965,
-      "concepts": [
-        "Mathematical economics",
-        "Mathematics",
-        "Economics",
-        "Combinatorics",
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.2307/1911908",
-      "node_type": "referenced"
-    },
-    "W2005573611": {
-      "title": "GIS and file management",
-      "year": 1966,
-      "concepts": [
-        "Computer science",
-        "File management",
-        "Acronym",
-        "Search engine indexing",
-        "Task (project management)",
-        "Function (biology)",
-        "Set (abstract data type)",
-        "Database",
-        "File system",
-        "Base (topology)",
-        "Information system",
-        "Information retrieval",
-        "Operating system",
-        "Programming language",
+        "Paleontology",
         "Mathematical analysis",
-        "Linguistics",
         "Philosophy",
-        "Mathematics",
-        "Management",
-        "Evolutionary biology",
-        "Biology",
-        "Electrical engineering",
-        "Economics",
-        "Engineering"
-      ],
-      "doi": "https://doi.org/10.1145/800256.810686",
-      "node_type": "referenced"
-    },
-    "W2007363236": {
-      "title": "Information structures for processing and retrieving",
-      "year": 1962,
-      "concepts": [
-        "Corporation",
-        "Citation",
-        "Computer science",
-        "Telecommunications",
-        "World Wide Web",
-        "Business",
-        "Finance"
-      ],
-      "doi": "https://doi.org/10.1145/366243.366715",
-      "node_type": "referenced"
-    },
-    "W2008065279": {
-      "title": "The catalog",
-      "year": 1965,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1145/1463891.1463925",
-      "node_type": "referenced"
-    },
-    "W2019806963": {
-      "title": "GIM-1, a generalized information management language and computer system",
-      "year": 1967,
-      "concepts": [
-        "Computer science",
-        "Management information systems",
-        "Information system",
-        "Information management",
-        "Automated information system",
-        "Software engineering",
-        "Knowledge management",
-        "Engineering",
-        "Electrical engineering"
-      ],
-      "doi": "https://doi.org/10.1145/1465482.1465509",
-      "node_type": "referenced"
-    },
-    "W2033825565": {
-      "title": "Mathematical Structure of Nonarithmetic Data Processing Procedures",
-      "year": 1962,
-      "concepts": [
-        "Citation",
-        "Computer science",
-        "Information retrieval",
-        "World Wide Web"
-      ],
-      "doi": "https://doi.org/10.1145/321105.321118",
-      "node_type": "referenced"
-    },
-    "W2061102396": {
-      "title": "DM-1",
-      "year": 1967,
-      "concepts": [
-        "Computer science",
-        "Section (typography)",
-        "Knowledge management",
-        "Software engineering",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1145/1465482.1465511",
-      "node_type": "referenced"
-    },
-    "W207426224": {
-      "title": "FORTRAN PROGRAM SUMX",
-      "year": 1964,
-      "concepts": [
-        "Fortran",
-        "Programming language",
-        "Computer science"
+        "Statistics",
+        "Physics",
+        "Epistemology",
+        "Quantum mechanics",
+        "Biology"
       ],
       "doi": "N/A",
       "node_type": "referenced"
     },
-    "W2080893847": {
-      "title": "An information algebra",
-      "year": 1962,
+    "W2108789285": {
+      "title": "Induction of Finite-State Automata Using Second-Order Recurrent Networks",
+      "year": 1991,
       "concepts": [
-        "IBM",
-        "Navy",
-        "Corporation",
-        "Citation",
-        "Rand corporation",
-        "Management",
-        "Library science",
+        "Finite-state machine",
+        "Finite state",
+        "Automaton",
         "Computer science",
-        "Operations research",
-        "Engineering",
-        "Political science",
-        "Law",
-        "Materials science",
-        "Economics",
-        "Nanotechnology"
+        "Deterministic finite automaton",
+        "Simple (philosophy)",
+        "Büchi automaton",
+        "State (computer science)",
+        "Regular language",
+        "Deterministic automaton",
+        "Recurrent neural network",
+        "Regular expression",
+        "Quantum finite automata",
+        "Order (exchange)",
+        "Nondeterministic finite automaton",
+        "First order",
+        "Theoretical computer science",
+        "Algorithm",
+        "Mathematics",
+        "Artificial intelligence",
+        "Automata theory",
+        "Artificial neural network",
+        "Applied mathematics",
+        "Machine learning",
+        "Programming language",
+        "Philosophy",
+        "Epistemology",
+        "Finance",
+        "Markov chain",
+        "Economics"
       ],
-      "doi": "https://doi.org/10.1145/366920.366935",
+      "doi": "N/A",
       "node_type": "agent_path"
     },
-    "W2084461042": {
-      "title": "Coming changes in system analysis and design",
-      "year": 1966,
+    "W2133688510": {
+      "title": "First-Order Recurrent Neural Networks and Deterministic Finite State Automata",
+      "year": 1994,
       "concepts": [
+        "Finite-state machine",
+        "Quantum finite automata",
+        "Deterministic finite automaton",
+        "Artificial neural network",
+        "Deterministic automaton",
+        "Büchi automaton",
+        "Theoretical computer science",
+        "Grammar induction",
         "Computer science",
-        "Structured systems analysis and design method",
-        "Systems analysis",
-        "Systems design",
-        "Software engineering",
-        "Systems engineering",
-        "Engineering"
+        "Automaton",
+        "ω-automaton",
+        "Recurrent neural network",
+        "Learning automata",
+        "Algorithm",
+        "Discrete mathematics",
+        "Automata theory",
+        "Mathematics",
+        "Artificial intelligence",
+        "Rule-based machine translation"
       ],
-      "doi": "https://doi.org/10.1145/800256.810716",
+      "doi": "https://doi.org/10.1162/neco.1994.6.6.1155",
+      "node_type": "agent_path"
+    },
+    "W2154890045": {
+      "title": "Gradient calculations for dynamic recurrent neural networks: a survey",
+      "year": 1995,
+      "concepts": [
+        "Backpropagation",
+        "Computer science",
+        "Artificial neural network",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Deep learning",
+        "Types of artificial neural networks",
+        "Point (geometry)",
+        "Boltzmann machine",
+        "Algorithm",
+        "Theoretical computer science",
+        "Machine learning",
+        "Mathematics",
+        "Geometry"
+      ],
+      "doi": "https://doi.org/10.1109/72.410363",
       "node_type": "referenced"
     },
-    "W2088584969": {
-      "title": "Computer user-oriented system",
-      "year": 1965,
+    "W2161523118": {
+      "title": "An Input Output HMM Architecture",
+      "year": 1994,
       "concepts": [
-        "Computer science"
+        "Hidden Markov model",
+        "Computer science",
+        "Exploit",
+        "Modular design",
+        "Architecture",
+        "Artificial intelligence",
+        "Machine learning",
+        "Maximum-entropy Markov model",
+        "Markov model",
+        "Pattern recognition (psychology)",
+        "Markov chain",
+        "Variable-order Markov model",
+        "Art",
+        "Computer security",
+        "Visual arts",
+        "Operating system"
       ],
-      "doi": "https://doi.org/10.1145/363744.363786",
+      "doi": "N/A",
       "node_type": "referenced"
     },
-    "W2105379774": {
-      "title": "A programmer's utility filing system",
-      "year": 1964,
+    "W2016589492": {
+      "title": "A Learning Algorithm for Continually Running Fully Recurrent Neural Networks",
+      "year": 1989,
       "concepts": [
-        "Programmer",
         "Computer science",
-        "Magnetic tape",
-        "Database",
-        "Human–computer interaction",
-        "Operating system",
-        "Programming language",
-        "Computer hardware",
-        "Digital recording"
+        "Artificial neural network",
+        "Algorithm",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Basis (linear algebra)",
+        "Machine learning",
+        "Wake-sleep algorithm",
+        "Mathematics",
+        "Generalization error",
+        "Geometry"
       ],
-      "doi": "https://doi.org/10.1093/comjnl/7.3.180",
+      "doi": "https://doi.org/10.1162/neco.1989.1.2.270",
       "node_type": "referenced"
     },
-    "W2156565954": {
-      "title": "NEBULA: A Programming Language for Data Processing",
-      "year": 1961,
+    "W2032164462": {
+      "title": "Complete gradient optimization of a recurrent network applied to /b/, /d/, /g/ discrimination",
+      "year": 1988,
       "concepts": [
-        "Nebula",
+        "Gradient method",
         "Computer science",
-        "Programming language",
-        "Computer vision",
-        "Stars"
+        "Proximal Gradient Methods",
+        "Context (archaeology)",
+        "Gradient descent",
+        "Connectionism",
+        "Algorithm",
+        "Applied mathematics",
+        "Mathematics",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Paleontology",
+        "Biology"
       ],
-      "doi": "https://doi.org/10.1093/comjnl/4.3.197",
+      "doi": "https://doi.org/10.1121/1.2025397",
       "node_type": "referenced"
     },
-    "W2159405924": {
-      "title": "A data management system for time-shared file processing using a cross-index file and self-defining entries",
-      "year": 1966,
+    "W2110485445": {
+      "title": "Finding Structure in Time",
+      "year": 1990,
       "concepts": [
+        "Connectionism",
         "Computer science",
-        "Data management",
-        "Indexed file",
-        "Data file",
-        "File system",
-        "Database",
         "Set (abstract data type)",
-        "File management",
-        "Index (typography)",
-        "Operating system",
-        "World Wide Web",
+        "Task (project management)",
+        "Context (archaeology)",
+        "Representation (politics)",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Semantic memory",
+        "Security token",
+        "Cognitive science",
+        "Cognition",
+        "Artificial neural network",
+        "Psychology",
+        "Law",
+        "Economics",
+        "Biology",
+        "Paleontology",
+        "Computer security",
+        "Management",
+        "Neuroscience",
+        "Politics",
+        "Political science",
         "Programming language"
       ],
-      "doi": "https://doi.org/10.1145/1464182.1464191",
+      "doi": "https://doi.org/10.1207/s15516709cog1402_1",
       "node_type": "referenced"
     },
-    "W2324061260": {
-      "title": "CRESTS--Courtaulds Rapid Extract, Sort and Tabulate System",
-      "year": 1966,
+    "W2116664051": {
+      "title": "Higher Order Recurrent Networks and Grammatical Inference",
+      "year": 1989,
       "concepts": [
-        "sort",
-        "Geology",
+        "Pushdown automaton",
         "Computer science",
-        "Database"
+        "Finite-state machine",
+        "Rule-based machine translation",
+        "Artificial neural network",
+        "Stack (abstract data type)",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Embedded pushdown automaton",
+        "Automaton",
+        "Nested word",
+        "Inference",
+        "Grammar induction",
+        "State (computer science)",
+        "Theoretical computer science",
+        "Algorithm",
+        "Automata theory",
+        "Programming language",
+        "Context-free grammar",
+        "Quantum finite automata",
+        "L-attributed grammar"
       ],
-      "doi": "https://doi.org/10.1093/comjnl/9.1.3",
+      "doi": "N/A",
       "node_type": "referenced"
     },
-    "W2333732024": {
-      "title": "A Simple Program for Use in the \"Conversational Mode\"",
-      "year": 1966,
+    "W2134568112": {
+      "title": "Second-order recurrent neural networks for grammatical inference",
+      "year": 2002,
       "concepts": [
+        "Grammar induction",
+        "Computer science",
+        "Finite-state machine",
+        "Rule-based machine translation",
+        "Automaton",
+        "Equivalence (formal languages)",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Set (abstract data type)",
+        "Recurrent neural network",
+        "Theoretical computer science",
+        "Algorithm",
+        "Mathematics",
+        "Discrete mathematics",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1109/ijcnn.1991.155350",
+      "node_type": "referenced"
+    },
+    "W2468203291": {
+      "title": "The Induction of Dynamical Recognizers",
+      "year": 1991,
+      "concepts": [
+        "Computer science",
+        "Natural language processing",
+        "Speech recognition"
+      ],
+      "doi": "https://doi.org/10.1007/978-1-4615-4008-3_6",
+      "node_type": "referenced"
+    },
+    "W1498436455": {
+      "title": "Learning representations by back-propagating errors",
+      "year": 1986,
+      "concepts": [
+        "Computer science",
+        "Task (project management)",
+        "Convergence (economics)",
+        "Measure (data warehouse)",
+        "Backpropagation",
+        "Artificial intelligence",
+        "Multilayer perceptron",
+        "Perceptron",
+        "Domain (mathematical analysis)",
+        "Artificial neural network",
+        "Algorithm",
+        "Pattern recognition (psychology)",
+        "Mathematics",
+        "Data mining",
+        "Engineering",
+        "Mathematical analysis",
+        "Systems engineering",
+        "Economics",
+        "Economic growth"
+      ],
+      "doi": "https://doi.org/10.1038/323533a0",
+      "node_type": "referenced"
+    },
+    "W1505652865": {
+      "title": "NETtalk: a parallel network that learns to read aloud",
+      "year": 1988,
+      "concepts": [
+        "Computer science",
+        "Parallel computing"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1800750688": {
+      "title": "The Case for Interactionism in Language Processing",
+      "year": 1987,
+      "concepts": [
+        "Interactionism",
+        "Linguistics",
+        "Symbolic interactionism",
+        "Computer science",
+        "Psychology",
+        "Cognitive science",
+        "Sociology",
+        "Natural language processing",
+        "Philosophy",
+        "Social psychology",
+        "Anthropology"
+      ],
+      "doi": "https://doi.org/10.21236/ada204521",
+      "node_type": "referenced"
+    },
+    "W2049093093": {
+      "title": "Graded state machines: The representation of temporal contingencies in simple recurrent networks",
+      "year": 1991,
+      "concepts": [
+        "Computer science",
+        "Simple (philosophy)",
+        "Set (abstract data type)",
+        "Context (archaeology)",
+        "Representation (politics)",
+        "State (computer science)",
+        "Sequence (biology)",
+        "Grammar",
+        "Theoretical computer science",
+        "Natural language",
+        "Finite-state machine",
+        "Element (criminal law)",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Algorithm",
+        "Programming language",
+        "Linguistics",
+        "Philosophy",
+        "Epistemology",
+        "Politics",
+        "Political science",
+        "Law",
+        "Paleontology",
+        "Genetics",
+        "Biology"
+      ],
+      "doi": "https://doi.org/10.1007/bf00114843",
+      "node_type": "referenced"
+    },
+    "W2081965739": {
+      "title": "Implicit learning of artificial grammars",
+      "year": 1967,
+      "concepts": [
+        "Implicit learning",
+        "Memorization",
+        "Grammar",
+        "Rule-based machine translation",
+        "Perception",
+        "Stimulus (psychology)",
+        "Psychology",
+        "Coding (social sciences)",
+        "Computer science",
+        "Natural language processing",
+        "Cognitive psychology",
+        "Artificial intelligence",
+        "Linguistics",
+        "Cognition",
+        "Mathematics",
+        "Neuroscience",
+        "Philosophy",
+        "Statistics"
+      ],
+      "doi": "https://doi.org/10.1016/s0022-5371(67)80149-x",
+      "node_type": "referenced"
+    },
+    "W2119796132": {
+      "title": "Learning Sequential Structure in Simple Recurrent Networks",
+      "year": 1988,
+      "concepts": [
+        "Computer science",
+        "Sequence (biology)",
+        "Path (computing)",
+        "Set (abstract data type)",
+        "Simple (philosophy)",
+        "Grammar",
+        "Artificial intelligence",
+        "State (computer science)",
+        "Cluster (spacecraft)",
+        "ENCODE",
+        "Layer (electronics)",
+        "Network architecture",
+        "Theoretical computer science",
+        "Natural language processing",
+        "Algorithm",
+        "Computer network",
+        "Philosophy",
+        "Linguistics",
+        "Genetics",
+        "Biochemistry",
+        "Chemistry",
+        "Organic chemistry",
+        "Epistemology",
+        "Gene",
+        "Biology",
+        "Programming language"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1535681052": {
+      "title": "Introduction to formal language theory",
+      "year": 1980,
+      "concepts": [
+        "Computer science",
+        "Formal language",
+        "Natural language",
+        "Programming language",
+        "Fist",
+        "Grammar systems theory",
+        "Object language",
+        "Context (archaeology)",
+        "Natural language programming",
+        "Programming language theory",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Fifth-generation programming language",
+        "Universal Networking Language",
+        "Programming paradigm",
+        "Comprehension approach",
+        "Physiology",
+        "Paleontology",
+        "Generative grammar",
+        "Biology",
+        "Emergent grammar"
+      ],
+      "doi": "https://doi.org/10.1016/0096-0551(80)90068-5",
+      "node_type": "referenced"
+    },
+    "W1982370770": {
+      "title": "Learning and Extracting Finite State Automata with Second-Order Recurrent Neural Networks",
+      "year": 1992,
+      "concepts": [
+        "Finite-state machine",
+        "Grammar induction",
+        "Artificial neural network",
+        "Computer science",
+        "Automaton",
+        "Equivalence (formal languages)",
+        "Rule-based machine translation",
+        "Artificial intelligence",
+        "Learning automata",
+        "Set (abstract data type)",
+        "Recurrent neural network",
+        "String (physics)",
+        "Algorithm",
+        "Pattern recognition (psychology)",
+        "Mathematics",
+        "Discrete mathematics",
+        "Programming language",
+        "Mathematical physics"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1992.4.3.393",
+      "node_type": "agent_path"
+    },
+    "W2001165346": {
+      "title": "Using recurrent neural networks to learn the structure of interconnection networks",
+      "year": 1995,
+      "concepts": [
+        "Recurrent neural network",
+        "Interconnection",
+        "Computer science",
+        "Representation (politics)",
+        "Set (abstract data type)",
+        "Routing (electronic design automation)",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Machine learning",
+        "Computer network",
+        "Politics",
+        "Political science",
+        "Law",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(95)00025-u",
+      "node_type": "referenced"
+    },
+    "W2012796055": {
+      "title": "Encoding sequential structure: experience with the real-time recurrent learning algorithm",
+      "year": 1989,
+      "concepts": [
+        "Computer science",
+        "Task (project management)",
+        "String (physics)",
+        "Encoding (memory)",
+        "Recurrent neural network",
+        "Artificial intelligence",
+        "Parallelism (grammar)",
+        "Computation",
+        "Algorithm",
+        "Machine learning",
+        "Theoretical computer science",
+        "Artificial neural network",
+        "Parallel computing",
+        "Mathematics",
+        "Management",
+        "Economics",
+        "Mathematical physics"
+      ],
+      "doi": "https://doi.org/10.1109/ijcnn.1989.118646",
+      "node_type": "referenced"
+    },
+    "W2061079066": {
+      "title": "Inductive Inference: Theory and Methods",
+      "year": 1983,
+      "concepts": [
+        "Computer science",
+        "Citation",
+        "Haven",
+        "Inference",
+        "Library science",
+        "Operations research",
+        "World Wide Web",
+        "Artificial intelligence",
+        "Mathematics",
+        "Combinatorics"
+      ],
+      "doi": "https://doi.org/10.1145/356914.356918",
+      "node_type": "referenced"
+    },
+    "W2065134213": {
+      "title": "Convergent activation dynamics in continuous time networks",
+      "year": 1989,
+      "concepts": [
+        "Differentiable function",
+        "Convergence (economics)",
+        "Mathematics",
+        "Net (polyhedron)",
+        "Chaotic",
+        "State space",
+        "Extension (predicate logic)",
+        "Trajectory",
+        "Applied mathematics",
+        "Dynamical system (definition)",
+        "State (computer science)",
+        "Dynamical systems theory",
+        "Vector field",
+        "Computer science",
+        "Pure mathematics",
+        "Algorithm",
+        "Artificial intelligence",
+        "Statistics",
+        "Physics",
+        "Geometry",
+        "Quantum mechanics",
+        "Astronomy",
+        "Economics",
+        "Programming language",
+        "Economic growth"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(89)90018-x",
+      "node_type": "referenced"
+    },
+    "W2106944545": {
+      "title": "Self-clustering recurrent networks",
+      "year": 2002,
+      "concepts": [
+        "Computer science",
+        "Cluster analysis",
+        "Learning automata",
+        "Automaton",
+        "Theoretical computer science",
+        "Artificial intelligence",
+        "Clustering coefficient",
+        "Finite-state machine",
+        "Representation (politics)",
+        "Quantization (signal processing)",
+        "Vector quantization",
+        "Recurrent neural network",
+        "Artificial neural network",
+        "Algorithm",
+        "Politics",
+        "Political science",
+        "Law"
+      ],
+      "doi": "https://doi.org/10.1109/icnn.1993.298535",
+      "node_type": "referenced"
+    },
+    "W2137983211": {
+      "title": "Multilayer feedforward networks are universal approximators",
+      "year": 1989,
+      "concepts": [
+        "Feed forward",
+        "Feedforward neural network",
+        "Computer science",
+        "Class (philosophy)",
+        "Function (biology)",
+        "Space (punctuation)",
+        "Artificial neural network",
+        "Degree (music)",
+        "Control theory (sociology)",
+        "Artificial intelligence",
+        "Algorithm",
+        "Mathematics",
+        "Topology (electrical circuits)",
+        "Control (management)",
+        "Control engineering",
+        "Physics",
+        "Engineering",
+        "Combinatorics",
+        "Evolutionary biology",
+        "Acoustics",
+        "Biology",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(89)90020-8",
+      "node_type": "referenced"
+    },
+    "W2156960699": {
+      "title": "Induction of Finite-State Languages Using Second-Order Recurrent Networks",
+      "year": 1992,
+      "concepts": [
+        "Finite state",
+        "Recurrent neural network",
         "Simple (philosophy)",
         "Computer science",
-        "Mode (computer interface)",
-        "Programming language",
-        "Human–computer interaction",
+        "State (computer science)",
+        "Finite-state machine",
+        "Order (exchange)",
+        "Algorithm",
+        "First order",
+        "Artificial intelligence",
+        "Mathematics",
+        "Theoretical computer science",
+        "Artificial neural network",
+        "Applied mathematics",
+        "Machine learning",
+        "Philosophy",
         "Epistemology",
-        "Philosophy"
+        "Finance",
+        "Markov chain",
+        "Economics"
       ],
-      "doi": "https://doi.org/10.1093/comjnl/9.3.238",
+      "doi": "https://doi.org/10.1162/neco.1992.4.3.406",
       "node_type": "referenced"
     },
-    "W258541156": {
-      "title": "THE MADAM SYSTEM",
-      "year": 1965,
+    "W2161017408": {
+      "title": "Heuristics for the extraction of rules from discrete-time recurrent neural networks",
+      "year": 2003,
       "concepts": [
-        "Madam",
         "Computer science",
-        "Grammar",
-        "Vocabulary",
-        "Linguistics",
-        "World Wide Web",
+        "Heuristics",
+        "Extraction (chemistry)",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Recurrent neural network",
+        "Machine learning",
+        "Chemistry",
+        "Chromatography",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1109/ijcnn.1992.287212",
+      "node_type": "referenced"
+    },
+    "W3146803896": {
+      "title": "Multilayer feedforward networks are universal approximators",
+      "year": 1989,
+      "concepts": [
+        "Computer science",
+        "Feed forward",
+        "Feedforward neural network",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Control theory (sociology)",
+        "Control engineering",
+        "Control (management)",
+        "Engineering"
+      ],
+      "doi": "https://doi.org/10.5555/70405.70408",
+      "node_type": "referenced"
+    },
+    "W4254816979": {
+      "title": "Finding structure in time",
+      "year": 1990,
+      "concepts": [
+        "Connectionism",
+        "Computer science",
+        "Set (abstract data type)",
+        "Task (project management)",
+        "Representation (politics)",
+        "Context (archaeology)",
+        "Artificial intelligence",
+        "Security token",
         "Natural language processing",
+        "Semantic memory",
+        "Theoretical computer science",
+        "Cognition",
+        "Artificial neural network",
+        "Psychology",
+        "Paleontology",
+        "Computer security",
+        "Management",
+        "Neuroscience",
+        "Politics",
+        "Political science",
+        "Law",
+        "Economics",
+        "Biology",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1016/0364-0213(90)90002-e",
+      "node_type": "referenced"
+    },
+    "W1839691461": {
+      "title": "Regular language inference using evolving neural networks",
+      "year": 2003,
+      "concepts": [
+        "Inference",
+        "Artificial intelligence",
+        "Computer science",
+        "Artificial neural network",
+        "Scaling",
+        "Natural language processing",
+        "Machine learning",
+        "Theoretical computer science",
+        "Mathematics",
+        "Geometry"
+      ],
+      "doi": "https://doi.org/10.1109/cogann.1992.273947",
+      "node_type": "referenced"
+    },
+    "W1982898256": {
+      "title": "Discovering the Structure of a Reactive Environment by Exploration",
+      "year": 1990,
+      "concepts": [
+        "Connectionism",
+        "Computer science",
+        "Theoretical computer science",
+        "Representation (politics)",
+        "Graph",
+        "Artificial intelligence",
+        "Robot",
+        "Machine learning",
+        "Artificial neural network",
+        "Politics",
+        "Political science",
+        "Law"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1990.2.4.447",
+      "node_type": "referenced"
+    },
+    "W1990813072": {
+      "title": "Learning Finite State Machines With Self-Clustering Recurrent Networks",
+      "year": 1993,
+      "concepts": [
+        "Gradient descent",
+        "Computer science",
+        "Artificial neural network",
+        "Learning rule",
+        "Finite-state machine",
+        "Heuristic",
+        "Cluster analysis",
+        "Artificial intelligence",
+        "Activation function",
+        "Stability (learning theory)",
+        "Discretization",
+        "Function (biology)",
+        "Mathematics",
+        "Machine learning",
+        "Algorithm",
+        "Mathematical analysis",
+        "Evolutionary biology",
+        "Biology"
+      ],
+      "doi": "https://doi.org/10.1162/neco.1993.5.6.976",
+      "node_type": "referenced"
+    },
+    "W2002089154": {
+      "title": "Introduction to automata theory, languages and computation",
+      "year": 1981,
+      "concepts": [
+        "Exposition (narrative)",
+        "Computer science",
+        "Automaton",
+        "Computation",
+        "Theory of computation",
+        "Theoretical computer science",
+        "Automata theory",
+        "Formal language",
+        "Model of computation",
+        "Programming language",
+        "Art",
+        "Literature"
+      ],
+      "doi": "https://doi.org/10.1016/0378-4754(81)90068-9",
+      "node_type": "referenced"
+    },
+    "W2013816767": {
+      "title": "Machine Learning Using a Higher Order Correlation Network",
+      "year": 1986,
+      "concepts": [
+        "Correctness",
+        "Encryption",
+        "Synchronization (alternating current)",
+        "Computer science",
+        "Controller (irrigation)",
+        "Control theory (sociology)",
+        "Artificial neural network",
+        "State (computer science)",
+        "Class (philosophy)",
+        "Algorithm",
+        "Control (management)",
+        "Artificial intelligence",
+        "Computer network",
+        "Channel (broadcasting)",
+        "Agronomy",
+        "Biology",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1016/0167-2789(86)90300-6",
+      "node_type": "referenced"
+    },
+    "W2017603160": {
+      "title": "Complexity of automaton identification from given data",
+      "year": 1978,
+      "concepts": [
+        "Deterministic automaton",
+        "Automaton",
+        "Two-way deterministic finite automaton",
+        "Deterministic finite automaton",
+        "Set (abstract data type)",
+        "Büchi automaton",
+        "Finite-state machine",
+        "Timed automaton",
+        "Discrete mathematics",
+        "Mathematics",
+        "Heuristic",
+        "Function (biology)",
+        "Limit (mathematics)",
+        "State (computer science)",
+        "Combinatorics",
+        "Finite set",
+        "Identification (biology)",
+        "Nondeterministic finite automaton",
+        "Computer science",
+        "Algorithm",
+        "Theoretical computer science",
+        "Automata theory",
+        "Mathematical optimization",
+        "Mathematical analysis",
+        "Evolutionary biology",
+        "Programming language",
+        "Biology",
+        "Botany"
+      ],
+      "doi": "https://doi.org/10.1016/s0019-9958(78)90562-4",
+      "node_type": "referenced"
+    },
+    "W2061315523": {
+      "title": "Syntactic pattern recognition and applications",
+      "year": 1968,
+      "concepts": [
+        "Computer science",
+        "Natural language processing",
+        "Linguistics",
+        "Artificial intelligence",
         "Philosophy"
       ],
       "doi": "N/A",
       "node_type": "referenced"
     },
-    "W2810290055": {
-      "title": "File Management on a Small Computer",
-      "year": 1899,
+    "W2063370840": {
+      "title": "Extraction, Insertion and Refinement of Symbolic Rules in Dynamically Driven Recurrent Neural Networks",
+      "year": 1993,
       "concepts": [
-        "Computer science"
+        "Computer science",
+        "Connectionism",
+        "Recurrent neural network",
+        "Representation (politics)",
+        "Generalization",
+        "Expressive power",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Process (computing)",
+        "String (physics)",
+        "Theoretical computer science",
+        "Machine learning",
+        "Natural language processing",
+        "Programming language",
+        "Mathematics",
+        "Mathematical analysis",
+        "Politics",
+        "Political science",
+        "Law",
+        "Mathematical physics"
       ],
-      "doi": "https://doi.org/10.1109/afips.1967.52",
+      "doi": "https://doi.org/10.1080/09540099308915703",
       "node_type": "referenced"
     },
-    "W290103084": {
-      "title": "THE COLINGO SYSTEM DESIGN PHILOSOPHY",
-      "year": 1964,
+    "W2078376347": {
+      "title": "Progress in supervised neural networks",
+      "year": 1993,
       "concepts": [
-        "Philosophy of design",
         "Computer science",
-        "Epistemology",
-        "Philosophy",
-        "Western philosophy"
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Feed forward",
+        "Machine learning",
+        "Recurrent neural network",
+        "Feedforward neural network",
+        "Types of artificial neural networks",
+        "Theoretical computer science",
+        "Control engineering",
+        "Engineering"
       ],
-      "doi": "https://doi.org/10.21236/ad0608833",
+      "doi": "https://doi.org/10.1109/79.180705",
+      "node_type": "referenced"
+    },
+    "W2133671888": {
+      "title": "Introduction to the theory of neural computation",
+      "year": 1994,
+      "concepts": [
+        "Computation",
+        "Computer science",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Models of neural computation",
+        "Machine learning",
+        "Algorithm"
+      ],
+      "doi": "https://doi.org/10.1016/0893-6080(94)90014-0",
+      "node_type": "referenced"
+    },
+    "W2148454341": {
+      "title": "Diversity-based inference of finite automata",
+      "year": 1987,
+      "concepts": [
+        "Automaton",
+        "Equivalence (formal languages)",
+        "Computer science",
+        "Logarithm",
+        "Inference",
+        "Representation (politics)",
+        "Timed automaton",
+        "Algorithm",
+        "Theoretical computer science",
+        "Upper and lower bounds",
+        "Deterministic automaton",
+        "Nondeterministic finite automaton",
+        "Discrete mathematics",
+        "Mathematics",
+        "Automata theory",
+        "Artificial intelligence",
+        "Mathematical analysis",
+        "Politics",
+        "Political science",
+        "Law"
+      ],
+      "doi": "https://doi.org/10.1109/sfcs.1987.21",
+      "node_type": "referenced"
+    },
+    "W2152080463": {
+      "title": "Discrete recurrent neural networks for grammatical inference",
+      "year": 1994,
+      "concepts": [
+        "Computer science",
+        "Overfitting",
+        "Pushdown automaton",
+        "Artificial intelligence",
+        "Learning automata",
+        "Grammar induction",
+        "Artificial neural network",
+        "Nested word",
+        "Theoretical computer science",
+        "Automaton",
+        "Inference",
+        "Finite-state machine",
+        "Machine learning",
+        "Algorithm",
+        "Quantum finite automata",
+        "Rule-based machine translation",
+        "Automata theory"
+      ],
+      "doi": "https://doi.org/10.1109/72.279194",
+      "node_type": "referenced"
+    },
+    "W2799061466": {
+      "title": "Pattern Classification",
+      "year": 2012,
+      "concepts": [
+        "Computer science",
+        "Pattern recognition (psychology)",
+        "Artificial intelligence"
+      ],
+      "doi": "https://doi.org/10.1007/978-1-4419-1428-6_5195",
       "node_type": "referenced"
     }
   },
   "edges": [
     {
-      "source": "W2185907055",
-      "target": "W1984820433"
+      "source": "W2064675550",
+      "target": "W1674799117"
     },
     {
-      "source": "W2185907055",
-      "target": "W2022843269"
+      "source": "W2064675550",
+      "target": "W1881179843"
     },
     {
-      "source": "W2185907055",
-      "target": "W2044618373"
+      "source": "W2064675550",
+      "target": "W1963605035"
     },
     {
-      "source": "W2185907055",
-      "target": "W2082763279"
+      "source": "W2064675550",
+      "target": "W1971129545"
     },
     {
-      "source": "W2185907055",
-      "target": "W2088549934"
+      "source": "W2064675550",
+      "target": "W1971209221"
     },
     {
-      "source": "W2185907055",
-      "target": "W2104880663"
+      "source": "W2064675550",
+      "target": "W1982291194"
     },
     {
-      "source": "W2185907055",
-      "target": "W2092025391"
+      "source": "W2064675550",
+      "target": "W1984375561"
     },
     {
-      "source": "W2092025391",
-      "target": "W142231902"
+      "source": "W2064675550",
+      "target": "W2007431958"
     },
     {
-      "source": "W2092025391",
-      "target": "W1529465401"
+      "source": "W2064675550",
+      "target": "W202296964"
     },
     {
-      "source": "W2092025391",
-      "target": "W1540771591"
+      "source": "W2064675550",
+      "target": "W2036317923"
     },
     {
-      "source": "W2092025391",
-      "target": "W1993595811"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W2043355327"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W2047150424"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W2120747541"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W2135010675"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W2185907055"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W2232207765"
-    },
-    {
-      "source": "W2092025391",
-      "target": "W1996988468"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W114517082"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W128190844"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1480376833"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1504694836"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1512098439"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1521626219"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1540550673"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1543357255"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1565201084"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W1582320196"
-    },
-    {
-      "source": "W1996988468",
-      "target": "W4239510810"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W1519043304"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W1979065383"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W1986949946"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W2015720094"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W2020289613"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W2048229624"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W2119409989"
-    },
-    {
-      "source": "W2022843269",
-      "target": "W2170166939"
-    },
-    {
-      "source": "W2022843269",
+      "source": "W2064675550",
       "target": "W4285719527"
     },
     {
-      "source": "W2119409989",
-      "target": "W1970001627"
+      "source": "W4285719527",
+      "target": "W1000149840"
     },
     {
-      "source": "W2119409989",
-      "target": "W2112161977"
+      "source": "W4285719527",
+      "target": "W1002743077"
     },
     {
-      "source": "W2119409989",
-      "target": "W2479583503"
+      "source": "W4285719527",
+      "target": "W100632932"
     },
     {
-      "source": "W2048229624",
-      "target": "W1514436817"
+      "source": "W4285719527",
+      "target": "W1011232681"
     },
     {
-      "source": "W2048229624",
-      "target": "W1578539980"
+      "source": "W4285719527",
+      "target": "W1012684526"
     },
     {
-      "source": "W2048229624",
-      "target": "W1601555688"
+      "source": "W4285719527",
+      "target": "W101478257"
     },
     {
-      "source": "W2048229624",
-      "target": "W1628475528"
+      "source": "W4285719527",
+      "target": "W1017106669"
     },
     {
-      "source": "W2048229624",
-      "target": "W1977384182"
+      "source": "W4285719527",
+      "target": "W1018796324"
     },
     {
-      "source": "W2048229624",
-      "target": "W1979065383"
+      "source": "W4285719527",
+      "target": "W1020659046"
     },
     {
-      "source": "W2048229624",
-      "target": "W1986949946"
+      "source": "W4285719527",
+      "target": "W1020798780"
     },
     {
-      "source": "W2048229624",
-      "target": "W2035758894"
+      "source": "W4285719527",
+      "target": "W2100172689"
     },
     {
-      "source": "W2048229624",
-      "target": "W2052628540"
+      "source": "W2100172689",
+      "target": "W1503676779"
     },
     {
-      "source": "W2048229624",
-      "target": "W2094815455"
+      "source": "W2100172689",
+      "target": "W1973077637"
     },
     {
-      "source": "W2048229624",
-      "target": "W2119409989"
+      "source": "W2100172689",
+      "target": "W2014404405"
     },
     {
-      "source": "W2048229624",
-      "target": "W2171071458"
+      "source": "W2100172689",
+      "target": "W2027077493"
     },
     {
-      "source": "W2048229624",
-      "target": "W2799867313"
+      "source": "W2100172689",
+      "target": "W2028754841"
     },
     {
-      "source": "W2048229624",
-      "target": "W4285719527"
+      "source": "W2100172689",
+      "target": "W2031612682"
     },
     {
-      "source": "W2035758894",
-      "target": "W118880854"
+      "source": "W2100172689",
+      "target": "W2036265926"
     },
     {
-      "source": "W2035758894",
-      "target": "W1505640990"
+      "source": "W2100172689",
+      "target": "W2043862089"
     },
     {
-      "source": "W2035758894",
-      "target": "W1604754811"
+      "source": "W2100172689",
+      "target": "W2052110143"
     },
     {
-      "source": "W2035758894",
-      "target": "W1628475528"
+      "source": "W2100172689",
+      "target": "W2058200712"
     },
     {
-      "source": "W2035758894",
-      "target": "W1977190837"
+      "source": "W2100172689",
+      "target": "W2046533349"
     },
     {
-      "source": "W2035758894",
-      "target": "W1977384182"
+      "source": "W2064675550",
+      "target": "W2048060899"
     },
     {
-      "source": "W2035758894",
-      "target": "W1979263599"
+      "source": "W2064675550",
+      "target": "W2057653135"
     },
     {
-      "source": "W2035758894",
-      "target": "W1980491396"
+      "source": "W2064675550",
+      "target": "W2086756055"
     },
     {
-      "source": "W2035758894",
-      "target": "W2025297205"
+      "source": "W2064675550",
+      "target": "W2103452139"
     },
     {
-      "source": "W2035758894",
-      "target": "W2041225318"
+      "source": "W2064675550",
+      "target": "W2107878631"
     },
     {
-      "source": "W2035758894",
-      "target": "W2119409989"
+      "source": "W2064675550",
+      "target": "W2111871983"
     },
     {
-      "source": "W2035758894",
-      "target": "W2170166939"
+      "source": "W2064675550",
+      "target": "W2114471683"
     },
     {
-      "source": "W2035758894",
-      "target": "W53732215"
+      "source": "W2064675550",
+      "target": "W2118127772"
     },
     {
-      "source": "W1977384182",
-      "target": "W1977384182"
+      "source": "W2064675550",
+      "target": "W2119216348"
     },
     {
-      "source": "W2088549934",
-      "target": "W1971804672"
+      "source": "W2064675550",
+      "target": "W2121553911"
     },
     {
-      "source": "W2088549934",
-      "target": "W1979835740"
+      "source": "W2064675550",
+      "target": "W2123716044"
     },
     {
-      "source": "W2088549934",
-      "target": "W1985547558"
+      "source": "W2064675550",
+      "target": "W2128499899"
     },
     {
-      "source": "W2088549934",
-      "target": "W1992676961"
+      "source": "W2064675550",
+      "target": "W2129831132"
     },
     {
-      "source": "W2088549934",
-      "target": "W1997542989"
+      "source": "W2064675550",
+      "target": "W2131387845"
     },
     {
-      "source": "W2088549934",
-      "target": "W1998458210"
+      "source": "W2064675550",
+      "target": "W2136939460"
     },
     {
-      "source": "W2088549934",
-      "target": "W1999667176"
+      "source": "W2136939460",
+      "target": "W1547547196"
     },
     {
-      "source": "W2088549934",
-      "target": "W2005573611"
+      "source": "W2136939460",
+      "target": "W194249466"
     },
     {
-      "source": "W2088549934",
-      "target": "W2007363236"
+      "source": "W2136939460",
+      "target": "W1963605035"
     },
     {
-      "source": "W2088549934",
-      "target": "W2008065279"
+      "source": "W2136939460",
+      "target": "W1971209221"
     },
     {
-      "source": "W2088549934",
-      "target": "W2019806963"
+      "source": "W2136939460",
+      "target": "W2036317923"
     },
     {
-      "source": "W2088549934",
-      "target": "W2033825565"
+      "source": "W2136939460",
+      "target": "W2057653135"
     },
     {
-      "source": "W2088549934",
-      "target": "W2061102396"
+      "source": "W2136939460",
+      "target": "W2064675550"
     },
     {
-      "source": "W2088549934",
-      "target": "W207426224"
+      "source": "W2136939460",
+      "target": "W2071906671"
     },
     {
-      "source": "W2088549934",
-      "target": "W2080893847"
+      "source": "W2136939460",
+      "target": "W2099257174"
     },
     {
-      "source": "W2088549934",
-      "target": "W2084461042"
+      "source": "W2136939460",
+      "target": "W2107878631"
     },
     {
-      "source": "W2088549934",
-      "target": "W2088584969"
+      "source": "W2136939460",
+      "target": "W2108789285"
     },
     {
-      "source": "W2088549934",
-      "target": "W2105379774"
+      "source": "W2136939460",
+      "target": "W2121553911"
     },
     {
-      "source": "W2088549934",
-      "target": "W2156565954"
+      "source": "W2136939460",
+      "target": "W2128499899"
     },
     {
-      "source": "W2088549934",
-      "target": "W2159405924"
+      "source": "W2136939460",
+      "target": "W2129831132"
     },
     {
-      "source": "W2088549934",
-      "target": "W2324061260"
+      "source": "W2136939460",
+      "target": "W2131387845"
     },
     {
-      "source": "W2088549934",
-      "target": "W2333732024"
+      "source": "W2136939460",
+      "target": "W2133688510"
     },
     {
-      "source": "W2088549934",
-      "target": "W258541156"
+      "source": "W2136939460",
+      "target": "W2154890045"
     },
     {
-      "source": "W2088549934",
-      "target": "W2810290055"
+      "source": "W2136939460",
+      "target": "W2161523118"
     },
     {
-      "source": "W2088549934",
-      "target": "W290103084"
+      "source": "W2108789285",
+      "target": "W2016589492"
+    },
+    {
+      "source": "W2108789285",
+      "target": "W2032164462"
+    },
+    {
+      "source": "W2108789285",
+      "target": "W2110485445"
+    },
+    {
+      "source": "W2108789285",
+      "target": "W2116664051"
+    },
+    {
+      "source": "W2108789285",
+      "target": "W2121553911"
+    },
+    {
+      "source": "W2108789285",
+      "target": "W2134568112"
+    },
+    {
+      "source": "W2108789285",
+      "target": "W2468203291"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W1498436455"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W1505652865"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W1800750688"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W2016589492"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W2049093093"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W2057653135"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W2081965739"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W2110485445"
+    },
+    {
+      "source": "W2121553911",
+      "target": "W2119796132"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W1498436455"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W1535681052"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W1982370770"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2001165346"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2012796055"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2016589492"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2061079066"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2065134213"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2081965739"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2106944545"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2108789285"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2110485445"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2121553911"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2137983211"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2156960699"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W2161017408"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W3146803896"
+    },
+    {
+      "source": "W2133688510",
+      "target": "W4254816979"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W1535681052"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W1839691461"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W1982898256"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W1990813072"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2002089154"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2013816767"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2016589492"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2017603160"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2061079066"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2061315523"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2063370840"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2071906671"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2078376347"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2110485445"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2116664051"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2121553911"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2133671888"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2148454341"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2152080463"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2156960699"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2161017408"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W2799061466"
+    },
+    {
+      "source": "W1982370770",
+      "target": "W4254816979"
     }
   ],
   "agent_path": [
-    "W2185907055",
-    "W2022843269",
-    "W1519043304",
-    "W2119409989",
-    "W1984820433",
-    "W2082763279",
-    "W2048229624",
-    "W2035758894",
-    "W1977384182",
-    "W2088549934",
-    "W2080893847"
+    "W2064675550",
+    "W2136939460",
+    "W2108789285",
+    "W2121553911",
+    "W2133688510",
+    "W1982370770"
   ]
 }

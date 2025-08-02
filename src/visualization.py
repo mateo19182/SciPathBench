@@ -150,18 +150,31 @@ def _create_html_visualization(G, ground_truth_path, agent_path, output_prefix):
     # Configure physics for better node separation
     net.set_options("""
     var options = {
-      "physics": {
+    "physics": {
         "enabled": true,
-        "stabilization": {"iterations": 1000},
+        "stabilization": {
+        "enabled": true,
+        "iterations": 100,
+        "updateInterval": 100
+        },
         "barnesHut": {
-          "gravitationalConstant": -5000,
-          "centralGravity": 0.3,
-          "springLength": 200,
-          "springConstant": 0.04,
-          "damping": 0.09,
-          "avoidOverlap": 1
-        }
-      }
+        "gravitationalConstant": -2500,
+        "centralGravity": 0.3,
+        "springLength": 200,
+        "springConstant": 0.05,
+        "damping": 0.09,
+        "avoidOverlap": 10
+        },
+        "minVelocity": 0.75,
+        "maxVelocity": 10,
+        "solver": "barnesHut",
+        "adaptiveTimestep": true
+    },
+    "interaction": {
+        "dragNodes": true,
+        "dragView": true,
+        "zoomView": true
+    }
     }
     """)
 
