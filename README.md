@@ -18,6 +18,12 @@ uv run main.py
 
 ## TODO
 
+- improve prmpt, only forward frontier
+
+- speed up api calls
+
+- make resilient to error: "message":"Provider returned error","code":429,"
+
 - add visualization with [VOSviewer](https://www.vosviewer.com/)
 
 - use https://inciteful.xyz/c?to=W1995017064&from=W2059020082 for shortest path!

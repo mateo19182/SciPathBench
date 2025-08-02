@@ -4,9 +4,10 @@
 import requests
 import json
 import logging
+import re
 from src.openalex_client import OpenAlexClient
 from src.utils import reconstruct_abstract
-from config import OPENROUTER_API_KEY, OPENROUTER_API_BASE_URL
+from config import OPENROUTER_API_KEY, OPENROUTER_API_BASE_URL, LLM_PROVIDER_MODEL
 
 class LLMAgent:
     """The LLM-powered agent that attempts to find the shortest path."""
@@ -112,39 +113,69 @@ class LLMAgent:
         
     def _build_prompt(self, start_paper, end_paper):
         """Constructs the detailed prompt for the LLM planner."""
-        return f"""
-        You are a research assistant AI finding the shortest citation path between two papers using a bidirectional search.
-        START: "{start_paper['title']}" ({start_paper['publication_year']})
-        END: "{end_paper['title']}" ({end_paper['publication_year']})
-        Analyze the frontiers and decide which SINGLE paper to expand next to connect them. Consider semantic similarity, topic overlap, and dates.
-        
-        FORWARD FRONTIER (from START):
-        {json.dumps(self.start_frontier, indent=2)}
-
-        BACKWARD FRONTIER (from END):
-        {json.dumps(self.end_frontier, indent=2)}
-
-        Respond in JSON with "command": "expand", "paper_id": "ID_TO_EXPAND", "direction": "forward" or "backward".
-        """
+        # Cleaned up prompt to avoid leading whitespace issues from multiline f-strings
+        prompt_lines = [
+            "You are a research assistant AI finding the shortest citation path between two papers using a bidirectional search.",
+            f"START: \"{start_paper['title']}\" ({start_paper['publication_year']})",
+            f"END: \"{end_paper['title']}\" ({end_paper['publication_year']})",
+            "Analyze the frontiers and decide which SINGLE paper to expand next to connect them. Consider semantic similarity, topic overlap, and dates.",
+            "\nFORWARD FRONTIER (from START):",
+            json.dumps(self.start_frontier, indent=2),
+            "\nBACKWARD FRONTIER (from END):",
+            json.dumps(self.end_frontier, indent=2),
+            "\nYou MUST respond in a valid JSON format. The JSON object must contain three fields: \"command\", \"paper_id\", and \"direction\".",
+            "- \"command\": Must always be \"expand\".",
+            "- \"paper_id\": The OpenAlex ID (e.g., \"W12345\") of the paper you want to expand.",
+            "- \"direction\": Either \"forward\" or \"backward\", indicating which frontier the chosen paper_id is from."
+        ]
+        return "\n".join(prompt_lines)
         
     def _get_llm_decision(self, prompt):
         """Makes the API call to OpenRouter to get the agent's next move."""
         if not OPENROUTER_API_KEY:
-            logging.error("OPENROUTER_API_KEY not set! Cannot make LLM requests.")
-            # if self.start_frontier:
-            #     return {"command": "expand", "paper_id": list(self.start_frontier.keys())[0], "direction": "forward"}
+            logging.error("OPENROUTER_API_KEY not set. Using simple heuristic fallback.")
+            if self.start_frontier:
+                return {"command": "expand", "paper_id": list(self.start_frontier.keys())[0], "direction": "forward"}
             return None
 
-        headers = {"Authorization": f"Bearer {OPENROUTER_API_KEY}"}
-        body = {"model": self.llm_provider, "messages": [{"role": "user", "content": prompt}], "response_format": {"type": "json_object"}}
+        headers = {
+            "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://github.com/mateo-m/SciPathBench", # Recommended header
+            "X-Title": "SciPathBench" # Recommended header
+        }
+        
+        body = {
+            "model": self.llm_provider,
+            "messages": [{"role": "user", "content": prompt}]
+        }
+
+        data_json = json.dumps(body)
 
         try:
-            response = requests.post(f"{OPENROUTER_API_BASE_URL}/chat/completions", headers=headers, json=body)
+            response = requests.post(f"{OPENROUTER_API_BASE_URL}/chat/completions", headers=headers, data=data_json)
+            # This will raise an HTTPError if the HTTP request returned an unsuccessful status code
             response.raise_for_status()
-            decision_text = response.json()['choices'][0]['message']['content']
-            return json.loads(decision_text)
+            
+            response_text = response.json()['choices'][0]['message']['content']
+            
+            match = re.search(r'\{.*\}', response_text, re.DOTALL)
+            if match:
+                json_str = match.group(0)
+                return json.loads(json_str)
+            else:
+                logging.error(f"Could not find a JSON object in the LLM response: {response_text}")
+                return None
+
+        except requests.exceptions.HTTPError as e:
+            # This is the crucial change: log the server's response body on error.
+            logging.error(f"OpenRouter API request failed with status {e.response.status_code}: {e}")
+            logging.error(f"Server Response: {e.response.text}") # This will show the detailed error from OpenRouter
+            return None
         except requests.exceptions.RequestException as e:
-            logging.error(f"OpenRouter API request failed: {e}")
+            logging.error(f"A network-level error occurred: {e}")
+            return None
         except json.JSONDecodeError as e:
-            logging.error(f"Failed to parse LLM JSON response: {e}")
+            logging.error(f"Failed to parse LLM JSON response: {e} - Response was: {response_text}")
+            return None
         return None

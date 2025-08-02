@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-08-02 15:30:47",
+    "benchmark_pair": {
+        "start_paper_id": "W2169528473",
+        "end_paper_id": "W2036265926"
+    },
+    "ground_truth": {
+        "path": [
+            "W2169528473",
+            "W1773233",
+            "W2036265926"
+        ],
+        "path_length": 2
+    },
+    "agent_run": {
+        "model": "deepseek/deepseek-chat-v3-0324:free",
+        "path": null,
+        "path_length": 0,
+        "api_calls": 73
+    },
+    "scorecard": {
+        "path_success": 0,
+        "path_optimality": 0,
+        "step_efficiency": 73,
+        "reasoning_faithfulness": 0
+    }
+}

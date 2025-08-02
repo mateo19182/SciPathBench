@@ -1,171 +1,111 @@
-2025-08-02 12:58:48,108 - INFO - ==================================================
-2025-08-02 12:58:48,108 - INFO - Starting New SciPathBench Run
-2025-08-02 12:58:48,108 - INFO - ==================================================
-2025-08-02 12:58:48,108 - INFO - Objective: Find shortest path between W2059020082 and W1995017064
-2025-08-02 12:58:48,108 - INFO - --- Starting BFS Ground Truth Calculation ---
-2025-08-02 12:58:48,108 - INFO - BFS Depth: 1
-2025-08-02 12:58:48,108 - INFO - API CALLS ~1-2: Getting all neighbors for W2059020082
-2025-08-02 12:58:48,108 - INFO - API CALL 1: Getting details for paper ID W2059020082
-2025-08-02 12:58:49,140 - INFO - API CALLS ~3-4: Getting all neighbors for W1995017064
-2025-08-02 12:58:49,140 - INFO - API CALL 3: Getting details for paper ID W1995017064
-2025-08-02 12:58:50,148 - INFO - BFS Depth: 2
-2025-08-02 12:58:50,148 - INFO - API CALLS ~5-6: Getting all neighbors for W2063334178
-2025-08-02 12:58:50,148 - INFO - API CALL 5: Getting details for paper ID W2063334178
-2025-08-02 12:58:51,260 - INFO - API CALLS ~7-8: Getting all neighbors for W2002301940
-2025-08-02 12:58:51,260 - INFO - API CALL 7: Getting details for paper ID W2002301940
-2025-08-02 12:58:52,363 - INFO - API CALLS ~9-10: Getting all neighbors for W2036775739
-2025-08-02 12:58:52,363 - INFO - API CALL 9: Getting details for paper ID W2036775739
-2025-08-02 12:58:53,433 - INFO - API CALLS ~11-12: Getting all neighbors for W3015772155
-2025-08-02 12:58:53,433 - INFO - API CALL 11: Getting details for paper ID W3015772155
-2025-08-02 12:58:54,534 - INFO - API CALLS ~13-14: Getting all neighbors for W2122141445
-2025-08-02 12:58:54,534 - INFO - API CALL 13: Getting details for paper ID W2122141445
-2025-08-02 12:58:55,607 - INFO - API CALLS ~15-16: Getting all neighbors for W1990170643
-2025-08-02 12:58:55,607 - INFO - API CALL 15: Getting details for paper ID W1990170643
-2025-08-02 12:58:56,669 - INFO - API CALLS ~17-18: Getting all neighbors for W2121679275
-2025-08-02 12:58:56,669 - INFO - API CALL 17: Getting details for paper ID W2121679275
-2025-08-02 12:58:57,787 - INFO - API CALLS ~19-20: Getting all neighbors for W2084480448
-2025-08-02 12:58:57,787 - INFO - API CALL 19: Getting details for paper ID W2084480448
-2025-08-02 12:58:58,932 - INFO - API CALLS ~21-22: Getting all neighbors for W2511651917
-2025-08-02 12:58:58,932 - INFO - API CALL 21: Getting details for paper ID W2511651917
-2025-08-02 12:59:00,106 - INFO - API CALLS ~23-24: Getting all neighbors for W2029129196
-2025-08-02 12:59:00,106 - INFO - API CALL 23: Getting details for paper ID W2029129196
-2025-08-02 12:59:01,188 - INFO - API CALLS ~25-26: Getting all neighbors for W2077059894
-2025-08-02 12:59:01,188 - INFO - API CALL 25: Getting details for paper ID W2077059894
-2025-08-02 12:59:02,229 - INFO - API CALLS ~27-28: Getting all neighbors for W2160181385
-2025-08-02 12:59:02,229 - INFO - API CALL 27: Getting details for paper ID W2160181385
-2025-08-02 12:59:03,229 - INFO - API CALLS ~29-30: Getting all neighbors for W2024428988
-2025-08-02 12:59:03,230 - INFO - API CALL 29: Getting details for paper ID W2024428988
-2025-08-02 12:59:04,432 - INFO - API CALLS ~31-32: Getting all neighbors for W2072408396
-2025-08-02 12:59:04,432 - INFO - API CALL 31: Getting details for paper ID W2072408396
-2025-08-02 12:59:05,466 - INFO - API CALLS ~33-34: Getting all neighbors for W2037626421
-2025-08-02 12:59:05,466 - INFO - API CALL 33: Getting details for paper ID W2037626421
-2025-08-02 12:59:06,515 - INFO - API CALLS ~35-36: Getting all neighbors for W4309875737
-2025-08-02 12:59:06,515 - INFO - API CALL 35: Getting details for paper ID W4309875737
-2025-08-02 12:59:07,565 - INFO - API CALLS ~37-38: Getting all neighbors for W2028877284
-2025-08-02 12:59:07,565 - INFO - API CALL 37: Getting details for paper ID W2028877284
-2025-08-02 12:59:08,589 - INFO - API CALLS ~39-40: Getting all neighbors for W2778006205
-2025-08-02 12:59:08,589 - INFO - API CALL 39: Getting details for paper ID W2778006205
-2025-08-02 12:59:09,698 - INFO - API CALLS ~41-42: Getting all neighbors for W2078277035
-2025-08-02 12:59:09,698 - INFO - API CALL 41: Getting details for paper ID W2078277035
-2025-08-02 12:59:10,702 - INFO - API CALLS ~43-44: Getting all neighbors for W2007780046
-2025-08-02 12:59:10,702 - INFO - API CALL 43: Getting details for paper ID W2007780046
-2025-08-02 12:59:11,913 - INFO - API CALLS ~45-46: Getting all neighbors for W2064542583
-2025-08-02 12:59:11,913 - INFO - API CALL 45: Getting details for paper ID W2064542583
-2025-08-02 12:59:12,921 - INFO - API CALLS ~47-48: Getting all neighbors for W1974296399
-2025-08-02 12:59:12,921 - INFO - API CALL 47: Getting details for paper ID W1974296399
-2025-08-02 12:59:13,950 - INFO - API CALLS ~49-50: Getting all neighbors for W4206529098
-2025-08-02 12:59:13,951 - INFO - API CALL 49: Getting details for paper ID W4206529098
-2025-08-02 12:59:15,097 - INFO - API CALLS ~51-52: Getting all neighbors for W2028931219
-2025-08-02 12:59:15,097 - INFO - API CALL 51: Getting details for paper ID W2028931219
-2025-08-02 12:59:16,137 - INFO - API CALLS ~53-54: Getting all neighbors for W2089700460
-2025-08-02 12:59:16,137 - INFO - API CALL 53: Getting details for paper ID W2089700460
-2025-08-02 12:59:17,300 - INFO - API CALLS ~55-56: Getting all neighbors for https://openalex.org/W1481344232
-2025-08-02 12:59:17,300 - INFO - API CALL 55: Getting details for paper ID https://openalex.org/W1481344232
-2025-08-02 12:59:18,629 - INFO - API CALLS ~57-58: Getting all neighbors for W2154197653
-2025-08-02 12:59:18,629 - INFO - API CALL 57: Getting details for paper ID W2154197653
-2025-08-02 12:59:19,949 - INFO - Ground Truth Path (BFS): ['W2059020082', 'W2064542583', 'https://openalex.org/W2112200653', 'W2154197653', 'W1995017064'] (Length: 4, Cost: 58 API calls)
-2025-08-02 12:59:19,949 - INFO - --- Starting LLM Agent Run ---
-2025-08-02 12:59:19,949 - INFO - API CALL 1: Getting details for paper ID W2059020082
-2025-08-02 12:59:20,384 - INFO - API CALL 2: Getting details for paper ID W1995017064
-2025-08-02 12:59:20,826 - INFO - --- Agent's Turn 1/15 ---
-2025-08-02 12:59:20,827 - ERROR - OPENROUTER_API_KEY not set. Using simple heuristic fallback.
-2025-08-02 12:59:20,827 - INFO - Agent decided to expand 'W2059020082' from the 'forward' frontier.
-2025-08-02 12:59:20,827 - INFO - API CALLS ~3-4: Getting all neighbors for W2059020082
-2025-08-02 12:59:20,827 - INFO - API CALL 3: Getting details for paper ID W2059020082
-2025-08-02 12:59:21,708 - INFO - API CALL 5: Getting details for paper ID W2063334178
-2025-08-02 12:59:22,138 - INFO - API CALL 6: Getting details for paper ID W2002301940
-2025-08-02 12:59:22,552 - INFO - API CALL 7: Getting details for paper ID W2036775739
-2025-08-02 12:59:22,978 - INFO - API CALL 8: Getting details for paper ID W3015772155
-2025-08-02 12:59:23,409 - INFO - API CALL 9: Getting details for paper ID W2122141445
-2025-08-02 12:59:23,829 - INFO - API CALL 10: Getting details for paper ID W1990170643
-2025-08-02 12:59:24,295 - INFO - API CALL 11: Getting details for paper ID W2121679275
-2025-08-02 12:59:24,727 - INFO - API CALL 12: Getting details for paper ID W2084480448
-2025-08-02 12:59:25,142 - INFO - API CALL 13: Getting details for paper ID W2511651917
-2025-08-02 12:59:25,568 - INFO - API CALL 14: Getting details for paper ID W2029129196
-2025-08-02 12:59:26,019 - INFO - API CALL 15: Getting details for paper ID W2077059894
-2025-08-02 12:59:26,439 - INFO - API CALL 16: Getting details for paper ID W2160181385
-2025-08-02 12:59:26,874 - INFO - API CALL 17: Getting details for paper ID W2024428988
-2025-08-02 12:59:27,286 - INFO - API CALL 18: Getting details for paper ID W2072408396
-2025-08-02 12:59:27,711 - INFO - API CALL 19: Getting details for paper ID W2037626421
-2025-08-02 12:59:28,135 - INFO - API CALL 20: Getting details for paper ID W4309875737
-2025-08-02 12:59:28,578 - INFO - API CALL 21: Getting details for paper ID W2028877284
-2025-08-02 12:59:29,009 - INFO - API CALL 22: Getting details for paper ID W2778006205
-2025-08-02 12:59:29,446 - INFO - API CALL 23: Getting details for paper ID W2078277035
-2025-08-02 12:59:29,878 - INFO - API CALL 24: Getting details for paper ID W2007780046
-2025-08-02 12:59:30,303 - INFO - API CALL 25: Getting details for paper ID W2064542583
-2025-08-02 12:59:30,734 - INFO - API CALL 26: Getting details for paper ID W1974296399
-2025-08-02 12:59:31,144 - INFO - API CALL 27: Getting details for paper ID W4206529098
-2025-08-02 12:59:31,561 - INFO - API CALL 28: Getting details for paper ID W2028931219
-2025-08-02 12:59:31,996 - INFO - API CALL 29: Getting details for paper ID W2089700460
-2025-08-02 12:59:32,410 - INFO - --- Agent's Turn 2/15 ---
-2025-08-02 12:59:32,410 - ERROR - OPENROUTER_API_KEY not set. Using simple heuristic fallback.
-2025-08-02 12:59:32,410 - INFO - Agent decided to expand 'W2063334178' from the 'forward' frontier.
-2025-08-02 12:59:32,410 - INFO - API CALLS ~30-31: Getting all neighbors for W2063334178
-2025-08-02 12:59:32,410 - INFO - API CALL 30: Getting details for paper ID W2063334178
-2025-08-02 12:59:33,294 - INFO - API CALL 32: Getting details for paper ID https://openalex.org/W2144332006
-2025-08-02 12:59:34,005 - INFO - API CALL 33: Getting details for paper ID https://openalex.org/W2026758097
-2025-08-02 12:59:34,666 - INFO - API CALL 34: Getting details for paper ID W2095191961
-2025-08-02 12:59:35,150 - INFO - API CALL 35: Getting details for paper ID W2042468043
-2025-08-02 12:59:35,660 - INFO - API CALL 36: Getting details for paper ID W2318655974
-2025-08-02 12:59:36,192 - INFO - API CALL 37: Getting details for paper ID W2616018473
-2025-08-02 12:59:36,745 - INFO - API CALL 38: Getting details for paper ID https://openalex.org/W2101748147
-2025-08-02 12:59:37,500 - INFO - API CALL 39: Getting details for paper ID W2468089184
-2025-08-02 12:59:38,070 - INFO - API CALL 40: Getting details for paper ID W2026580854
-2025-08-02 12:59:38,573 - INFO - API CALL 41: Getting details for paper ID https://openalex.org/W2070942956
-2025-08-02 12:59:39,209 - INFO - API CALL 42: Getting details for paper ID W2006957749
-2025-08-02 12:59:39,687 - INFO - API CALL 43: Getting details for paper ID W2143803583
-2025-08-02 12:59:40,291 - INFO - API CALL 44: Getting details for paper ID W2020226532
-2025-08-02 12:59:40,788 - INFO - API CALL 45: Getting details for paper ID https://openalex.org/W2059020082
-2025-08-02 12:59:41,390 - INFO - API CALL 46: Getting details for paper ID W1975511395
-2025-08-02 12:59:41,878 - INFO - API CALL 47: Getting details for paper ID https://openalex.org/W2071964146
-2025-08-02 12:59:42,534 - INFO - API CALL 48: Getting details for paper ID https://openalex.org/W2080182825
-2025-08-02 12:59:43,263 - INFO - API CALL 49: Getting details for paper ID W2607028235
-2025-08-02 12:59:43,750 - INFO - API CALL 50: Getting details for paper ID W2024509898
-2025-08-02 12:59:44,296 - INFO - API CALL 51: Getting details for paper ID W2052852734
-2025-08-02 12:59:44,775 - INFO - API CALL 52: Getting details for paper ID W2026563033
-2025-08-02 12:59:45,310 - INFO - API CALL 53: Getting details for paper ID https://openalex.org/W2026258231
-2025-08-02 12:59:45,968 - INFO - API CALL 54: Getting details for paper ID W2146426024
-2025-08-02 12:59:46,435 - INFO - API CALL 55: Getting details for paper ID W2061521035
-2025-08-02 12:59:46,922 - INFO - API CALL 56: Getting details for paper ID W2167003936
-2025-08-02 12:59:47,441 - INFO - API CALL 57: Getting details for paper ID W2123890717
-2025-08-02 12:59:47,977 - INFO - API CALL 58: Getting details for paper ID W2060047235
-2025-08-02 12:59:48,600 - INFO - API CALL 59: Getting details for paper ID W1983114908
-2025-08-02 12:59:49,095 - INFO - API CALL 60: Getting details for paper ID https://openalex.org/W2017327381
-2025-08-02 12:59:49,765 - INFO - API CALL 61: Getting details for paper ID W2070059498
-2025-08-02 12:59:50,362 - INFO - API CALL 62: Getting details for paper ID https://openalex.org/W1972493784
-2025-08-02 12:59:51,021 - INFO - API CALL 63: Getting details for paper ID W2168204708
-2025-08-02 12:59:51,635 - INFO - API CALL 64: Getting details for paper ID https://openalex.org/W1969635440
-2025-08-02 12:59:52,298 - INFO - API CALL 65: Getting details for paper ID https://openalex.org/W2080528351
-2025-08-02 12:59:52,965 - INFO - --- Agent's Turn 3/15 ---
-2025-08-02 12:59:52,965 - ERROR - OPENROUTER_API_KEY not set. Using simple heuristic fallback.
-2025-08-02 12:59:52,965 - INFO - Agent decided to expand 'W2002301940' from the 'forward' frontier.
-2025-08-02 12:59:52,965 - INFO - API CALLS ~66-67: Getting all neighbors for W2002301940
-2025-08-02 12:59:52,965 - INFO - API CALL 66: Getting details for paper ID W2002301940
-2025-08-02 12:59:53,826 - INFO - API CALL 68: Getting details for paper ID https://openalex.org/W2083564567
-2025-08-02 12:59:54,482 - INFO - API CALL 69: Getting details for paper ID W2562952133
-2025-08-02 12:59:55,028 - INFO - API CALL 70: Getting details for paper ID https://openalex.org/W2031307975
-2025-08-02 12:59:55,689 - INFO - API CALL 71: Getting details for paper ID W2338353692
-2025-08-02 12:59:56,181 - INFO - API CALL 72: Getting details for paper ID W2912435447
-2025-08-02 12:59:56,742 - INFO - API CALL 73: Getting details for paper ID W3025922687
-2025-08-02 12:59:57,261 - INFO - API CALL 74: Getting details for paper ID W3098717241
-2025-08-02 12:59:57,796 - INFO - API CALL 75: Getting details for paper ID W2946629440
-2025-08-02 12:59:58,276 - INFO - API CALL 76: Getting details for paper ID W4317888697
-2025-08-02 12:59:58,748 - INFO - API CALL 77: Getting details for paper ID https://openalex.org/W2055634959
-2025-08-02 12:59:59,538 - INFO - API CALL 78: Getting details for paper ID https://openalex.org/W1983778678
-2025-08-02 13:00:00,235 - INFO - API CALL 79: Getting details for paper ID W2911442430
-2025-08-02 13:00:00,777 - INFO - API CALL 80: Getting details for paper ID W2533429430
-2025-08-02 13:00:01,272 - INFO - API CALL 81: Getting details for paper ID W4296766770
-2025-08-02 13:00:01,775 - INFO - API CALL 82: Getting details for paper ID W1979086238
-2025-08-02 13:00:02,361 - INFO - API CALL 83: Getting details for paper ID W3122185495
-2025-08-02 13:00:02,896 - INFO - API CALL 84: Getting details for paper ID W2619974203
-2025-08-02 13:00:04,437 - INFO - API CALL 85: Getting details for paper ID W2911025402
-2025-08-02 13:00:05,152 - INFO - API CALL 86: Getting details for paper ID https://openalex.org/W1973398121
-2025-08-02 13:00:05,844 - INFO - API CALL 87: Getting details for paper ID https://openalex.org/W1998379783
-2025-08-02 13:00:06,590 - INFO - API CALL 88: Getting details for paper ID https://openalex.org/W2063334178
-2025-08-02 13:00:07,212 - INFO - API CALL 89: Getting details for paper ID W2899631718
-2025-08-02 13:00:07,761 - INFO - API CALL 90: Getting details for paper ID https://openalex.org/W2002396274
-2025-08-02 13:00:08,467 - INFO - API CALL 91: Getting details for paper ID https://openalex.org/W1995782160
-2025-08-02 13:00:09,216 - INFO - API CALL 92: Getting details for paper ID W3109651547
-2025-08-02 13:00:09,743 - INFO - API CALL 93: Getting details for paper ID W2514183635
-2025-08-02 13:00:10,277 - INFO - API CALL 94: Getting details for paper ID W2918883656
-2025-08-02 13:00:10,916 - INFO - API CALL 95: Getting details for paper ID W3008295325
+2025-08-02 15:29:35,980 - INFO - ==================================================
+2025-08-02 15:29:35,980 - INFO - Starting New SciPathBench Run
+2025-08-02 15:29:35,980 - INFO - ==================================================
+2025-08-02 15:29:35,980 - INFO - Using pre-calculated benchmark mode from 'benchmark_pairs.json'
+2025-08-02 15:29:35,980 - INFO - Selected pre-calculated task with difficulty 2.
+2025-08-02 15:29:35,980 - INFO - Objective: Find shortest path between W2169528473 and W2036265926
+2025-08-02 15:29:35,980 - INFO - Ground Truth Path: ['W2169528473', 'W1773233', 'W2036265926'] (Length: 2)
+2025-08-02 15:29:35,980 - INFO - --- Starting LLM Agent Run ---
+2025-08-02 15:29:35,980 - INFO - API CALL 1: Getting details for paper ID W2169528473
+2025-08-02 15:29:36,427 - INFO - API CALL 2: Getting details for paper ID W2036265926
+2025-08-02 15:29:36,847 - INFO - --- Agent's Turn 1/15 ---
+2025-08-02 15:29:47,716 - INFO - Agent decided to expand 'W2169528473' from the 'forward' frontier.
+2025-08-02 15:29:47,716 - INFO - API CALLS ~3-4: Getting all neighbors for W2169528473
+2025-08-02 15:29:47,716 - INFO - API CALL 3: Getting details for paper ID W2169528473
+2025-08-02 15:29:48,870 - INFO - API CALL 5: Getting details for paper ID W229097380
+2025-08-02 15:29:49,296 - INFO - API CALL 6: Getting details for paper ID W2137570937
+2025-08-02 15:29:49,788 - INFO - API CALL 7: Getting details for paper ID https://openalex.org/W4285719527
+2025-08-02 15:29:50,991 - INFO - API CALL 8: Getting details for paper ID W2012329067
+2025-08-02 15:29:51,404 - INFO - API CALL 9: Getting details for paper ID W2011282943
+2025-08-02 15:29:51,878 - INFO - API CALL 10: Getting details for paper ID W2113319997
+2025-08-02 15:29:52,363 - INFO - API CALL 11: Getting details for paper ID W2165775468
+2025-08-02 15:29:52,841 - INFO - API CALL 12: Getting details for paper ID W2301363727
+2025-08-02 15:29:53,363 - INFO - API CALL 13: Getting details for paper ID W2164989576
+2025-08-02 15:29:53,850 - INFO - API CALL 14: Getting details for paper ID W2084224084
+2025-08-02 15:29:54,353 - INFO - API CALL 15: Getting details for paper ID https://openalex.org/W1965680834
+2025-08-02 15:29:54,950 - INFO - API CALL 16: Getting details for paper ID W2150492737
+2025-08-02 15:29:55,455 - INFO - API CALL 17: Getting details for paper ID W2055345898
+2025-08-02 15:29:55,940 - INFO - API CALL 18: Getting details for paper ID W1652775531
+2025-08-02 15:29:56,433 - INFO - API CALL 19: Getting details for paper ID W2170616854
+2025-08-02 15:29:56,928 - INFO - API CALL 20: Getting details for paper ID W2142897908
+2025-08-02 15:29:57,615 - INFO - API CALL 21: Getting details for paper ID W2053294416
+2025-08-02 15:29:58,095 - INFO - API CALL 22: Getting details for paper ID https://openalex.org/W2085958541
+2025-08-02 15:29:58,778 - INFO - API CALL 23: Getting details for paper ID W2112615110
+2025-08-02 15:29:59,212 - INFO - API CALL 24: Getting details for paper ID W2170830164
+2025-08-02 15:29:59,768 - INFO - API CALL 25: Getting details for paper ID W2054113582
+2025-08-02 15:30:00,358 - INFO - API CALL 26: Getting details for paper ID W2009803313
+2025-08-02 15:30:00,872 - INFO - API CALL 27: Getting details for paper ID W1989921625
+2025-08-02 15:30:01,528 - INFO - API CALL 28: Getting details for paper ID W1984953641
+2025-08-02 15:30:02,152 - INFO - API CALL 29: Getting details for paper ID https://openalex.org/W1968778433
+2025-08-02 15:30:02,941 - INFO - API CALL 30: Getting details for paper ID W2151721316
+2025-08-02 15:30:03,503 - INFO - API CALL 31: Getting details for paper ID W2137825366
+2025-08-02 15:30:04,010 - INFO - API CALL 32: Getting details for paper ID W2343568200
+2025-08-02 15:30:04,453 - INFO - API CALL 33: Getting details for paper ID W1664011265
+2025-08-02 15:30:04,998 - INFO - --- Agent's Turn 2/15 ---
+2025-08-02 15:30:13,550 - INFO - Agent decided to expand 'W1965680834' from the 'forward' frontier.
+2025-08-02 15:30:13,550 - ERROR - Paper W1965680834 not in the specified frontier. Agent is confused.
+2025-08-02 15:30:13,550 - INFO - --- Agent's Turn 3/15 ---
+2025-08-02 15:30:16,078 - INFO - Agent decided to expand 'W2009803313' from the 'forward' frontier.
+2025-08-02 15:30:16,078 - INFO - API CALLS ~34-35: Getting all neighbors for W2009803313
+2025-08-02 15:30:16,078 - INFO - API CALL 34: Getting details for paper ID W2009803313
+2025-08-02 15:30:17,130 - INFO - API CALL 36: Getting details for paper ID W2017697298
+2025-08-02 15:30:17,624 - INFO - API CALL 37: Getting details for paper ID W2017708378
+2025-08-02 15:30:18,176 - INFO - API CALL 38: Getting details for paper ID W1983945124
+2025-08-02 15:30:18,725 - INFO - API CALL 39: Getting details for paper ID W2058748455
+2025-08-02 15:30:19,294 - INFO - API CALL 40: Getting details for paper ID W2167580124
+2025-08-02 15:30:19,812 - INFO - API CALL 41: Getting details for paper ID https://openalex.org/W2051378252
+2025-08-02 15:30:20,522 - INFO - API CALL 42: Getting details for paper ID W2095478116
+2025-08-02 15:30:21,047 - INFO - API CALL 43: Getting details for paper ID W1972755385
+2025-08-02 15:30:21,576 - INFO - API CALL 44: Getting details for paper ID W2042986967
+2025-08-02 15:30:22,157 - INFO - API CALL 45: Getting details for paper ID https://openalex.org/W1991528957
+2025-08-02 15:30:22,836 - INFO - API CALL 46: Getting details for paper ID W2000748685
+2025-08-02 15:30:23,519 - INFO - API CALL 47: Getting details for paper ID https://openalex.org/W2136499036
+2025-08-02 15:30:24,328 - INFO - API CALL 48: Getting details for paper ID https://openalex.org/W1987659069
+2025-08-02 15:30:25,175 - INFO - API CALL 49: Getting details for paper ID W2035231387
+2025-08-02 15:30:25,723 - INFO - API CALL 50: Getting details for paper ID W109636739
+2025-08-02 15:30:26,249 - INFO - API CALL 51: Getting details for paper ID https://openalex.org/W2100658172
+2025-08-02 15:30:27,066 - INFO - API CALL 52: Getting details for paper ID W1559582792
+2025-08-02 15:30:27,584 - INFO - API CALL 53: Getting details for paper ID W2029242918
+2025-08-02 15:30:28,022 - INFO - API CALL 54: Getting details for paper ID W1972300623
+2025-08-02 15:30:28,519 - INFO - API CALL 55: Getting details for paper ID https://openalex.org/W2058937865
+2025-08-02 15:30:29,218 - INFO - API CALL 56: Getting details for paper ID W187767610
+2025-08-02 15:30:29,700 - INFO - API CALL 57: Getting details for paper ID W2033957915
+2025-08-02 15:30:30,205 - INFO - API CALL 58: Getting details for paper ID W4242130683
+2025-08-02 15:30:30,752 - INFO - API CALL 59: Getting details for paper ID W2087216833
+2025-08-02 15:30:31,328 - INFO - API CALL 60: Getting details for paper ID https://openalex.org/W1969186119
+2025-08-02 15:30:32,001 - INFO - API CALL 61: Getting details for paper ID W2001341021
+2025-08-02 15:30:32,669 - INFO - API CALL 62: Getting details for paper ID https://openalex.org/W2169528473
+2025-08-02 15:30:33,286 - INFO - API CALL 63: Getting details for paper ID W2108753073
+2025-08-02 15:30:33,834 - INFO - API CALL 64: Getting details for paper ID W2143037347
+2025-08-02 15:30:34,365 - INFO - API CALL 65: Getting details for paper ID https://openalex.org/W2144946856
+2025-08-02 15:30:35,094 - INFO - API CALL 66: Getting details for paper ID https://openalex.org/W2037455079
+2025-08-02 15:30:35,783 - INFO - API CALL 67: Getting details for paper ID W2798566347
+2025-08-02 15:30:36,294 - INFO - API CALL 68: Getting details for paper ID W2139211712
+2025-08-02 15:30:36,775 - INFO - API CALL 69: Getting details for paper ID https://openalex.org/W2086863198
+2025-08-02 15:30:37,422 - INFO - API CALL 70: Getting details for paper ID W1968594877
+2025-08-02 15:30:37,964 - INFO - API CALL 71: Getting details for paper ID W15274158
+2025-08-02 15:30:38,493 - INFO - API CALL 72: Getting details for paper ID https://openalex.org/W2165195292
+2025-08-02 15:30:39,168 - INFO - API CALL 73: Getting details for paper ID https://openalex.org/W2085478109
+2025-08-02 15:30:39,978 - INFO - --- Agent's Turn 4/15 ---
+2025-08-02 15:30:45,372 - INFO - Agent decided to expand 'W1965680834' from the 'forward' frontier.
+2025-08-02 15:30:45,372 - ERROR - Paper W1965680834 not in the specified frontier. Agent is confused.
+2025-08-02 15:30:45,372 - INFO - --- Agent's Turn 5/15 ---
+2025-08-02 15:30:47,700 - ERROR - OpenRouter API request failed with status 429: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions
+2025-08-02 15:30:47,700 - ERROR - Server Response: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"deepseek/deepseek-chat-v3-0324:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Targon"}},"user_id":"user_2qyiUaVmTTNwxFDtJi2Ioc0nf8t"}
+2025-08-02 15:30:47,701 - WARNING - Agent failed to make a valid decision. Stopping.
+2025-08-02 15:30:47,701 - INFO - Agent failed to find a path within the turn limit.
+2025-08-02 15:30:47,701 - WARNING - Agent did not find a path.
+2025-08-02 15:30:47,701 - INFO - Agent used 73 API calls (steps).
+2025-08-02 15:30:47,701 - INFO - --- Running Evaluation ---
+2025-08-02 15:30:47,701 - INFO - Path Success: 0
+2025-08-02 15:30:47,701 - INFO - Path Optimality: 0.00
+2025-08-02 15:30:47,701 - INFO - Step Efficiency (API Calls): 73
+2025-08-02 15:30:47,701 - INFO - Reasoning Faithfulness: 0
+2025-08-02 15:30:47,701 - INFO - --- Final Scorecard written to scipathbench_results.json ---
+2025-08-02 15:30:47,701 - INFO - {
+    "path_success": 0,
+    "path_optimality": 0,
+    "step_efficiency": 73,
+    "reasoning_faithfulness": 0
+}
+2025-08-02 15:30:47,701 - INFO - SciPathBench Run Finished.
