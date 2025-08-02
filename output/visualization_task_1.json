@@ -1,0 +1,1 @@
+{"network": {"items": [{"id": 1, "label": "W2618530766"}, {"id": 2, "label": "W2734776202"}, {"id": 3, "label": "W1545791100"}, {"id": 4, "label": "W2097356275"}, {"id": 5, "label": "W1995875735"}], "links": [{"source_id": 1, "target_id": 2}, {"source_id": 1, "target_id": 4}, {"source_id": 2, "target_id": 3}, {"source_id": 3, "target_id": 5}]}}

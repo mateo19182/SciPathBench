@@ -1,17 +1,17 @@
 [
     {
         "task_index": 1,
-        "timestamp": "2025-08-02 19:00:31",
+        "timestamp": "2025-08-02 19:46:59",
         "benchmark_pair": {
-            "start_paper_id": "W2001771035",
-            "end_paper_id": "W2949650786"
+            "start_paper_id": "W2618530766",
+            "end_paper_id": "W1995875735"
         },
         "ground_truth": {
             "path": [
-                "W2001771035",
-                "W2937037822",
-                "W2592929672",
-                "W2949650786"
+                "W2618530766",
+                "W2734776202",
+                "W1545791100",
+                "W1995875735"
             ],
             "path_length": 3
         },
@@ -28,7 +28,7 @@
     },
     {
         "task_index": 2,
-        "timestamp": "2025-08-02 19:01:59",
+        "timestamp": "2025-08-02 19:47:04",
         "benchmark_pair": {
             "start_paper_id": "W2064675550",
             "end_paper_id": "W2046533349"

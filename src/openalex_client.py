@@ -59,5 +59,5 @@ class OpenAlexClient:
         if not work:
             return []
         
-        # Return only outgoing citations (referenced_works)
-        return work.get('referenced_works', [])
+        # Return only outgoing citations (referenced_works), top 25 for performance
+        return work.get('referenced_works', [])[:25]

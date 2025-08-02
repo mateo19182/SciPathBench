@@ -138,7 +138,7 @@ def run_single_task(task, task_index=1):
         output_prefix=f"visualization_task_{task_index}",
     )
 
-    logging.info(f"VOSviewer files created for task {task_index}.")
+    # logging.info(f"VOSviewer files created for task {task_index}.")
 
     # 5. Collate results for this single task
     results_data = {
