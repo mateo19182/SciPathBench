@@ -101,14 +101,24 @@ def run_single_task(task, task_index=1):
     start_paper_id = task["start_id"]
     end_paper_id = task["end_id"]
     ground_truth = task["ground_truth_path"]
-
-    logging.info(f"Objective: Find shortest path between {start_paper_id} and {end_paper_id}")
-    logging.info(f"Ground Truth Path: {ground_truth} (Length: {len(ground_truth)-1})")
-
+    
     # 2. Run LLM Agent
     agent_client = OpenAlexClient()
     agent = LLMAgent(api_client=agent_client, llm_provider=config.LLM_PROVIDER_MODEL)
-    agent_found_path, agent_api_calls = agent.find_path(
+    
+    start_paper_title = agent._extract_metadata(agent.api_client.get_paper_by_id(start_paper_id)).get("title")
+    end_paper_title = agent._extract_metadata(agent.api_client.get_paper_by_id(end_paper_id)).get("title")
+    
+    logging.info(f"Objective: Find shortest path between \"{start_paper_title}\" and \"{end_paper_title}\"")
+    
+    ground_truth_titles = []
+    for paper_id in ground_truth:
+        ground_truth_titles.append(agent._extract_metadata(agent.api_client.get_paper_by_id(paper_id)).get("title"))
+        
+    logging.info(f"Ground Truth Path: {ground_truth_titles} (Length: {len(ground_truth)-1})")
+
+    
+    agent_found_path = agent.find_path(
         start_paper_id, end_paper_id, max_turns=config.AGENT_MAX_TURNS
     )
 
@@ -116,13 +126,11 @@ def run_single_task(task, task_index=1):
         logging.info(f"Agent Path: {agent_found_path} (Length: {len(agent_found_path)-1})")
     else:
         logging.warning("Agent did not find a path.")
-    logging.info(f"Agent used {agent_api_calls} API calls (steps).")
 
     # 3. Evaluate Performance
     evaluator = EvaluationHarness(
         ground_truth_path=ground_truth,
         agent_path=agent_found_path,
-        agent_steps=agent_api_calls,
     )
     final_scorecard = evaluator.run_evaluation()
     logging.info(f"Scorecard for Task {task_index}:\n{json.dumps(final_scorecard, indent=4)}")
@@ -151,7 +159,6 @@ def run_single_task(task, task_index=1):
             "model": config.LLM_PROVIDER_MODEL,
             "path": agent_found_path,
             "path_length": len(agent_found_path) - 1 if agent_found_path else 0,
-            "api_calls": agent_api_calls,
         },
         "scorecard": final_scorecard,
     }

@@ -7,10 +7,9 @@ import logging
 class EvaluationHarness:
     """Calculates performance metrics for a single benchmark run."""
 
-    def __init__(self, ground_truth_path: list, agent_path: list, agent_steps: int):
+    def __init__(self, ground_truth_path: list, agent_path: list):
         self.ground_truth_path = ground_truth_path
         self.agent_path = agent_path
-        self.agent_steps = agent_steps
         self.scorecard = {}
 
     def run_evaluation(self):
