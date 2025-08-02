@@ -6,34 +6,44 @@ Inspired by [WikiBench: 76% of SOTA Models Fail - by hero thousandfaces](https:/
 
 Using [OpenAlex](https://openalex.org/), [OpenRouter](https://openrouter.ai/), [VOSviewer](https://www.vosviewer.com/) and [Inciteful](https://inciteful.xyz/).
 
+## Usage
+
+Create a `.env` file in the root directory with your OPENROUTER_API_KEY.
+Modify config.py as needed.
+
+```bash
+uv sync
+uv run main.py
+```
+
 ## Evaluation
 
 The agent's performance is evaluated based on wether the path it finds is correct and how many API requests it took to find (compared to the optimal path).
 
-## Usage
+## Visualization
 
-```bash
-uv run main.py
-```
+To visualize the citation graph, use the generated graph.json file with [VOSviewer](https://www.vosviewer.com/).
 
 ## TODO
 
-- improve prmpt, only forward frontier
+- improve prompt, only forward frontier!
 
 - speed up api calls
+- dont redo api calls, use cache!
 
 - make resilient to error: "message":"Provider returned error","code":429,"
 
-- add visualization with [VOSviewer](https://www.vosviewer.com/)
+- better eval, steps are counted badly...
 
-- use https://inciteful.xyz/c?to=W1995017064&from=W2059020082 for shortest path!
-- get lists of papers for start and end, by difficulty? have optimal precalculated
+- improve visualization, weights, attributes...
+
+- get better dataset
 
 - cli interface?
 
 - actually verify agent path is correct
 
-- get openalex id from doi/name
+- get openalex id from doi/name directly
 
 - traverse by authors?
 

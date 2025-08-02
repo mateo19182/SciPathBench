@@ -3,6 +3,7 @@
 
 import logging
 
+
 def setup_logging(log_file):
     """
     Configures logging to both console and a file in a robust way.
@@ -16,10 +17,10 @@ def setup_logging(log_file):
         logger.handlers.clear()
 
     # Create a formatter
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 
     # Create a file handler
-    file_handler = logging.FileHandler(log_file, mode='w')
+    file_handler = logging.FileHandler(log_file, mode="w")
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
@@ -37,16 +38,18 @@ def reconstruct_abstract(inverted_index: dict) -> str:
     """
     if not inverted_index:
         return "Abstract not available."
-    
+
     try:
         # Find the maximum index to determine the length of the list
-        max_len = max(max(positions) for positions in inverted_index.values() if positions)
+        max_len = max(
+            max(positions) for positions in inverted_index.values() if positions
+        )
         abstract_list = [""] * (max_len + 1)
-        
+
         for word, positions in inverted_index.items():
             for pos in positions:
                 abstract_list[pos] = word
-                
+
         return " ".join(filter(None, abstract_list))
     except (ValueError, TypeError):
         # Handle cases where the inverted_index is empty or malformed

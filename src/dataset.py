@@ -26,6 +26,7 @@ LANDMARK_PAPERS = [
     "W2028590532",
 ]
 
+
 # Function to check if a OpenAlex ID is valid
 def is_valid_openalex_id(client, paper_id: str) -> bool:
     """
@@ -41,7 +42,8 @@ def is_valid_openalex_id(client, paper_id: str) -> bool:
         print(f"Error validating OpenAlex ID {paper_id}: {e}")
         logging.error(f"Error validating OpenAlex ID {paper_id}: {e}")
         return False
-    
+
+
 def test_dataset():
     client = OpenAlexClient()
     for paper_id in LANDMARK_PAPERS:
