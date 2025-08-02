@@ -110,10 +110,8 @@ def run_single_task(task, task_index=1):
     end_paper_title = agent._extract_metadata(agent.api_client.get_paper_by_id(end_paper_id)).get("title")
     
     logging.info(f"Objective: Find shortest path between \"{start_paper_title}\" and \"{end_paper_title}\"")
-    
-    ground_truth_titles = []
-    for paper_id in ground_truth:
-        ground_truth_titles.append(agent._extract_metadata(agent.api_client.get_paper_by_id(paper_id)).get("title"))
+    ground_truth_titles = [] # ????? idk why i need to do this
+    ground_truth_titles = [agent._extract_metadata(agent.api_client.get_paper_by_id(paper_id)).get("title") for paper_id in ground_truth]
         
     logging.info(f"Ground Truth Path: {ground_truth_titles} (Length: {len(ground_truth)-1})")
 
@@ -178,9 +176,6 @@ def log_summary(all_results):
     success_count = len(successful_runs)
     success_rate = (success_count / num_tasks) * 100 if num_tasks > 0 else 0
 
-    # These metrics can be calculated on all runs
-    api_calls = [r["agent_run"]["api_calls"] for r in all_results]
-
     # These metrics should only be calculated on successful runs
     precisions = [r["scorecard"]["precision"] for r in successful_runs]
     recalls = [r["scorecard"]["recall"] for r in successful_runs]
@@ -188,7 +183,6 @@ def log_summary(all_results):
     summary = {
         "Total Tasks": num_tasks,
         "Success Rate": f"{success_rate:.2f}% ({success_count}/{num_tasks})",
-        "Average API Calls (All Runs)": f"{statistics.mean(api_calls):.2f}" if api_calls else "N/A",
         "Average Precision (Successful Runs)": f"{statistics.mean(precisions):.2f}" if precisions else "N/A",
         "Average Recall (Successful Runs)": f"{statistics.mean(recalls):.2f}" if recalls else "N/A",
     }

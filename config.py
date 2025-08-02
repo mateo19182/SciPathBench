@@ -18,7 +18,7 @@ OPENROUTER_API_BASE_URL = "https://openrouter.ai/api/v1"
 
 # --- LLM Agent Configuration ---
 # Recommended models: google/gemini-flash-1.5, cohere/command-r, mistralai/mistral-7b-instruct-v0.2
-LLM_PROVIDER_MODEL = "z-ai/glm-4-32b"
+LLM_PROVIDER_MODEL = "mistralai/ministral-8b"
 AGENT_MAX_TURNS = 25  # Max number of decisions the agent can make
 
 # --- BFS Ground Truth Configuration ---

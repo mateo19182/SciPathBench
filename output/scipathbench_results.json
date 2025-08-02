@@ -1,60 +1,54 @@
 [
     {
         "task_index": 1,
-        "timestamp": "2025-08-02 18:14:18",
+        "timestamp": "2025-08-02 18:44:57",
         "benchmark_pair": {
-            "start_paper_id": "W4300912893",
-            "end_paper_id": "W2173213060"
+            "start_paper_id": "W2185907055",
+            "end_paper_id": "W4239510810"
         },
         "ground_truth": {
             "path": [
-                "W4300912893",
-                "W4392580998",
-                "W2618530766",
-                "W1756175326",
-                "W2173213060"
+                "W2185907055",
+                "W2092025391",
+                "W1996988468",
+                "W4239510810"
             ],
-            "path_length": 4
+            "path_length": 3
         },
         "agent_run": {
-            "model": "z-ai/glm-4-32b",
+            "model": "mistralai/ministral-8b",
             "path": null,
-            "path_length": 0,
-            "api_calls": 0
+            "path_length": 0
         },
         "scorecard": {
             "path_success": 0,
             "path_optimality": 0,
-            "step_efficiency": 0,
             "reasoning_faithfulness": 0
         }
     },
     {
         "task_index": 2,
-        "timestamp": "2025-08-02 18:14:27",
+        "timestamp": "2025-08-02 18:44:57",
         "benchmark_pair": {
-            "start_paper_id": "W2001771035",
-            "end_paper_id": "W2949650786"
+            "start_paper_id": "W4298289240",
+            "end_paper_id": "W4385245566"
         },
         "ground_truth": {
             "path": [
-                "W2001771035",
-                "W2937037822",
-                "W2592929672",
-                "W2949650786"
+                "W4298289240",
+                "W2766892611",
+                "W4385245566"
             ],
-            "path_length": 3
+            "path_length": 2
         },
         "agent_run": {
-            "model": "z-ai/glm-4-32b",
+            "model": "mistralai/ministral-8b",
             "path": null,
-            "path_length": 0,
-            "api_calls": 13
+            "path_length": 0
         },
         "scorecard": {
             "path_success": 0,
             "path_optimality": 0,
-            "step_efficiency": 13,
             "reasoning_faithfulness": 0
         }
     }

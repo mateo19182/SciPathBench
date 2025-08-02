@@ -91,6 +91,6 @@ def create_vosviewer_files(
     #     G,
     #     network_file,
     # )
-    nx2vos.write_vos_json(G, "output/graph.json")
+    nx2vos.write_vos_json(G, f"output/graph{output_prefix}.json")
 
-    logging.info(f"VOSviewer file created: output/graph.json")
+    logging.info(f"VOSviewer file created: output/graph{output_prefix}.json")
