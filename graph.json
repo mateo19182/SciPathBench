@@ -1,1 +1,1 @@
-{"network": {"items": [{"id": 1, "label": "W2001771035"}, {"id": 2, "label": "W2592929672"}, {"id": 3, "label": "W2949650786"}, {"id": 4, "label": "W2937037822"}], "links": [{"source_id": 1, "target_id": 4}, {"source_id": 2, "target_id": 4}, {"source_id": 2, "target_id": 3}]}}
+{"network": {"items": [{"id": 1, "label": "W4285719527"}, {"id": 2, "label": "W2100172689"}, {"id": 3, "label": "W2064675550"}, {"id": 4, "label": "W2046533349"}], "links": [{"source_id": 1, "target_id": 3}, {"source_id": 1, "target_id": 2}, {"source_id": 2, "target_id": 4}]}}

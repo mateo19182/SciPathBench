@@ -41,6 +41,8 @@ To visualize the citation graph, use the generated graph.json file with [VOSview
 
 - cli interface?
 
+- take a list of problems
+
 - actually verify agent path is correct
 
 - get openalex id from doi/name directly

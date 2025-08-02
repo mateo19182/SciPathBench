@@ -33,5 +33,6 @@ RESULTS_FILE = "scipathbench_results.json"
 # 'runtime': Generate a random pair from the dataset.py list and find the path at runtime.
 BENCHMARK_MODE = "precalculated"
 BENCHMARK_DATA_FILE = "benchmark_pairs.json"
+NUMBER_OF_BENCHMARK_TASKS = 2  # Number of tasks to run in benchmark mode
 
 logging.info(f"Configuration loaded: {LLM_PROVIDER_MODEL}, {AGENT_MAX_TURNS}")
