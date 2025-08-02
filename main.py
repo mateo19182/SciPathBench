@@ -106,12 +106,20 @@ def run_single_task(task, task_index=1):
     agent_client = OpenAlexClient()
     agent = LLMAgent(api_client=agent_client, llm_provider=config.LLM_PROVIDER_MODEL)
     
-    start_paper_title = agent._extract_metadata(agent.api_client.get_paper_by_id(start_paper_id)).get("title")
-    end_paper_title = agent._extract_metadata(agent.api_client.get_paper_by_id(end_paper_id)).get("title")
+    # Get paper titles for logging
+    start_paper = agent.api_client.get_paper_by_id(start_paper_id)
+    end_paper = agent.api_client.get_paper_by_id(end_paper_id)
+    start_paper_title = start_paper.get("title", "Unknown") if start_paper else "Unknown"
+    end_paper_title = end_paper.get("title", "Unknown") if end_paper else "Unknown"
     
     logging.info(f"Objective: Find shortest path between \"{start_paper_title}\" and \"{end_paper_title}\"")
-    ground_truth_titles = [] # ????? idk why i need to do this
-    ground_truth_titles = [agent._extract_metadata(agent.api_client.get_paper_by_id(paper_id)).get("title") for paper_id in ground_truth]
+    
+    # Get ground truth titles for logging
+    ground_truth_titles = []
+    for paper_id in ground_truth:
+        paper = agent.api_client.get_paper_by_id(paper_id)
+        title = paper.get("title", "Unknown") if paper else "Unknown"
+        ground_truth_titles.append(title)
         
     logging.info(f"Ground Truth Path: {ground_truth_titles} (Length: {len(ground_truth)-1})")
 

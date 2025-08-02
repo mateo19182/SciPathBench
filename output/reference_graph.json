@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "W4300912893": {
+      "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "year": 2016,
+      "concepts": [
+        "Tweaking",
+        "Computer science",
+        "Image translation",
+        "Image (mathematics)",
+        "Adversarial system",
+        "Translation (biology)",
+        "Enhanced Data Rates for GSM Evolution",
+        "Function (biology)",
+        "The Internet",
+        "Software",
+        "Artificial intelligence",
+        "Theoretical computer science",
+        "Computer vision",
+        "Machine learning",
+        "World Wide Web",
+        "Programming language",
+        "Biochemistry",
+        "Chemistry",
+        "Evolutionary biology",
+        "Biology",
+        "Messenger RNA",
+        "Gene",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.48550/arxiv.1611.07004",
+      "node_type": "start"
+    },
+    "W2173213060": {
+      "title": "MapReduce",
+      "year": 2008,
+      "concepts": [
+        "Petabyte",
+        "Computer science",
+        "Computation",
+        "Variety (cybernetics)",
+        "Programming paradigm",
+        "Function (biology)",
+        "Parallel computing",
+        "Operating system",
+        "Distributed computing",
+        "Big data",
+        "Artificial intelligence",
+        "Programming language",
+        "Evolutionary biology",
+        "Biology"
+      ],
+      "doi": "https://doi.org/10.1145/1327452.1327492",
+      "node_type": "end"
+    }
+  },
+  "edges": [],
+  "agent_path": [
+    "W4300912893"
+  ]
+}

@@ -1,180 +1,239 @@
 import logging
+import json
 import networkx as nx
 import nx2vos
-from src.openalex_client import OpenAlexClient
 from pyvis.network import Network
 
-def extract_metadata(client, paper_id):
-    return client.get_paper_by_id(paper_id).get("title"), client.get_paper_by_id(paper_id).get("publication_year"), client.get_paper_by_id(paper_id).get("concepts", []), client.get_paper_by_id(paper_id).get("ids", {}).get("doi", "N/A")
-
-def create_vosviewer_files(ground_truth_path: list, agent_path: list, output_prefix: str
-):
+def create_vosviewer_files(ground_truth_path: list, agent_path: list, output_prefix: str, reference_graph_path: str = "output/reference_graph.json"):
     """
     Creates a NetworkX graph with rich metadata for visualization in VOSviewer.
+    Uses the unified graph structure from the agent.
     """
     if not ground_truth_path and not agent_path:
         logging.warning("No paths provided for visualization. Skipping.")
         return
 
-    logging.info(f"{ground_truth_path}, {agent_path}, {output_prefix=}")
+    logging.info(f"Creating visualization: ground_truth={len(ground_truth_path or [])} nodes, agent_path={len(agent_path or [])} nodes")
 
     G = nx.Graph()
-    client = OpenAlexClient()
+    graph_data = None
 
-    # Collect all unique paper IDs from both paths
-    all_path_ids = set(ground_truth_path or []) | set(agent_path or [])
+    # Load the unified graph data from the agent
+    try:
+        with open(reference_graph_path, "r", encoding="utf-8") as f:
+            graph_data = json.load(f)
+        logging.info(f"Loaded graph data from {reference_graph_path}")
+    except FileNotFoundError:
+        logging.warning(f"Graph file not found at {reference_graph_path}. Creating minimal visualization.")
+    except Exception as e:
+        logging.error(f"Failed to load graph data: {e}")
 
-    # --- Add Nodes with Metadata ---
-    # concept_cluster_map = {}  # Map concept to cluster ID
-    # cluster_counter = 1
-    for paper_id in all_path_ids:
-        title, year, concepts, doi = extract_metadata(client, paper_id)
-        if not title or not year:
-            logging.warning(f"Missing metadata for paper {paper_id}")
-            continue
+    # Get nodes and edges from graph data
+    nodes = graph_data.get("nodes", {}) if graph_data else {}
+    edges = graph_data.get("edges", []) if graph_data else []
+    actual_agent_path = graph_data.get("agent_path", []) if graph_data else []
 
-        in_ground = paper_id in (ground_truth_path or [])
-        in_agent = paper_id in (agent_path or [])
-        path_membership = (
-            "both"
-            if in_ground and in_agent
-            else "ground_truth"
-            if in_ground
-            else "agent_path"
-        )
+    # Use actual agent path if available, otherwise fall back to provided agent_path
+    if actual_agent_path:
+        agent_path = actual_agent_path
+        logging.info(f"Using actual agent path from graph: {len(agent_path)} steps")
 
+    # Collect all unique paper IDs
+    all_paper_ids = set()
+    if ground_truth_path:
+        all_paper_ids.update(ground_truth_path)
+    if agent_path:
+        all_paper_ids.update(agent_path)
+    all_paper_ids.update(nodes.keys())
 
-        # # Assign a cluster based on primary concept
-        # primary_concept = concepts[0] if concepts else "Unknown"
-        # if primary_concept not in concept_cluster_map:
-        #     concept_cluster_map[primary_concept] = cluster_counter
-        #     cluster_counter += 1
-        # cluster_id = concept_cluster_map[primary_concept]
+    # Add nodes to NetworkX graph
+    for paper_id in all_paper_ids:
+        node_data = nodes.get(paper_id, {})
+        
+        # Determine node type based on paths
+        in_ground_truth = paper_id in (ground_truth_path or [])
+        in_agent_path = paper_id in (agent_path or [])
+        
+        if in_ground_truth and in_agent_path:
+            path_membership = "both"
+        elif in_ground_truth:
+            path_membership = "ground_truth"
+        elif in_agent_path:
+            path_membership = "agent_path"
+        else:
+            path_membership = "referenced_only"
 
-        # Add node with rich attributes
+        # Get node attributes
+        title = node_data.get("title", f"Paper {paper_id}")
+        year = node_data.get("year", "Unknown")
+        doi = node_data.get("doi", "N/A")
+        node_type = node_data.get("node_type", "referenced")
+
+        # Add node to graph
         G.add_node(
             paper_id,
             label=title,
             year=year,
             path_membership=path_membership,
-            weight=1 if path_membership == "ground_truth" else 2 if path_membership == "agent_path" else 3,
+            node_type=node_type,
+            weight=_get_node_weight(path_membership),
             url=doi,
-            # cluster=cluster_id,
         )
 
-    # --- Add Edges with Path Type and Strength ---
+    # Add edges to NetworkX graph
     def add_path_edges(path, path_type):
+        """Add edges for a specific path."""
         if not path or len(path) < 2:
             return
         for i in range(len(path) - 1):
             u, v = path[i], path[i + 1]
             if G.has_edge(u, v):
+                # Upgrade existing edge
                 G[u][v]["link_strength"] = G[u][v].get("link_strength", 1) + 1
-                G[u][v]["path_type"] = "both"
+                if G[u][v].get("path_type") != path_type:
+                    G[u][v]["path_type"] = "both"
             else:
                 G.add_edge(u, v, path_type=path_type, link_strength=1)
 
+    # Add path edges
     add_path_edges(ground_truth_path, "ground_truth")
     add_path_edges(agent_path, "agent_path")
 
-    # --- Export to VOSviewer JSON ---
+    # Add reference edges from the graph data
+    for edge in edges:
+        u = edge.get("source")
+        v = edge.get("target")
+        if not u or not v:
+            continue
+
+        # Ensure both nodes exist
+        for node_id in [u, v]:
+            if not G.has_node(node_id):
+                node_data = nodes.get(node_id, {})
+                G.add_node(
+                    node_id,
+                    label=node_data.get("title", f"Paper {node_id}"),
+                    year=node_data.get("year", "Unknown"),
+                    path_membership="referenced_only",
+                    node_type=node_data.get("node_type", "referenced"),
+                    weight=0,
+                    url=node_data.get("doi", "N/A"),
+                )
+
+        # Add edge if not already present from paths
+        if not G.has_edge(u, v):
+            G.add_edge(u, v, path_type="referenced_only", link_strength=1)
+
+    # Export to VOSviewer JSON
     nx2vos.write_vos_json(G, f"output/{output_prefix}.json")
+    logging.info(f"VOSviewer file created: output/{output_prefix}.json")
 
-    # --- Export to Interactive HTML using PyVis ---
-    logging.info(f"Generating interactive HTML visualization...")
-    # Create a PyVis network
-    net = Network(height="750px", width="100%", bgcolor="#ffffff", font_color="#000000", directed=False) # Set directed=False for undirected graph like yours
+    # Create interactive HTML visualization
+    _create_html_visualization(G, ground_truth_path, agent_path, output_prefix)
 
-    # Define colors for path membership
+def _get_node_weight(path_membership):
+    """Get node weight based on path membership."""
+    weights = {
+        "ground_truth": 1,
+        "agent_path": 2,
+        "both": 3,
+        "referenced_only": 0
+    }
+    return weights.get(path_membership, 0)
+
+def _create_html_visualization(G, ground_truth_path, agent_path, output_prefix):
+    """Create interactive HTML visualization using PyVis."""
+    logging.info("Generating interactive HTML visualization...")
+    
+    net = Network(height="750px", width="100%", bgcolor="#ffffff", font_color="#000000", directed=False)
+
+    # Define colors for different node types
     color_map = {
         "ground_truth": "#1f77b4",  # Blue
         "agent_path": "#ff7f0e",    # Orange
-        "both": "#2ca02c"           # Green
+        "both": "#2ca02c",          # Green
+        "referenced_only": "#999999" # Grey
     }
 
-    # Add nodes from NetworkX graph to PyVis network
+    # Add nodes to PyVis network
     for node, data in G.nodes(data=True):
-        # Get attributes, providing defaults if missing
         label = data.get('label', f'Paper {node}')
+        
+        # Create tooltip with rich info
         title = f"<b>{data.get('label', 'N/A')}</b><br>" \
                 f"ID: {node}<br>" \
                 f"Year: {data.get('year', 'N/A')}<br>" \
                 f"Path: {data.get('path_membership', 'N/A')}<br>" \
-                f"DOI: <a href='{data.get('url', '#')}'>{data.get('url', 'N/A')}</a>" # Create tooltip with rich info
-        color = color_map.get(data.get('path_membership'), "#999999") # Default grey
-
-        # --- Determine if node is start/end ---
-        is_start = False
-        is_end = False
-        is_ground_truth_end = False
-        is_agent_end = False
+                f"Type: {data.get('node_type', 'N/A')}<br>" \
+                f"DOI: <a href='{data.get('url', '#')}'>{data.get('url', 'N/A')}</a>"
         
-        # Check for start nodes
-        if ground_truth_path and node == ground_truth_path[0]:
-            is_start = True
-        if agent_path and node == agent_path[0] and node != ground_truth_path[0]:
-             is_start = True
+        # Determine node appearance
+        path_membership = data.get('path_membership', 'referenced_only')
+        color = color_map.get(path_membership, "#999999")
         
-        # Check for end nodes (ground truth end is the "correct" end)
-        if ground_truth_path and node == ground_truth_path[-1]:
-            is_end = True
-            is_ground_truth_end = True
-        if agent_path and node == agent_path[-1]:
-            is_agent_end = True
-            
-        # If agent end is different from ground truth end, show it
-        if is_agent_end and not is_ground_truth_end:
-            is_end = True
-
-        # --- Customize appearance for start/end ---
+        # Special handling for start/end nodes
+        is_start = _is_start_node(node, ground_truth_path, agent_path)
+        is_end = _is_end_node(node, ground_truth_path, agent_path)
+        
         if is_start or is_end:
-            # Override color for start/end nodes
+            size = 35
             if is_start and is_end:
-                color = "#ff0000"  # Red if both start and end
-            elif is_start:
-                color = "#00ff00"   # Green if start only
-            elif is_end:
-                if is_ground_truth_end and is_agent_end:
-                    color = "#ff0000"  # Red if it's the correct end AND agent also ends here
-                elif is_ground_truth_end:
-                    color = "#2ca02c"  # Correct end (green-ish, different from start)
-                elif is_agent_end:
-                    color = "#ff7f0e"  # Agent end only (orange)
-            size = 35  # Make them larger
-            # Modify label to indicate start/end
-            marker = ""
-            if is_start and is_end:
+                color = "#ff0000"  # Red for start/end
                 marker = " [S/E]"
             elif is_start:
+                color = "#00ff00"  # Green for start
                 marker = " [Start]"
             elif is_end:
-                if is_ground_truth_end and is_agent_end:
-                    marker = " [End]"  # Correct end that agent also found
-                elif is_ground_truth_end:
-                    marker = " [End]"  # Correct end
-                elif is_agent_end:
-                    marker = " [Dead Run]"  # Agent's wrong end
-            display_label = (label + marker)
+                if _is_correct_end(node, ground_truth_path, agent_path):
+                    color = "#2ca02c"  # Correct end
+                    marker = " [End]"
+                else:
+                    color = "#ff7f0e"  # Agent's wrong end
+                    marker = " [Failed]"
+            display_label = label + marker
         else:
-            size = 20 + data.get('weight', 1) * 5
-            display_label = label[:50] + "..." if len(label) > 50 else label
+            size = 12 if path_membership == "referenced_only" else 20 + data.get('weight', 1) * 5
+            display_label = label
 
-        # Add node to PyVis network
-        net.add_node(node, label=display_label,
-                           title=title, # Tooltip
-                           color=color,
-                           size=size)
+        net.add_node(node, label=display_label, title=title, color=color, size=size)
 
-    # Add edges from NetworkX graph to PyVis network
+    # Add edges to PyVis network
     for u, v, data in G.edges(data=True):
-        width = data.get('link_strength', 1) * 2 # Adjust width based on strength
-        edge_label = data.get('path_type', '')
-        net.add_edge(u, v, width=width, title=edge_label) # Add edge with tooltip for type
+        width = data.get('link_strength', 1) * 2
+        edge_type = data.get('path_type', 'referenced_only')
+        
+        edge_colors = {
+            "referenced_only": "#cccccc",
+            "ground_truth": "#1f77b4",
+            "agent_path": "#ff7f0e",
+            "both": "#2ca02c"
+        }
+        
+        color = edge_colors.get(edge_type, "#cccccc")
+        if edge_type == "referenced_only":
+            width = 1.5
+            
+        net.add_edge(u, v, width=width, title=edge_type, color=color)
 
-    # Generate and save the HTML file
+    # Save HTML file
     output_file = f"output/{output_prefix}.html"
-    net.write_html(output_file) # This creates the interactive HTML file
-
+    net.write_html(output_file)
     logging.info(f"Interactive HTML visualization created: {output_file}")
-    
-    logging.info(f"VOSviewer file created: output/{output_prefix}.json")
+
+def _is_start_node(node, ground_truth_path, agent_path):
+    """Check if node is a start node."""
+    is_gt_start = ground_truth_path and node == ground_truth_path[0]
+    is_agent_start = agent_path and node == agent_path[0]
+    return is_gt_start or is_agent_start
+
+def _is_end_node(node, ground_truth_path, agent_path):
+    """Check if node is an end node."""
+    is_gt_end = ground_truth_path and node == ground_truth_path[-1]
+    is_agent_end = agent_path and node == agent_path[-1]
+    return is_gt_end or is_agent_end
+
+def _is_correct_end(node, ground_truth_path, agent_path):
+    """Check if this is the correct end node (ground truth end)."""
+    is_gt_end = ground_truth_path and node == ground_truth_path[-1]
+    is_agent_end = agent_path and node == agent_path[-1]
+    return is_gt_end and is_agent_end

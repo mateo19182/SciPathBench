@@ -18,25 +18,3 @@ Data Generation: generate_benchmark_data.py creates problems using Inciteful API
 Evaluation: main.py runs the benchmark. LLM agents navigate citation graphs turn-by-turn, scored on success and optimality vs ground truth.
 Visualization: visualization.py generates VOSviewer files and .html interactive visualizations.
 Results saved to scipathbench_results.json
-
-## TODO
-
-- improve prompt, let them go abck to previous papers?
-
-- speed up api calls
-- better cache
-
-- make resilient to error: "message":"Provider returned error","code":429,"
-- manage W4285719527 (Deleted Work)
-
-- improve visualization, pyvis with all citations scraped shown as well, save all in memory, currently agent_path is weird!
-- cli interface?
-
-- get human baseline, ui?
-- get better dataset
-
-- actually verify agent path is correct
-- traverse by authors?
-- get openalex id from doi/name directly
-
-- leaderboard
