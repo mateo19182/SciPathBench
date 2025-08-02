@@ -1,61 +1,1874 @@
 {
   "nodes": {
-    "W4300912893": {
-      "title": "Image-to-Image Translation with Conditional Adversarial Networks",
-      "year": 2016,
+    "W2185907055": {
+      "title": "A relational model of data for large shared data banks",
+      "year": 1970,
       "concepts": [
-        "Tweaking",
         "Computer science",
-        "Image translation",
-        "Image (mathematics)",
-        "Adversarial system",
-        "Translation (biology)",
-        "Enhanced Data Rates for GSM Evolution",
-        "Function (biology)",
-        "The Internet",
-        "Software",
-        "Artificial intelligence",
+        "Sublanguage",
+        "Logical data model",
+        "Representation (politics)",
+        "Relational database",
+        "External Data Representation",
+        "Data redundancy",
+        "Data mining",
+        "Data model (GIS)",
+        "Inference",
         "Theoretical computer science",
-        "Computer vision",
-        "Machine learning",
-        "World Wide Web",
+        "Information retrieval",
+        "Database",
+        "Data modeling",
         "Programming language",
-        "Biochemistry",
-        "Chemistry",
-        "Evolutionary biology",
-        "Biology",
-        "Messenger RNA",
-        "Gene",
-        "Operating system"
+        "Artificial intelligence",
+        "Politics",
+        "Political science",
+        "Law"
       ],
-      "doi": "https://doi.org/10.48550/arxiv.1611.07004",
+      "doi": "https://doi.org/10.1145/362384.362685",
       "node_type": "start"
     },
-    "W2173213060": {
-      "title": "MapReduce",
+    "W4239510810": {
+      "title": "Support-vector networks",
+      "year": 1995,
+      "concepts": [
+        "Feature vector",
+        "Generalization",
+        "Support vector machine",
+        "Artificial intelligence",
+        "Computer science",
+        "Relevance vector machine",
+        "Structured support vector machine",
+        "Dimension (graph theory)",
+        "Benchmark (surveying)",
+        "Vector space",
+        "Feature (linguistics)",
+        "Machine learning",
+        "Artificial neural network",
+        "Decision boundary",
+        "Pattern recognition (psychology)",
+        "Mathematics",
+        "Mathematical analysis",
+        "Linguistics",
+        "Philosophy",
+        "Geometry",
+        "Geodesy",
+        "Pure mathematics",
+        "Geography"
+      ],
+      "doi": "https://doi.org/10.1007/bf00994018",
+      "node_type": "end"
+    },
+    "W1984820433": {
+      "title": "An Introduction to Mathematical Logic",
+      "year": 2005,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1201/b13782-17",
+      "node_type": "agent_path"
+    },
+    "W2022843269": {
+      "title": "A computer system for inference execution and data retrieval",
+      "year": 1967,
+      "concepts": [
+        "Computer science",
+        "Relational database",
+        "File system",
+        "Inference",
+        "Logical data model",
+        "Information retrieval",
+        "Relational database management system",
+        "Database",
+        "Programming language",
+        "Data mining",
+        "Data modeling",
+        "Operating system",
+        "Artificial intelligence"
+      ],
+      "doi": "https://doi.org/10.1145/363790.363817",
+      "node_type": "agent_path"
+    },
+    "W2044618373": {
+      "title": "Treating hierarchical data structures in the SDC Time-Shared Data Management System (TDMS)",
+      "year": 1967,
+      "concepts": [
+        "Computer science",
+        "Scope (computer science)",
+        "Construct (python library)",
+        "Data management",
+        "Data integrity",
+        "Logical data model",
+        "Data structure",
+        "Data modeling",
+        "Language construct",
+        "Computer data storage",
+        "Distributed computing",
+        "Database",
+        "Programming language",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1145/800196.805973",
+      "node_type": "referenced"
+    },
+    "W2082763279": {
+      "title": "Annual review in automatic programming",
+      "year": 1976,
+      "concepts": [
+        "Computer science",
+        "Programming language",
+        "Artificial intelligence"
+      ],
+      "doi": "https://doi.org/10.1016/0031-3203(76)90021-2",
+      "node_type": "agent_path"
+    },
+    "W2088549934": {
+      "title": "Generalized file processing",
+      "year": 1969,
+      "concepts": [
+        "Computer science",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1016/0066-4138(69)90003-2",
+      "node_type": "agent_path"
+    },
+    "W2104880663": {
+      "title": "An ALGOL-based associative language",
+      "year": 1969,
+      "concepts": [
+        "Computer science",
+        "Associative property",
+        "Programming language",
+        "Coding (social sciences)",
+        "Low-level programming language",
+        "Programming language implementation",
+        "High-level programming language",
+        "Language primitive",
+        "Hash function",
+        "Data structure",
+        "Theoretical computer science",
+        "Programming domain",
+        "Programming paradigm",
+        "Inductive programming",
+        "Statistics",
+        "Mathematics",
+        "Pure mathematics"
+      ],
+      "doi": "https://doi.org/10.1145/363196.363204",
+      "node_type": "referenced"
+    },
+    "W2092025391": {
+      "title": "The Database for Aggregate Analysis of ClinicalTrials.gov (AACT) and Subsequent Regrouping by Clinical Specialty",
+      "year": 2012,
+      "concepts": [
+        "Computer science",
+        "Information retrieval",
+        "Usability",
+        "Clinical trial",
+        "Parsing",
+        "Oracle",
+        "Download",
+        "Database",
+        "Data mining",
+        "Medicine",
+        "World Wide Web",
+        "Pathology",
+        "Artificial intelligence",
+        "Software engineering",
+        "Human–computer interaction"
+      ],
+      "doi": "https://doi.org/10.1371/journal.pone.0033677",
+      "node_type": "ground_truth"
+    },
+    "W142231902": {
+      "title": "A relational model of data for large shared data banks. 1970.",
+      "year": 1998,
+      "concepts": [
+        "Computer science",
+        "Data model (GIS)",
+        "Relational model",
+        "Relational database",
+        "Data science",
+        "Database",
+        "Artificial intelligence"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1529465401": {
+      "title": "Manifesto for agile software development",
+      "year": 2001,
+      "concepts": [
+        "Agile software development",
+        "Software",
+        "Manifesto",
+        "Computer science",
+        "Software development",
+        "Software engineering",
+        "Political science",
+        "Programming language",
+        "Law"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1540771591": {
+      "title": "Global Burden of Disease",
       "year": 2008,
       "concepts": [
-        "Petabyte",
+        "Comparability",
+        "Burden of disease",
+        "Life expectancy",
+        "Disease",
+        "Disease burden",
+        "Global health",
+        "Actuarial science",
+        "Medicine",
+        "Environmental health",
+        "Economic growth",
+        "Health care",
+        "Population",
+        "Economics",
+        "Mathematics",
+        "Pathology",
+        "Combinatorics"
+      ],
+      "doi": "https://doi.org/10.1016/b978-012373960-5.00335-x",
+      "node_type": "referenced"
+    },
+    "W1993595811": {
+      "title": "The ClinicalTrials.gov Results Database — Update and Key Issues",
+      "year": 2011,
+      "concepts": [
+        "Medicine",
+        "Database",
+        "Key (lock)",
+        "Clinical trial",
+        "Computer science",
+        "Internal medicine",
+        "Computer security"
+      ],
+      "doi": "https://doi.org/10.1056/nejmsa1012065",
+      "node_type": "referenced"
+    },
+    "W2043355327": {
+      "title": "Clinical Trial Registration",
+      "year": 2004,
+      "concepts": [
+        "Medicine",
+        "Otorhinolaryngology",
+        "Family medicine",
+        "Psychiatry"
+      ],
+      "doi": "https://doi.org/10.1001/jama.292.11.1363",
+      "node_type": "referenced"
+    },
+    "W2047150424": {
+      "title": "Trends in the globalization of clinical trials",
+      "year": 2007,
+      "concepts": [
+        "Clinical trial",
+        "Globalization",
+        "Medicine",
+        "MEDLINE",
+        "Intensive care medicine",
+        "Political science",
+        "Internal medicine",
+        "Law"
+      ],
+      "doi": "https://doi.org/10.1038/nrd2441",
+      "node_type": "referenced"
+    },
+    "W2120747541": {
+      "title": "Issues in the Registration of Clinical Trials",
+      "year": 2007,
+      "concepts": [
+        "Medicine",
+        "Clinical trial",
+        "Trial registration",
+        "Psychological intervention",
+        "MEDLINE",
+        "Medical physics",
+        "Pathology",
+        "Nursing",
+        "Political science",
+        "Law"
+      ],
+      "doi": "https://doi.org/10.1001/jama.297.19.2112",
+      "node_type": "referenced"
+    },
+    "W2135010675": {
+      "title": "Clinical Trial Registration: A Statement from the International Committee of Medical Journal Editors",
+      "year": 2004,
+      "concepts": [
+        "Medicine",
+        "Statement (logic)",
+        "Trial registration",
+        "Clinical trial",
+        "Family medicine",
+        "MEDLINE",
+        "Medical physics",
+        "Library science",
+        "Law",
+        "Pathology",
+        "Political science",
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1056/nejme048225",
+      "node_type": "referenced"
+    },
+    "W2232207765": {
+      "title": "Further Normalization of the Data Base Relational Model",
+      "year": 1972,
+      "concepts": [
+        "Normalization (sociology)",
+        "Computer science",
+        "Base (topology)",
+        "Relational database",
+        "Data mining",
+        "Mathematics",
+        "Sociology",
+        "Mathematical analysis",
+        "Anthropology"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1996988468": {
+      "title": "A Machine Learning Approach to Identify Clinical Trials Involving Nanodrugs and Nanodevices from ClinicalTrials.gov",
+      "year": 2014,
+      "concepts": [
+        "Nanomedicine",
+        "Artificial intelligence",
+        "Clinical trial",
+        "Classifier (UML)",
+        "Clinical Practice",
+        "Computer science",
+        "Medicine",
+        "Nanotechnology",
+        "Machine learning",
+        "Nanoparticle",
+        "Materials science",
+        "Family medicine",
+        "Pathology"
+      ],
+      "doi": "https://doi.org/10.1371/journal.pone.0110331",
+      "node_type": "ground_truth"
+    },
+    "W114517082": {
+      "title": "Large-Scale Machine Learning with Stochastic Gradient Descent",
+      "year": 2010,
+      "concepts": [
+        "Stochastic gradient descent",
+        "Computer science",
+        "Scale (ratio)",
+        "Stochastic optimization",
+        "Gradient descent",
+        "Set (abstract data type)",
+        "Online machine learning",
+        "Context (archaeology)",
+        "Sample (material)",
+        "Artificial intelligence",
+        "Algorithm",
+        "Mathematical optimization",
+        "Machine learning",
+        "Mathematics",
+        "Active learning (machine learning)",
+        "Artificial neural network",
+        "Paleontology",
+        "Chemistry",
+        "Physics",
+        "Quantum mechanics",
+        "Chromatography",
+        "Biology",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-7908-2604-3_16",
+      "node_type": "referenced"
+    },
+    "W128190844": {
+      "title": "Automated disambiguation of acronyms and abbreviations in clinical texts: window and training size considerations.",
+      "year": 2012,
+      "concepts": [
+        "Computer science",
+        "Acronym",
+        "Support vector machine",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Context (archaeology)",
+        "Task (project management)",
+        "Window (computing)",
+        "Naive Bayes classifier",
+        "Sample size determination",
+        "Machine learning",
+        "Sample (material)",
+        "Statistics",
+        "Linguistics",
+        "Mathematics",
+        "Paleontology",
+        "Philosophy",
+        "Chemistry",
+        "Management",
+        "Chromatography",
+        "Economics",
+        "Biology",
+        "Operating system"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1480376833": {
+      "title": "The Elements of Statistical Learning",
+      "year": 2001,
+      "concepts": [
+        "Variety (cybernetics)",
+        "Data science",
         "Computer science",
         "Computation",
-        "Variety (cybernetics)",
-        "Programming paradigm",
-        "Function (biology)",
-        "Parallel computing",
-        "Operating system",
-        "Distributed computing",
-        "Big data",
         "Artificial intelligence",
+        "Algorithm"
+      ],
+      "doi": "https://doi.org/10.1007/978-0-387-21606-5",
+      "node_type": "referenced"
+    },
+    "W1504694836": {
+      "title": "Programs for Machine Learning",
+      "year": 1994,
+      "concepts": [
+        "Successor cardinal",
+        "Artificial intelligence",
+        "Computer science",
+        "Decision tree",
+        "Machine learning",
+        "Subject (documents)",
+        "ID3 algorithm",
+        "Decision tree learning",
+        "Incremental decision tree",
+        "World Wide Web",
+        "Mathematics",
+        "Mathematical analysis"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1512098439": {
+      "title": "Fast Training of Support Vector Machines Using Sequential Minimal Optimization",
+      "year": 1998,
+      "concepts": [
+        "Training (meteorology)",
+        "Computer science",
+        "Support vector machine",
+        "Artificial intelligence",
+        "Machine learning",
+        "Geography",
+        "Meteorology"
+      ],
+      "doi": "https://doi.org/10.7551/mitpress/1130.003.0016",
+      "node_type": "referenced"
+    },
+    "W1521626219": {
+      "title": "Natural Language Processing with Python",
+      "year": 2009,
+      "concepts": [
+        "Computer science",
+        "Python (programming language)",
+        "WordNet",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Parsing",
+        "Machine translation",
+        "Natural language programming",
+        "Automatic summarization",
+        "Natural language",
         "Programming language",
-        "Evolutionary biology",
+        "World Wide Web",
+        "Universal Networking Language",
+        "Comprehension approach"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1540550673": {
+      "title": "Learning to Classify Text Using Support Vector Machines",
+      "year": 2002,
+      "concepts": [
+        "Support vector machine",
+        "Artificial intelligence",
+        "Computer science",
+        "Relevance vector machine",
+        "Machine learning",
+        "Structured support vector machine",
+        "Natural language processing",
+        "Pattern recognition (psychology)"
+      ],
+      "doi": "https://doi.org/10.1007/978-1-4615-0907-3",
+      "node_type": "referenced"
+    },
+    "W1543357255": {
+      "title": "Nanoinformatics: a new area of research in nanomedicine",
+      "year": 2012,
+      "concepts": [
+        "Nanomedicine",
+        "Informatics",
+        "Health informatics",
+        "Data science",
+        "Computer science",
+        "Nanotechnology",
+        "Knowledge management",
+        "Engineering ethics",
+        "Engineering",
+        "Medicine",
+        "Public health",
+        "Materials science",
+        "Nanoparticle",
+        "Electrical engineering",
+        "Nursing"
+      ],
+      "doi": "https://doi.org/10.2147/ijn.s24582",
+      "node_type": "referenced"
+    },
+    "W1565201084": {
+      "title": "Multinomial Naive Bayes for Text Categorization Revisited",
+      "year": 2004,
+      "concepts": [
+        "Naive Bayes classifier",
+        "Multinomial distribution",
+        "Computer science",
+        "Categorization",
+        "Artificial intelligence",
+        "Machine learning",
+        "Normalization (sociology)",
+        "Classifier (UML)",
+        "Bayes' theorem",
+        "Support vector machine",
+        "Pattern recognition (psychology)",
+        "Mathematics",
+        "Statistics",
+        "Bayesian probability",
+        "Sociology",
+        "Anthropology"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-540-30549-1_43",
+      "node_type": "referenced"
+    },
+    "W1582320196": {
+      "title": "Identifying Nanotechnology in Society",
+      "year": 2007,
+      "concepts": [
+        "Nanotechnology",
+        "Context (archaeology)",
+        "Engineering ethics",
+        "Cover (algebra)",
+        "Field (mathematics)",
+        "Engineering",
+        "Data science",
+        "Epistemology",
+        "Computer science",
+        "History",
+        "Materials science",
+        "Philosophy",
+        "Mathematics",
+        "Mechanical engineering",
+        "Archaeology",
+        "Pure mathematics"
+      ],
+      "doi": "https://doi.org/10.1016/s0065-2458(06)71005-1",
+      "node_type": "referenced"
+    },
+    "W1519043304": {
+      "title": "Relational Data File: A Tool for Mechanized Inference Execution and Data Retrieval",
+      "year": 1965,
+      "concepts": [
+        "Computer science",
+        "Inference",
+        "Information retrieval",
+        "Relational database",
+        "Field (mathematics)",
+        "Data retrieval",
+        "Key (lock)",
+        "Realization (probability)",
+        "Logical data model",
+        "Data mining",
+        "Database",
+        "Data modeling",
+        "Artificial intelligence",
+        "Statistics",
+        "Mathematics",
+        "Computer security",
+        "Pure mathematics"
+      ],
+      "doi": "N/A",
+      "node_type": "agent_path"
+    },
+    "W1979065383": {
+      "title": "Answering English questions by computer",
+      "year": 1965,
+      "concepts": [
+        "Citation",
+        "Computer science",
+        "World Wide Web",
+        "Information retrieval"
+      ],
+      "doi": "https://doi.org/10.1145/363707.363732",
+      "node_type": "referenced"
+    },
+    "W1986949946": {
+      "title": "Fact Retrieval and Deductive Question-Answering Information Retrieval Systems",
+      "year": 1964,
+      "concepts": [
+        "Sublanguage",
+        "Computer science",
+        "Question answering",
+        "Information retrieval",
+        "Document retrieval",
+        "Data retrieval",
+        "Natural language processing",
+        "Natural language",
+        "IBM",
+        "Cognitive models of information retrieval",
+        "Inference",
+        "Human–computer information retrieval",
+        "Artificial intelligence",
+        "Search engine",
+        "Materials science",
+        "Nanotechnology"
+      ],
+      "doi": "https://doi.org/10.1145/321217.321218",
+      "node_type": "referenced"
+    },
+    "W2015720094": {
+      "title": "As We May Think",
+      "year": 1945,
+      "concepts": [
+        "Perfection",
+        "Task (project management)",
+        "Incentive",
+        "Political science",
+        "Epistemology",
+        "Engineering",
+        "Philosophy",
+        "Systems engineering",
+        "Economics",
+        "Microeconomics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2020289613": {
+      "title": "Information retrieval II",
+      "year": 1962,
+      "concepts": [
+        "Computer science",
+        "Information retrieval"
+      ],
+      "doi": "https://doi.org/10.1145/800198.806138",
+      "node_type": "referenced"
+    },
+    "W2048229624": {
+      "title": "Experiments with a deductive question-answering program",
+      "year": 1965,
+      "concepts": [
+        "Citation",
+        "Question answering",
+        "Computer science",
+        "Information retrieval",
+        "World Wide Web"
+      ],
+      "doi": "https://doi.org/10.1145/365691.365960",
+      "node_type": "agent_path"
+    },
+    "W2119409989": {
+      "title": "Programs with common sense",
+      "year": 1960,
+      "concepts": [
+        "Predicate (mathematical logic)",
+        "Sentence",
+        "Computer science",
+        "Common sense",
+        "Programming language",
+        "Action (physics)",
+        "Process (computing)",
+        "Natural language processing",
+        "Linguistics",
+        "Artificial intelligence",
+        "Philosophy",
+        "Epistemology",
+        "Physics",
+        "Quantum mechanics"
+      ],
+      "doi": "N/A",
+      "node_type": "agent_path"
+    },
+    "W2170166939": {
+      "title": "SIR: A COMPUTER PROGRAM FOR SEMANTIC INFORMATION RETRIEVAL",
+      "year": 1964,
+      "concepts": [
+        "Computer science",
+        "Lisp",
+        "Sentence",
+        "Natural language processing",
+        "Artificial intelligence",
+        "Information retrieval",
+        "Programming language"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W4285719527": {
+      "title": "Deleted Work",
+      "year": 1955,
+      "concepts": [],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1970001627": {
+      "title": "A Learning Machine: Part I",
+      "year": 1958,
+      "concepts": [
+        "Computer science",
+        "Test (biology)",
+        "Artificial intelligence",
+        "Machine learning",
+        "Paleontology",
         "Biology"
       ],
-      "doi": "https://doi.org/10.1145/1327452.1327492",
-      "node_type": "end"
+      "doi": "https://doi.org/10.1147/rd.21.0002",
+      "node_type": "referenced"
+    },
+    "W2112161977": {
+      "title": "Empirical explorations of the logic theory machine",
+      "year": 1957,
+      "concepts": [
+        "Computer science",
+        "Mathematical proof",
+        "Logic programming",
+        "Mathematical logic",
+        "Process (computing)",
+        "Computational logic",
+        "Theoretical computer science",
+        "Programming language",
+        "Meaning (existential)",
+        "Artificial intelligence",
+        "Mathematics",
+        "Description logic",
+        "Epistemology",
+        "Philosophy",
+        "Geometry"
+      ],
+      "doi": "https://doi.org/10.1145/1455567.1455605",
+      "node_type": "referenced"
+    },
+    "W2479583503": {
+      "title": "The Inversion of Functions Defined by Turing Machines",
+      "year": 1956,
+      "concepts": [
+        "Turing",
+        "Inversion (geology)",
+        "Computer science",
+        "Mathematics",
+        "Geology",
+        "Programming language",
+        "Paleontology",
+        "Structural basin"
+      ],
+      "doi": "https://doi.org/10.1515/9781400882618-009",
+      "node_type": "referenced"
+    },
+    "W1514436817": {
+      "title": "Some problems of basic organization in problem-solving programs",
+      "year": 1962,
+      "concepts": [
+        "Flexibility (engineering)",
+        "Computer science",
+        "Context (archaeology)",
+        "Management science",
+        "Rest (music)",
+        "Engineering",
+        "Mathematics",
+        "Medicine",
+        "Paleontology",
+        "Statistics",
+        "Cardiology",
+        "Biology"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1578539980": {
+      "title": "A heuristic program that solves symbolic integration problems in freshman calculus : symbolic automatic integrator (SAINT)",
+      "year": 1961,
+      "concepts": [
+        "SAINT",
+        "Heuristic",
+        "Integrator",
+        "The Symbolic",
+        "Computer science",
+        "Calculus (dental)",
+        "Symbolic computation",
+        "Artificial intelligence",
+        "Algebra over a field",
+        "Mathematics",
+        "Psychology",
+        "Medicine",
+        "Psychotherapist",
+        "Pure mathematics",
+        "Computer network",
+        "Mathematical analysis",
+        "Computer security",
+        "Dentistry",
+        "Bandwidth (computing)"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1601555688": {
+      "title": "LISP 1.5 PROGRAMMER'S MANUAL",
+      "year": 1962,
+      "concepts": [
+        "Lisp",
+        "Programmer",
+        "Programming language",
+        "Computer science",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.21236/ad0406138",
+      "node_type": "referenced"
+    },
+    "W1628475528": {
+      "title": "Computers and Thought",
+      "year": 1963,
+      "concepts": [
+        "Turing",
+        "Cognitive science",
+        "Artificial intelligence",
+        "Computer science",
+        "Psychology",
+        "Programming language"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1977384182": {
+      "title": "Experiments with a Heuristic Compiler",
+      "year": 1963,
+      "concepts": [
+        "Rand corporation",
+        "Computer science",
+        "Compiler",
+        "Citation",
+        "Corporation",
+        "Heuristic",
+        "Operations research",
+        "Library science",
+        "Management",
+        "Programming language",
+        "Artificial intelligence",
+        "Law",
+        "Engineering",
+        "Political science",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.1145/321186.321192",
+      "node_type": "agent_path"
+    },
+    "W2035758894": {
+      "title": "A computer program which \"understands\"",
+      "year": 1964,
+      "concepts": [
+        "Computer science",
+        "Conversation",
+        "Human–computer interaction",
+        "Cognition",
+        "Computer program",
+        "Artificial intelligence",
+        "Cognitive science",
+        "Programming language",
+        "Psychology",
+        "Communication",
+        "Neuroscience"
+      ],
+      "doi": "https://doi.org/10.1145/1464052.1464107",
+      "node_type": "agent_path"
+    },
+    "W2052628540": {
+      "title": "A Heuristic Program that Solves Symbolic Integration Problems in Freshman Calculus",
+      "year": 1963,
+      "concepts": [
+        "Heuristic",
+        "Citation",
+        "Computer science",
+        "Calculus (dental)",
+        "Operations research",
+        "Library science",
+        "Mathematics",
+        "Artificial intelligence",
+        "Medicine",
+        "Dentistry"
+      ],
+      "doi": "https://doi.org/10.1145/321186.321193",
+      "node_type": "referenced"
+    },
+    "W2094815455": {
+      "title": "The Programming Language LISP: Its Operation and Applications",
+      "year": 1967,
+      "concepts": [
+        "Lisp",
+        "Programming language",
+        "Mathematics",
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.2307/2003282",
+      "node_type": "referenced"
+    },
+    "W2171071458": {
+      "title": "THE LOGIC THEORY MACHINE: A MODEL HEURISTIC PROGRAM,",
+      "year": 1963,
+      "concepts": [
+        "Programming language",
+        "Memorandum",
+        "Computer science",
+        "Listing (finance)",
+        "Rewriting",
+        "Documentation",
+        "Tracing",
+        "CLARITY",
+        "Mathematical proof",
+        "Heuristic",
+        "Theoretical computer science",
+        "Mathematics",
+        "Artificial intelligence",
+        "Biochemistry",
+        "Chemistry",
+        "Geometry",
+        "Archaeology",
+        "Finance",
+        "Economics",
+        "History"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2799867313": {
+      "title": "Self-Organizing Systems",
+      "year": 1962,
+      "concepts": [
+        "Login",
+        "Download",
+        "Service (business)",
+        "World Wide Web",
+        "Computer science",
+        "Internet privacy",
+        "Library science",
+        "Psychology",
+        "Business",
+        "Computer security",
+        "Marketing"
+      ],
+      "doi": "https://doi.org/10.1176/appi.psychotherapy.1962.16.2.326",
+      "node_type": "referenced"
+    },
+    "W118880854": {
+      "title": "A Question-Answering Routine",
+      "year": 1960,
+      "concepts": [
+        "Question answering",
+        "Computer science",
+        "Information retrieval"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1505640990": {
+      "title": "Natural Language Input for a Computer Problem Solving System",
+      "year": 1964,
+      "concepts": [
+        "Computer science",
+        "Natural (archaeology)",
+        "Natural language",
+        "Natural language processing",
+        "Artificial intelligence",
+        "History",
+        "Archaeology"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1604754811": {
+      "title": "Semantics. The Nature of Words and Their Meanings",
+      "year": 1943,
+      "concepts": [
+        "Semantics (computer science)",
+        "Linguistics",
+        "Computer science",
+        "Natural language processing",
+        "Philosophy",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.2307/4341833",
+      "node_type": "referenced"
+    },
+    "W1977190837": {
+      "title": "A comparison of list-processing computer languages",
+      "year": 1964,
+      "concepts": [
+        "Rand corporation",
+        "Corporation",
+        "Lisp",
+        "Citation",
+        "Computer science",
+        "Library science",
+        "Operations research",
+        "Management",
+        "Engineering",
+        "Political science",
+        "Law",
+        "Programming language",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.1145/364005.364057",
+      "node_type": "referenced"
+    },
+    "W1979263599": {
+      "title": "Baseball",
+      "year": 1961,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1145/1460690.1460714",
+      "node_type": "referenced"
+    },
+    "W1980491396": {
+      "title": "Word and Object",
+      "year": 1960,
+      "concepts": [
+        "Quine",
+        "Sentence",
+        "Meaning (existential)",
+        "Linguistics",
+        "Object (grammar)",
+        "Semantic theory of truth",
+        "Point (geometry)",
+        "Semantics (computer science)",
+        "Word (group theory)",
+        "Epistemology",
+        "Psychology",
+        "Computer science",
+        "Philosophy",
+        "Mathematics",
+        "Geometry",
+        "Programming language"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2025297205": {
+      "title": "Elements of Symbolic Logic.",
+      "year": 1948,
+      "concepts": [
+        "Mathematics",
+        "Arithmetic",
+        "Calculus (dental)",
+        "Programming language",
+        "Computer science",
+        "Medicine",
+        "Dentistry"
+      ],
+      "doi": "https://doi.org/10.2307/2305604",
+      "node_type": "referenced"
+    },
+    "W2041225318": {
+      "title": "Toward the synthesis of human language behavior",
+      "year": 2007,
+      "concepts": [
+        "Corporation",
+        "Citation",
+        "Library science",
+        "Computer science",
+        "Sociology",
+        "Artificial intelligence",
+        "Political science",
+        "Law"
+      ],
+      "doi": "https://doi.org/10.1002/bs.3830070313",
+      "node_type": "referenced"
+    },
+    "W53732215": {
+      "title": "A revised design for an understanding machine.",
+      "year": 1962,
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1971804672": {
+      "title": "RECOL—a retrieval command language",
+      "year": 1963,
+      "concepts": [
+        "Interrogation",
+        "Computer science",
+        "Scheme (mathematics)",
+        "Programming language",
+        "Information retrieval",
+        "File management",
+        "Data file",
+        "Database",
+        "Mathematics",
+        "History",
+        "Mathematical analysis",
+        "Archaeology"
+      ],
+      "doi": "https://doi.org/10.1145/366274.366342",
+      "node_type": "referenced"
+    },
+    "W1979835740": {
+      "title": "Progress in Some Commercial source languages",
+      "year": 1963,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1016/s0066-4138(63)80010-5",
+      "node_type": "referenced"
+    },
+    "W1985547558": {
+      "title": "AESOP",
+      "year": 1965,
+      "concepts": [
+        "Pencil (optics)",
+        "Computer science",
+        "Control (management)",
+        "Corporation",
+        "Control system",
+        "Information system",
+        "Class (philosophy)",
+        "Line (geometry)",
+        "Management information systems",
+        "Human–computer interaction",
+        "Software engineering",
+        "Engineering",
+        "Artificial intelligence",
+        "Electrical engineering",
+        "Mechanical engineering",
+        "Geometry",
+        "Mathematics",
+        "Finance",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.1145/1463891.1463940",
+      "node_type": "referenced"
+    },
+    "W1992676961": {
+      "title": "Annual review of information science and technology",
+      "year": 1995,
+      "concepts": [
+        "Computer science",
+        "Library science",
+        "Data science"
+      ],
+      "doi": "https://doi.org/10.1016/0099-1333(95)90072-1",
+      "node_type": "referenced"
+    },
+    "W1997542989": {
+      "title": "ADAM",
+      "year": 1966,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1145/1464182.1464204",
+      "node_type": "referenced"
+    },
+    "W1998458210": {
+      "title": "Generalization: Key to Successful Electronic Data Processing",
+      "year": 1959,
+      "concepts": [
+        "Citation",
+        "Key (lock)",
+        "Computer science",
+        "Generalization",
+        "Computer security",
+        "Operations research",
+        "World Wide Web",
+        "Engineering",
+        "Mathematics",
+        "Mathematical analysis"
+      ],
+      "doi": "https://doi.org/10.1145/320954.320955",
+      "node_type": "referenced"
+    },
+    "W1999667176": {
+      "title": "The Theory of Graphs and Its Applications",
+      "year": 1965,
+      "concepts": [
+        "Mathematical economics",
+        "Mathematics",
+        "Economics",
+        "Combinatorics",
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.2307/1911908",
+      "node_type": "referenced"
+    },
+    "W2005573611": {
+      "title": "GIS and file management",
+      "year": 1966,
+      "concepts": [
+        "Computer science",
+        "File management",
+        "Acronym",
+        "Search engine indexing",
+        "Task (project management)",
+        "Function (biology)",
+        "Set (abstract data type)",
+        "Database",
+        "File system",
+        "Base (topology)",
+        "Information system",
+        "Information retrieval",
+        "Operating system",
+        "Programming language",
+        "Mathematical analysis",
+        "Linguistics",
+        "Philosophy",
+        "Mathematics",
+        "Management",
+        "Evolutionary biology",
+        "Biology",
+        "Electrical engineering",
+        "Economics",
+        "Engineering"
+      ],
+      "doi": "https://doi.org/10.1145/800256.810686",
+      "node_type": "referenced"
+    },
+    "W2007363236": {
+      "title": "Information structures for processing and retrieving",
+      "year": 1962,
+      "concepts": [
+        "Corporation",
+        "Citation",
+        "Computer science",
+        "Telecommunications",
+        "World Wide Web",
+        "Business",
+        "Finance"
+      ],
+      "doi": "https://doi.org/10.1145/366243.366715",
+      "node_type": "referenced"
+    },
+    "W2008065279": {
+      "title": "The catalog",
+      "year": 1965,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1145/1463891.1463925",
+      "node_type": "referenced"
+    },
+    "W2019806963": {
+      "title": "GIM-1, a generalized information management language and computer system",
+      "year": 1967,
+      "concepts": [
+        "Computer science",
+        "Management information systems",
+        "Information system",
+        "Information management",
+        "Automated information system",
+        "Software engineering",
+        "Knowledge management",
+        "Engineering",
+        "Electrical engineering"
+      ],
+      "doi": "https://doi.org/10.1145/1465482.1465509",
+      "node_type": "referenced"
+    },
+    "W2033825565": {
+      "title": "Mathematical Structure of Nonarithmetic Data Processing Procedures",
+      "year": 1962,
+      "concepts": [
+        "Citation",
+        "Computer science",
+        "Information retrieval",
+        "World Wide Web"
+      ],
+      "doi": "https://doi.org/10.1145/321105.321118",
+      "node_type": "referenced"
+    },
+    "W2061102396": {
+      "title": "DM-1",
+      "year": 1967,
+      "concepts": [
+        "Computer science",
+        "Section (typography)",
+        "Knowledge management",
+        "Software engineering",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1145/1465482.1465511",
+      "node_type": "referenced"
+    },
+    "W207426224": {
+      "title": "FORTRAN PROGRAM SUMX",
+      "year": 1964,
+      "concepts": [
+        "Fortran",
+        "Programming language",
+        "Computer science"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2080893847": {
+      "title": "An information algebra",
+      "year": 1962,
+      "concepts": [
+        "IBM",
+        "Navy",
+        "Corporation",
+        "Citation",
+        "Rand corporation",
+        "Management",
+        "Library science",
+        "Computer science",
+        "Operations research",
+        "Engineering",
+        "Political science",
+        "Law",
+        "Materials science",
+        "Economics",
+        "Nanotechnology"
+      ],
+      "doi": "https://doi.org/10.1145/366920.366935",
+      "node_type": "agent_path"
+    },
+    "W2084461042": {
+      "title": "Coming changes in system analysis and design",
+      "year": 1966,
+      "concepts": [
+        "Computer science",
+        "Structured systems analysis and design method",
+        "Systems analysis",
+        "Systems design",
+        "Software engineering",
+        "Systems engineering",
+        "Engineering"
+      ],
+      "doi": "https://doi.org/10.1145/800256.810716",
+      "node_type": "referenced"
+    },
+    "W2088584969": {
+      "title": "Computer user-oriented system",
+      "year": 1965,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1145/363744.363786",
+      "node_type": "referenced"
+    },
+    "W2105379774": {
+      "title": "A programmer's utility filing system",
+      "year": 1964,
+      "concepts": [
+        "Programmer",
+        "Computer science",
+        "Magnetic tape",
+        "Database",
+        "Human–computer interaction",
+        "Operating system",
+        "Programming language",
+        "Computer hardware",
+        "Digital recording"
+      ],
+      "doi": "https://doi.org/10.1093/comjnl/7.3.180",
+      "node_type": "referenced"
+    },
+    "W2156565954": {
+      "title": "NEBULA: A Programming Language for Data Processing",
+      "year": 1961,
+      "concepts": [
+        "Nebula",
+        "Computer science",
+        "Programming language",
+        "Computer vision",
+        "Stars"
+      ],
+      "doi": "https://doi.org/10.1093/comjnl/4.3.197",
+      "node_type": "referenced"
+    },
+    "W2159405924": {
+      "title": "A data management system for time-shared file processing using a cross-index file and self-defining entries",
+      "year": 1966,
+      "concepts": [
+        "Computer science",
+        "Data management",
+        "Indexed file",
+        "Data file",
+        "File system",
+        "Database",
+        "Set (abstract data type)",
+        "File management",
+        "Index (typography)",
+        "Operating system",
+        "World Wide Web",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.1145/1464182.1464191",
+      "node_type": "referenced"
+    },
+    "W2324061260": {
+      "title": "CRESTS--Courtaulds Rapid Extract, Sort and Tabulate System",
+      "year": 1966,
+      "concepts": [
+        "sort",
+        "Geology",
+        "Computer science",
+        "Database"
+      ],
+      "doi": "https://doi.org/10.1093/comjnl/9.1.3",
+      "node_type": "referenced"
+    },
+    "W2333732024": {
+      "title": "A Simple Program for Use in the \"Conversational Mode\"",
+      "year": 1966,
+      "concepts": [
+        "Simple (philosophy)",
+        "Computer science",
+        "Mode (computer interface)",
+        "Programming language",
+        "Human–computer interaction",
+        "Epistemology",
+        "Philosophy"
+      ],
+      "doi": "https://doi.org/10.1093/comjnl/9.3.238",
+      "node_type": "referenced"
+    },
+    "W258541156": {
+      "title": "THE MADAM SYSTEM",
+      "year": 1965,
+      "concepts": [
+        "Madam",
+        "Computer science",
+        "Grammar",
+        "Vocabulary",
+        "Linguistics",
+        "World Wide Web",
+        "Natural language processing",
+        "Philosophy"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W2810290055": {
+      "title": "File Management on a Small Computer",
+      "year": 1899,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1109/afips.1967.52",
+      "node_type": "referenced"
+    },
+    "W290103084": {
+      "title": "THE COLINGO SYSTEM DESIGN PHILOSOPHY",
+      "year": 1964,
+      "concepts": [
+        "Philosophy of design",
+        "Computer science",
+        "Epistemology",
+        "Philosophy",
+        "Western philosophy"
+      ],
+      "doi": "https://doi.org/10.21236/ad0608833",
+      "node_type": "referenced"
     }
   },
-  "edges": [],
+  "edges": [
+    {
+      "source": "W2185907055",
+      "target": "W1984820433"
+    },
+    {
+      "source": "W2185907055",
+      "target": "W2022843269"
+    },
+    {
+      "source": "W2185907055",
+      "target": "W2044618373"
+    },
+    {
+      "source": "W2185907055",
+      "target": "W2082763279"
+    },
+    {
+      "source": "W2185907055",
+      "target": "W2088549934"
+    },
+    {
+      "source": "W2185907055",
+      "target": "W2104880663"
+    },
+    {
+      "source": "W2185907055",
+      "target": "W2092025391"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W142231902"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W1529465401"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W1540771591"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W1993595811"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W2043355327"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W2047150424"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W2120747541"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W2135010675"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W2185907055"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W2232207765"
+    },
+    {
+      "source": "W2092025391",
+      "target": "W1996988468"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W114517082"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W128190844"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1480376833"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1504694836"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1512098439"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1521626219"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1540550673"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1543357255"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1565201084"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W1582320196"
+    },
+    {
+      "source": "W1996988468",
+      "target": "W4239510810"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W1519043304"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W1979065383"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W1986949946"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W2015720094"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W2020289613"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W2048229624"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W2119409989"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W2170166939"
+    },
+    {
+      "source": "W2022843269",
+      "target": "W4285719527"
+    },
+    {
+      "source": "W2119409989",
+      "target": "W1970001627"
+    },
+    {
+      "source": "W2119409989",
+      "target": "W2112161977"
+    },
+    {
+      "source": "W2119409989",
+      "target": "W2479583503"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1514436817"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1578539980"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1601555688"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1628475528"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1977384182"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1979065383"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W1986949946"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W2035758894"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W2052628540"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W2094815455"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W2119409989"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W2171071458"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W2799867313"
+    },
+    {
+      "source": "W2048229624",
+      "target": "W4285719527"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W118880854"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1505640990"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1604754811"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1628475528"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1977190837"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1977384182"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1979263599"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W1980491396"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W2025297205"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W2041225318"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W2119409989"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W2170166939"
+    },
+    {
+      "source": "W2035758894",
+      "target": "W53732215"
+    },
+    {
+      "source": "W1977384182",
+      "target": "W1977384182"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1971804672"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1979835740"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1985547558"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1992676961"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1997542989"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1998458210"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W1999667176"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2005573611"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2007363236"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2008065279"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2019806963"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2033825565"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2061102396"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W207426224"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2080893847"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2084461042"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2088584969"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2105379774"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2156565954"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2159405924"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2324061260"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2333732024"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W258541156"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W2810290055"
+    },
+    {
+      "source": "W2088549934",
+      "target": "W290103084"
+    }
+  ],
   "agent_path": [
-    "W4300912893"
+    "W2185907055",
+    "W2022843269",
+    "W1519043304",
+    "W2119409989",
+    "W1984820433",
+    "W2082763279",
+    "W2048229624",
+    "W2035758894",
+    "W1977384182",
+    "W2088549934",
+    "W2080893847"
   ]
 }

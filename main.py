@@ -125,7 +125,7 @@ def run_single_task(task, task_index=1):
 
     
     agent_found_path, path = agent.find_path(
-        start_paper_id, end_paper_id, max_turns=config.AGENT_MAX_TURNS
+        start_paper_id, end_paper_id, max_turns=config.AGENT_MAX_TURNS, ground_truth_path=ground_truth
     )
 
     if agent_found_path:

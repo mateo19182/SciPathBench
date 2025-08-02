@@ -66,7 +66,7 @@ class LLMAgent:
         self.visited_nodes = set()
         self.frontier = {}  # paper_id -> metadata for LLM
 
-    def find_path(self, start_id: str, end_id: str, max_turns: int):
+    def find_path(self, start_id: str, end_id: str, max_turns: int, ground_truth_path: list = None):
         """Main execution loop for the agent."""
         logging.info("--- Starting LLM Agent Run ---")
 
@@ -81,6 +81,32 @@ class LLMAgent:
         # Add start and end nodes to graph
         self.graph.add_node(start_id, start_paper, "start")
         self.graph.add_node(end_id, end_paper, "end")
+
+        # Add ground truth path nodes and edges if provided
+        if ground_truth_path:
+            logging.info("Adding ground truth path references to graph")
+            for i, paper_id in enumerate(ground_truth_path):
+                paper_data = self.api_client.get_paper_by_id(paper_id)
+                if paper_data:
+                    node_type = "start" if i == 0 else "end" if i == len(ground_truth_path) - 1 else "ground_truth"
+                    self.graph.add_node(paper_id, paper_data, node_type)
+                
+                # Add edges between consecutive papers in ground truth path
+                if i > 0:
+                    self.graph.add_edge(ground_truth_path[i-1], paper_id)
+                
+                # Add references from each ground truth paper to show the citation network
+                if i < len(ground_truth_path) - 1:  # Don't expand the last paper (end node)
+                    neighbors = self.api_client.get_neighbors(paper_id)
+                    logging.info(f"Found {len(neighbors)} neighbors for ground truth paper {paper_id}")
+                    for neighbor_id in neighbors[:10]:  # Limit to first 10 references to avoid clutter
+                        self.graph.add_edge(paper_id, neighbor_id)
+                        if neighbor_id not in self.graph.nodes:
+                            neighbor_paper = self.api_client.get_paper_by_id(neighbor_id)
+                            if neighbor_paper:
+                                self.graph.add_node(neighbor_id, neighbor_paper, "referenced")
+                
+        
 
         # Initialize with start node
         logging.info(f"Starting from: '{start_paper.get('title')}'")
@@ -133,6 +159,7 @@ class LLMAgent:
 
             # Get neighbors of expanded paper
             neighbors = self.api_client.get_neighbors(paper_id_to_expand)
+            logging.info(f"Found {len(neighbors)} neighbors")
             for neighbor_id in neighbors:
                 self.graph.add_edge(paper_id_to_expand, neighbor_id)
                 

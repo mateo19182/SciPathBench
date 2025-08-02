@@ -146,6 +146,24 @@ def _create_html_visualization(G, ground_truth_path, agent_path, output_prefix):
     logging.info("Generating interactive HTML visualization...")
     
     net = Network(height="750px", width="100%", bgcolor="#ffffff", font_color="#000000", directed=False)
+    
+    # Configure physics for better node separation
+    net.set_options("""
+    var options = {
+      "physics": {
+        "enabled": true,
+        "stabilization": {"iterations": 1000},
+        "barnesHut": {
+          "gravitationalConstant": -5000,
+          "centralGravity": 0.3,
+          "springLength": 200,
+          "springConstant": 0.04,
+          "damping": 0.09,
+          "avoidOverlap": 1
+        }
+      }
+    }
+    """)
 
     # Define colors for different node types
     color_map = {
@@ -174,6 +192,8 @@ def _create_html_visualization(G, ground_truth_path, agent_path, output_prefix):
         # Special handling for start/end nodes
         is_start = _is_start_node(node, ground_truth_path, agent_path)
         is_end = _is_end_node(node, ground_truth_path, agent_path)
+        is_gt_end = ground_truth_path and node == ground_truth_path[-1]
+        is_agent_end = agent_path and node == agent_path[-1]
         
         if is_start or is_end:
             size = 35
@@ -184,16 +204,24 @@ def _create_html_visualization(G, ground_truth_path, agent_path, output_prefix):
                 color = "#00ff00"  # Green for start
                 marker = " [Start]"
             elif is_end:
-                if _is_correct_end(node, ground_truth_path, agent_path):
-                    color = "#2ca02c"  # Correct end
-                    marker = " [End]"
-                else:
-                    color = "#ff7f0e"  # Agent's wrong end
+                if is_gt_end and is_agent_end:
+                    color = "#2ca02c"  # Correct end - agent found the right target
+                    marker = " [Success]"
+                elif is_gt_end:
+                    color = "#1f77b4"  # Ground truth end (blue)
+                    marker = " [Target]"
+                elif is_agent_end:
+                    color = "#ff7f0e"  # Agent's wrong end (orange)
                     marker = " [Failed]"
             display_label = label + marker
         else:
-            size = 12 if path_membership == "referenced_only" else 20 + data.get('weight', 1) * 5
-            display_label = label
+            # For referenced nodes, show title only on hover
+            if path_membership == "referenced_only":
+                size = 12
+                display_label = "•"  # Just a dot for referenced nodes
+            else:
+                size = 20 + data.get('weight', 1) * 5
+                display_label = label
 
         net.add_node(node, label=display_label, title=title, color=color, size=size)
 
