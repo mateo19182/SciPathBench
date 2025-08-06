@@ -33,10 +33,8 @@ The web interface provides a modern, user-friendly way to interact with SciPathB
 ![web](docs/web.png)
 
 - **Interactive Mode**: Play the pathfinding game in your browser with a clean UI
-![interactive](docs/interactive.png)
 
 - **Live LLM Runs**: Watch AI agents solve challenges in real-time with live updates
-![Live LLM](docs/live.png)
 
 - **Leaderboard**: View performance metrics, compare models, and track progress
 
