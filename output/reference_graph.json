@@ -1,538 +1,340 @@
 {
   "nodes": {
-    "W4299608875": {
-      "title": "Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
-      "year": 2018,
+    "W4298289240": {
+      "title": "Generative Adversarial Networks",
+      "year": 2014,
       "concepts": [
-        "Causal inference",
+        "Discriminative model",
+        "Minimax",
         "Computer science",
-        "Artificial intelligence",
-        "Machine learning",
-        "Causal model",
         "Inference",
-        "Cognitive science",
-        "Psychology",
-        "Econometrics",
-        "Medicine",
-        "Pathology",
-        "Economics"
+        "Artificial intelligence",
+        "Perceptron",
+        "Generative grammar",
+        "Machine learning",
+        "Sample (material)",
+        "Generative model",
+        "Mistake",
+        "Artificial neural network",
+        "Mathematical optimization",
+        "Mathematics",
+        "Chemistry",
+        "Chromatography",
+        "Political science",
+        "Law"
       ],
-      "doi": "https://doi.org/10.48550/arxiv.1801.04016",
+      "doi": "https://doi.org/10.48550/arxiv.1406.2661",
       "node_type": "start"
     },
-    "W4206489165": {
-      "title": "The Structure of Scientific Revolutions",
-      "year": 2012,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.7208/chicago/9780226458144.001.0001",
-      "node_type": "end"
-    },
-    "W4312550351": {
-      "title": "Formation of dynamic cause-and-effect relationships when controlling the behavior of an intelligent agent based on the multi-agent neurocognitive architectures formalism",
-      "year": 2022,
-      "concepts": [
-        "Neurocognitive",
-        "Formalism (music)",
-        "Computer science",
-        "Artificial intelligence",
-        "Psychology",
-        "Cognitive science",
-        "Cognition",
-        "Neuroscience",
-        "Art",
-        "Musical",
-        "Visual arts"
-      ],
-      "doi": "https://doi.org/10.35330/1991-6639-2022-5-109-73-80",
-      "node_type": "ground_truth"
-    },
-    "W2017470614": {
-      "title": "Making things happen: a theory of causal explanation",
-      "year": 2004,
-      "concepts": [
-        "Causation",
-        "Appeal",
-        "Epistemology",
-        "Construct (python library)",
-        "Variety (cybernetics)",
-        "Counterexample",
-        "Everyday life",
-        "Philosophy",
-        "Computer science",
-        "Law",
-        "Mathematics",
-        "Political science",
-        "Discrete mathematics",
-        "Artificial intelligence",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.5860/choice.41-5840",
-      "node_type": "referenced"
-    },
-    "W2148764920": {
-      "title": "The free-energy principle: a unified brain theory?",
-      "year": 2010,
-      "concepts": [
-        "Surprise",
-        "Free energy principle",
-        "Energy (signal processing)",
-        "Computer science",
-        "Free will",
-        "Complement (music)",
-        "Function (biology)",
-        "Cognitive science",
-        "Key (lock)",
-        "Action (physics)",
-        "Value (mathematics)",
-        "Epistemology",
-        "Psychology",
-        "Physics",
-        "Social psychology",
-        "Machine learning",
-        "Philosophy",
-        "Biochemistry",
-        "Chemistry",
-        "Computer security",
-        "Quantum mechanics",
-        "Complementation",
-        "Gene",
-        "Phenotype",
-        "Evolutionary biology",
-        "Biology"
-      ],
-      "doi": "https://doi.org/10.1038/nrn2787",
-      "node_type": "referenced"
-    },
-    "W2516137114": {
-      "title": "Theory of Games and Economic Behavior",
-      "year": 1945,
-      "concepts": [
-        "Analogy",
-        "Epistemology",
-        "Philosophy of science",
-        "Maturity (psychological)",
-        "Sociology",
-        "Path (computing)",
-        "Social science",
-        "Computer science",
-        "Management science",
-        "Philosophy",
-        "Economics",
-        "Political science",
-        "Law",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.1086/286866",
-      "node_type": "referenced"
-    },
-    "W2560229246": {
-      "title": "Surfing uncertainty: prediction, action and the embodied mind",
-      "year": 2016,
-      "concepts": [
-        "Embodied cognition",
-        "Action (physics)",
-        "Computer science",
-        "Cognitive science",
-        "Psychology",
-        "Artificial intelligence",
-        "Physics",
-        "Quantum mechanics"
-      ],
-      "doi": "https://doi.org/10.1080/14794713.2016.1257478",
-      "node_type": "referenced"
-    },
-    "W2811247218": {
-      "title": "Playing against Nature: causal discovery for decision making under uncertainty",
-      "year": 2018,
-      "concepts": [
-        "Computer science",
-        "Data science",
-        "Management science",
-        "Economics"
-      ],
-      "doi": "https://doi.org/10.48550/arxiv.1807.01268",
-      "node_type": "referenced"
-    },
-    "W2907329683": {
-      "title": "An Introduction to Decision Theory",
+    "W4385245566": {
+      "title": "Attention Is All You Need",
       "year": 2017,
       "concepts": [
-        "Decision theory",
         "Computer science",
-        "Management science",
-        "Mathematics",
-        "Economics",
-        "Statistics"
-      ],
-      "doi": "https://doi.org/10.1201/9780203738641-11",
-      "node_type": "referenced"
-    },
-    "W2962681511": {
-      "title": "The Book of Why: The New Science of Cause and Effect",
-      "year": 2019,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1090/noti1912",
-      "node_type": "referenced"
-    },
-    "W2963305465": {
-      "title": "Building machines that learn and think like people",
-      "year": 2016,
-      "concepts": [
-        "Computer science",
-        "Cognition",
-        "Cognitive science",
+        "Machine translation",
+        "Transformer",
+        "BLEU",
+        "Encoder",
         "Artificial intelligence",
-        "Principle of compositionality",
-        "Human intelligence",
-        "Artificial neural network",
-        "Object (grammar)",
-        "Data science",
-        "Psychology",
-        "Neuroscience"
-      ],
-      "doi": "https://doi.org/10.1017/s0140525x16001837",
-      "node_type": "referenced"
-    },
-    "W3015469787": {
-      "title": "The Foundations of Statistics.",
-      "year": 1955,
-      "concepts": [
-        "Statistics",
-        "Mathematics"
-      ],
-      "doi": "https://doi.org/10.2307/2343133",
-      "node_type": "referenced"
-    },
-    "W3038902067": {
-      "title": "Learning algorithm for an intelligent decision making system based on multi-agent neurocognitive architectures",
-      "year": 2020,
-      "concepts": [
-        "Neurocognitive",
-        "Computer science",
-        "Artificial intelligence",
-        "Architecture",
-        "Agent architecture",
-        "Intelligent decision support system",
-        "Intelligent agent",
+        "Parallelizable manifold",
+        "Parsing",
+        "Natural language processing",
+        "Decoding methods",
+        "Language model",
+        "Task (project management)",
+        "Convolutional neural network",
+        "Speech recognition",
         "Machine learning",
         "Algorithm",
-        "Knowledge management",
-        "Cognition",
-        "Psychology",
-        "Neuroscience",
-        "Art",
-        "Visual arts"
-      ],
-      "doi": "https://doi.org/10.1016/j.cogsys.2020.10.015",
-      "node_type": "referenced"
-    },
-    "W4302423442": {
-      "title": "Causation, Prediction, and Search",
-      "year": 2001,
-      "concepts": [
-        "Causation",
-        "Computer science",
-        "Philosophy",
-        "Epistemology"
-      ],
-      "doi": "https://doi.org/10.7551/mitpress/1754.001.0001",
-      "node_type": "ground_truth"
-    },
-    "W55028352": {
-      "title": "A disposition-based process-theory of causation",
-      "year": 2013,
-      "concepts": [
-        "Causation",
-        "Epistemology",
-        "Disposition",
-        "Terminology",
-        "Process (computing)",
-        "Section (typography)",
-        "Causality (physics)",
-        "Psychology",
-        "Computer science",
-        "Philosophy",
-        "Linguistics",
         "Physics",
+        "Management",
         "Quantum mechanics",
+        "Voltage",
+        "Economics",
         "Operating system"
       ],
-      "doi": "https://doi.org/10.1093/acprof:oso/9780199674527.003.0005",
+      "doi": "https://doi.org/10.48550/arxiv.1706.03762",
+      "node_type": "end"
+    },
+    "W2766892611": {
+      "title": "Neural Networks for Document Image and Text Processing",
+      "year": 2017,
+      "concepts": [
+        "Internship",
+        "Recall",
+        "Safe haven",
+        "Psychology",
+        "Visual arts",
+        "Art",
+        "Medical education",
+        "Medicine",
+        "Cognitive psychology",
+        "Economics",
+        "International economics"
+      ],
+      "doi": "https://doi.org/10.4995/thesis/10251/90443",
       "node_type": "ground_truth"
     },
-    "W122531845": {
-      "title": "Universals and Scientific Realism",
-      "year": 1979,
+    "W107890371": {
+      "title": "BI-LEVEL IMAGE THRESHOLDING - A Fast Method",
+      "year": 2008,
       "concepts": [
-        "Problem of universals",
-        "Nominalism",
-        "Realism",
-        "Philosophy",
-        "Scientific realism",
-        "Epistemology",
-        "Classics",
-        "History"
-      ],
-      "doi": "https://doi.org/10.2307/2219454",
-      "node_type": "referenced"
-    },
-    "W148464473": {
-      "title": "Events as Property Exemplifications",
-      "year": 1976,
-      "concepts": [
-        "Creatures",
-        "Property (philosophy)",
-        "Event (particle physics)",
-        "Doctrine",
-        "Epistemology",
-        "Natural (archaeology)",
-        "Philosophy",
-        "History",
-        "Physics",
-        "Theology",
-        "Archaeology",
-        "Quantum mechanics"
-      ],
-      "doi": "https://doi.org/10.1007/978-94-010-9074-2_9",
-      "node_type": "referenced"
-    },
-    "W1498990133": {
-      "title": "Philosophy of Mind and Cognition",
-      "year": 1996,
-      "concepts": [
-        "Cognition",
-        "Cognitive science",
-        "Philosophy of mind",
-        "Psychology",
-        "Epistemology",
-        "Philosophy",
-        "Cognitive psychology",
-        "Neuroscience",
-        "Metaphysics"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1500458205": {
-      "title": "The Dappled World",
-      "year": 1999,
-      "concepts": [
-        "Empiricism",
-        "Natural (archaeology)",
-        "Epistemology",
-        "Natural science",
-        "Sociology",
-        "Social science",
-        "Philosophy",
-        "History",
-        "Archaeology"
-      ],
-      "doi": "https://doi.org/10.1017/cbo9781139167093",
-      "node_type": "referenced"
-    },
-    "W1501049079": {
-      "title": "General chemistry : an introduction to descriptive chemistry and modern chemical theory",
-      "year": 1947,
-      "concepts": [
-        "General chemistry",
-        "Chemistry",
-        "Organic chemistry"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1503147056": {
-      "title": null,
-      "year": 2000,
-      "concepts": [
-        "Novelty",
-        "Philosophy of science",
-        "Philosophy of language",
-        "Mathematics",
-        "Relation (database)",
-        "Metaphysics",
-        "Epistemology",
-        "Pure mathematics",
-        "Philosophy",
+        "Thresholding",
         "Computer science",
-        "Theology",
-        "Database"
+        "Artificial intelligence",
+        "Balanced histogram thresholding",
+        "Image (mathematics)",
+        "Computer vision",
+        "Image processing",
+        "Pattern recognition (psychology)",
+        "Histogram equalization"
       ],
-      "doi": "https://doi.org/10.1023/a:1005249907425",
+      "doi": "https://doi.org/10.5220/0001064300700076",
       "node_type": "referenced"
     },
-    "W1506104239": {
-      "title": "Causation and Counterfactuals",
-      "year": 2004,
+    "W112419282": {
+      "title": "Feature extraction: on the importance of zoning information in cursive script recognition",
+      "year": 1994,
       "concepts": [
-        "Causation",
-        "Counterfactual thinking",
-        "Counterfactual conditional",
-        "Epistemology",
-        "Transitive relation",
-        "Context (archaeology)",
-        "Philosophy",
-        "History",
-        "Mathematics",
-        "Archaeology",
-        "Combinatorics"
-      ],
-      "doi": "https://doi.org/10.7551/mitpress/1752.001.0001",
-      "node_type": "referenced"
-    },
-    "W1507131792": {
-      "title": "Philosophy and Logical Syntax.",
-      "year": 1935,
-      "concepts": [
-        "Syntax",
-        "Philosophy",
-        "Analytic philosophy",
-        "Epistemology",
+        "Cursive",
+        "Zoning",
+        "Computer science",
+        "Artificial intelligence",
+        "Sample (material)",
+        "Feature (linguistics)",
+        "Pattern recognition (psychology)",
+        "Feature extraction",
+        "Data mining",
+        "Natural language processing",
+        "Engineering",
         "Linguistics",
-        "Contemporary philosophy",
-        "Computer science",
-        "Programming language"
+        "Chemistry",
+        "Civil engineering",
+        "Philosophy",
+        "Chromatography"
       ],
-      "doi": "https://doi.org/10.2307/2016355",
+      "doi": "N/A",
       "node_type": "referenced"
     },
-    "W1536114261": {
-      "title": "A Recent Appreciation of the Singular Dynamics at the Edge of Chaos",
-      "year": 2006,
-      "concepts": [
-        "Supercooling",
-        "Statistical physics",
-        "Edge of chaos",
-        "Iterated function",
-        "Relaxation (psychology)",
-        "Phase transition",
-        "Mathematics",
-        "Physics",
-        "Thermodynamics",
-        "Mathematical analysis",
-        "Psychology",
-        "Social psychology",
-        "Algorithm"
-      ],
-      "doi": "https://doi.org/10.1007/3-540-32023-7_19",
-      "node_type": "referenced"
-    },
-    "W1536344018": {
-      "title": "A Philosophical Guide to Conditionals",
+    "W13608894": {
+      "title": "Optimizing F-Measure with Support Vector Machines",
       "year": 2003,
       "concepts": [
-        "Epistemology",
+        "Support vector machine",
+        "Measure (data warehouse)",
+        "Heuristic",
+        "Artificial intelligence",
+        "Weighting",
         "Computer science",
-        "Possible world",
-        "Philosophy"
+        "Machine learning",
+        "Class (philosophy)",
+        "Pattern recognition (psychology)",
+        "Data mining",
+        "Medicine",
+        "Radiology"
       ],
-      "doi": "https://doi.org/10.1093/0199258872.001.0001",
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1507680813": {
+      "title": "The tagged LOB Corpus : user's manual",
+      "year": 1986,
+      "concepts": [
+        "Natural language processing",
+        "Computer science",
+        "Information retrieval",
+        "Artificial intelligence"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1521044776": {
+      "title": "Novel Hybrid NN/HMM Modelling Techniques for On-line Handwriting Recognition",
+      "year": 2006,
+      "concepts": [
+        "Hidden Markov model",
+        "Discriminative model",
+        "Pattern recognition (psychology)",
+        "Computer science",
+        "Artificial intelligence",
+        "Speech recognition",
+        "Feature vector",
+        "Feature extraction",
+        "Handwriting recognition",
+        "Feature (linguistics)",
+        "Artificial neural network",
+        "Philosophy",
+        "Linguistics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1531333757": {
+      "title": "Framewise phoneme classification with bidirectional LSTM networks",
+      "year": 2006,
+      "concepts": [
+        "Recurrent neural network",
+        "TIMIT",
+        "Computer science",
+        "Speech recognition",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Long short term memory",
+        "Pattern recognition (psychology)",
+        "Hidden Markov model"
+      ],
+      "doi": "https://doi.org/10.1109/ijcnn.2005.1556215",
+      "node_type": "referenced"
+    },
+    "W1533861849": {
+      "title": "Understanding the difficulty of training deep feedforward neural networks",
+      "year": 2010,
+      "concepts": [
+        "Initialization",
+        "Computer science",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Deep neural networks",
+        "Deep learning",
+        "Gradient descent",
+        "Jacobian matrix and determinant",
+        "Sigmoid function",
+        "Machine learning",
+        "Mathematics",
+        "Applied mathematics",
+        "Programming language"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1535463134": {
+      "title": "Bayesian Separation of Document Images with Hidden Markov Model",
+      "year": 2007,
+      "concepts": [
+        "Bayesian probability",
+        "Pattern recognition (psychology)",
+        "Artificial intelligence",
+        "Pixel",
+        "Markov random field",
+        "Posterior probability",
+        "Markov chain Monte Carlo",
+        "Computer science",
+        "Smoothness",
+        "Mathematics",
+        "Mixture model",
+        "Algorithm",
+        "Image (mathematics)",
+        "Image segmentation",
+        "Mathematical analysis"
+      ],
+      "doi": "https://doi.org/10.48550/arxiv.0705.2461",
+      "node_type": "referenced"
+    },
+    "W1553004968": {
+      "title": "Connectionist Speech Recognition: A Hybrid Approach",
+      "year": 1993,
+      "concepts": [
+        "Connectionism",
+        "Artificial neural network",
+        "Computer science",
+        "Hidden Markov model",
+        "Perceptron",
+        "Time delay neural network",
+        "Artificial intelligence",
+        "Feature (linguistics)",
+        "Field (mathematics)",
+        "Speech recognition",
+        "Recurrent neural network",
+        "Multilayer perceptron",
+        "Machine learning",
+        "Pattern recognition (psychology)",
+        "Linguistics",
+        "Philosophy",
+        "Mathematics",
+        "Pure mathematics"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1560013842": {
+      "title": "Fundamentals of speech recognition",
+      "year": 1993,
+      "concepts": [
+        "Speech recognition",
+        "Computer science",
+        "Hidden Markov model",
+        "Vocabulary",
+        "Audio mining",
+        "Speech processing",
+        "Word recognition",
+        "Acoustic model",
+        "Speaker recognition",
+        "Task (project management)",
+        "Voice activity detection",
+        "Viseme",
+        "Artificial intelligence",
+        "Natural language processing",
+        "Linguistics",
+        "Engineering",
+        "Philosophy",
+        "Reading (process)",
+        "Systems engineering"
+      ],
+      "doi": "N/A",
       "node_type": "referenced"
     }
   },
   "edges": [
     {
-      "source": "W4299608875",
-      "target": "W4312550351"
+      "source": "W4298289240",
+      "target": "W2766892611"
     },
     {
-      "source": "W4312550351",
-      "target": "W2017470614"
+      "source": "W2766892611",
+      "target": "W107890371"
     },
     {
-      "source": "W4312550351",
-      "target": "W2148764920"
+      "source": "W2766892611",
+      "target": "W112419282"
     },
     {
-      "source": "W4312550351",
-      "target": "W2516137114"
+      "source": "W2766892611",
+      "target": "W13608894"
     },
     {
-      "source": "W4312550351",
-      "target": "W2560229246"
+      "source": "W2766892611",
+      "target": "W1507680813"
     },
     {
-      "source": "W4312550351",
-      "target": "W2811247218"
+      "source": "W2766892611",
+      "target": "W1521044776"
     },
     {
-      "source": "W4312550351",
-      "target": "W2907329683"
+      "source": "W2766892611",
+      "target": "W1531333757"
     },
     {
-      "source": "W4312550351",
-      "target": "W2962681511"
+      "source": "W2766892611",
+      "target": "W1533861849"
     },
     {
-      "source": "W4312550351",
-      "target": "W2963305465"
+      "source": "W2766892611",
+      "target": "W1535463134"
     },
     {
-      "source": "W4312550351",
-      "target": "W3015469787"
+      "source": "W2766892611",
+      "target": "W1553004968"
     },
     {
-      "source": "W4312550351",
-      "target": "W3038902067"
+      "source": "W2766892611",
+      "target": "W1560013842"
     },
     {
-      "source": "W4312550351",
-      "target": "W4302423442"
-    },
-    {
-      "source": "W4302423442",
-      "target": "W55028352"
-    },
-    {
-      "source": "W55028352",
-      "target": "W122531845"
-    },
-    {
-      "source": "W55028352",
-      "target": "W148464473"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1498990133"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1500458205"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1501049079"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1503147056"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1506104239"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1507131792"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1536114261"
-    },
-    {
-      "source": "W55028352",
-      "target": "W1536344018"
-    },
-    {
-      "source": "W55028352",
-      "target": "W4206489165"
+      "source": "W2766892611",
+      "target": "W4385245566"
     }
   ],
   "agent_path": [
-    "W4299608875"
+    "W4298289240"
   ]
 }

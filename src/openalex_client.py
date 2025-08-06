@@ -5,10 +5,7 @@ import requests
 import requests_cache
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL
-
-# Don't install global cache - we'll use a session-based cache instead
-# This avoids SQLite threading issues in the web server
+from config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL, OPENCITATIONS_API_KEY
 
 class OpenAlexClient:
     """
@@ -17,11 +14,10 @@ class OpenAlexClient:
     """
     def __init__(self):
         self.headers = {'User-Agent': f'SciPathBench/1.0 (mailto:{OPENALEX_USER_EMAIL})'}
-        # Use a session-based cache with memory backend for thread safety
         self.session = requests_cache.CachedSession(
             'api_cache',
-            backend='memory',
-            expire_after=864000,  # 1 day
+            # backend='memory',
+            expire_after=8640000,
             allowable_codes=[200, 404],
             allowable_methods=['GET'],
         )
@@ -53,7 +49,31 @@ class OpenAlexClient:
         except requests.exceptions.RequestException as e:
             logging.error(f"API Request Failed: {e}")
             return None
-
+    
+    def _make_open_citations_request(self, id, params=None):
+        """
+        Internal method to handle OpenCitations API requests.
+        """
+        try:
+            if params is None:
+                params = {}
+            # Ensure endpoint doesn't already contain 'doi:' prefix
+            clean_id = id.replace('doi:', '') if id.startswith('doi:') else id
+            url = f"https://api.opencitations.net/index/v2/references/doi:{clean_id}"
+            response = self.session.get(
+                url,
+                headers={"authorization": OPENCITATIONS_API_KEY},
+                params=params
+            )
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.HTTPError as e:
+            logging.error(f"OpenCitations API HTTP Error: {e} - URL: {e.response.url}")
+            return None
+        except requests.exceptions.RequestException as e:
+            logging.error(f"OpenCitations API Request Failed: {e}")
+            return None
+        
     def get_paper_by_id(self, openalex_id: str):
         """
         Retrieves a single paper's metadata. The request will be cached automatically.
@@ -62,21 +82,47 @@ class OpenAlexClient:
         norm = self._normalize_id(openalex_id)
         return self._make_request(f"/works/{norm}")
 
-    def get_neighbors(self, openalex_id: str):
+    def get_neighbors(self, id: str = None, doi: str = None):
         """
         Gets all papers that a given paper cites (outgoing references).
         This is a forward-only search.
         Returns a list of normalized OpenAlex IDs (W...).
+        Source can be 'opencitations' or 'openalex'.
         """
-        norm = self._normalize_id(openalex_id)
-        work = self._make_request(f"/works/{norm}")
-        if not work:
+        
+        if doi:
+            # Get citations from OpenCitations API
+            citations = self._make_open_citations_request(doi)
+            if not citations:
+                return []
+            
+            openalex_ids = []
+            for citation in citations:
+                cited_field = citation.get('citing', '')
+                # Extract openalex:W... from the cited field
+                if 'openalex:' in cited_field:
+                    parts = cited_field.split()
+                    for part in parts:
+                        if part.startswith('openalex:W'):
+                            openalex_ids.append(part.replace('openalex:', ''))
+            
+            return openalex_ids[:25]  # Limit to first 25 references
+            
+        elif id:
+            # Get citations from OpenAlex API
+            norm = self._normalize_id(id)
+
+            work = self._make_request(f"/works/{norm}")
+            if not work:
+                return []
+
+            refs = work.get('referenced_works', [])[:25]  # Limit to first 25 references
+            # Normalize each neighbor id to 'W...'
+            return [self._normalize_id(r) for r in refs]
+        else:
+            logging.error(f"Invalid or missing id/doi.")
             return []
-
-        refs = work.get('referenced_works', [])[:25]  # Limit to first 25 references
-        # Normalize each neighbor id to 'W...'
-        return [self._normalize_id(r) for r in refs]
-
+        
     def get_many_papers(self, ids: list[str], max_workers: int = 10) -> dict:
         """
         Fetch multiple works' metadata in parallel, leveraging cache. 

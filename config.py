@@ -7,7 +7,7 @@ import logging
 # --- API Configurations ---
 OPENALEX_API_BASE_URL = "https://api.openalex.org"
 OPENALEX_USER_EMAIL = "mateoamadoares@gmail.com"  # OpenAlex kindly requests an email for high-volume users
-
+OPENCITATIONS_API_KEY = os.getenv("OPENCITATIONS_API_KEY")  # Default key for OpenCitations
 # --- OpenRouter Configuration ---
 from dotenv import load_dotenv
 

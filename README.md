@@ -1,7 +1,9 @@
 # SciPathBench
 
 A benchmark for evaluating LLM agents on finding shortest citation paths between academic papers.
-Inspired by [WikiBench](https://1thousandfaces.substack.com/p/wikibench-76-of-sota-models-fail) | Uses [OpenAlex](OpenAlex), [OpenRouter](https://openrouter.ai/), [Inciteful](https://inciteful.xyz/).
+Inspired by [WikiBench](https://1thousandfaces.substack.com/p/wikibench-76-of-sota-models-fail) | Uses [OpenAlex](OpenAlex), [OpenRouter](https://openrouter.ai/), [Inciteful](https://inciteful.xyz/) and [OpenCitations](https://opencitations.net/) APIs.
+
+![graph](docs/graph.png)
 
 ## Quick Start
 
@@ -26,12 +28,17 @@ uv run main.py --interactive
 
 ## Web Interface
 
-The web interface provides a modern, user-friendly way to interact with SciPathBench:
+The web interface provides a modern, user-friendly way to interact with SciPathBench, using using [cs16.css](https://cs16.samke.me/) for styling:
+
+![web](docs/web.png)
 
 - **Interactive Mode**: Play the pathfinding game in your browser with a clean UI
+![interactive](docs/interactive.png)
+
 - **Live LLM Runs**: Watch AI agents solve challenges in real-time with live updates
+![Live LLM](docs/live.png)
+
 - **Leaderboard**: View performance metrics, compare models, and track progress
-- **Retro Styling**: Features a Counter Strike 1.6-inspired design using [cs16.css](https://cs16.samke.me/)
 
 Access at: `http://localhost:8001` after running `uv run web.py`
 
@@ -46,6 +53,7 @@ Access at: `http://localhost:8001` after running `uv run web.py`
 **Graph Representation**: Uses a unified `PaperGraph` structure where each node represents a paper with consistent attributes (title, year, concepts, DOI, node_type). The agent's actual path is tracked directly without complex reconstruction.
 
 **Visualization**: `visualization.py` generates VOSviewer files and interactive HTML visualizations showing:
+
 - **Blue**: Ground truth path nodes
 - **Orange**: Agent path nodes  
 - **Green**: Nodes in both paths

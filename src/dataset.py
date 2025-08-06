@@ -26,6 +26,11 @@ LANDMARK_PAPERS = [
     "W2028590532",
 ]
 
+DOI_PAPERS = [
+    # "10.1038/nature12373",
+    "10.1186/1756-8722-6-59",
+]
+
 
 # Function to check if a OpenAlex ID is valid
 def is_valid_openalex_id(client, paper_id: str) -> bool:
