@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    
+    <div class="features">
+        <div class="feature-card">
+            <h3>Interactive Mode</h3>
+            <p>Play the pathfinding game yourself.</p>
+            <button class="cs-btn" onclick="window.location.href='/interactive'">Start Interactive Session</button>
+        </div>
+        
+        <div class="feature-card">
+            <h3>LLM Runs</h3>
+            <p>Test LLM agents on challenges.</p>
+            <button class="cs-btn" onclick="window.location.href='/live'">View Live Runs</button>
+        </div>
+        
+        <div class="feature-card">
+            <h3>Leaderboard</h3>
+            <p>See how different models and players perform on the benchmark.</p>
+            <button class="cs-btn" onclick="window.location.href='/leaderboard'">View Leaderboard</button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Status functionality removed
+</script>
+{% endblock %}

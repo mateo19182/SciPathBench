@@ -7,9 +7,8 @@ import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL
 
-# Install a global cache for all requests. Responses will be cached for 1 day.
-# The cache will be stored in a file named 'api_cache.sqlite'.
-requests_cache.install_cache('api_cache', backend='sqlite', expire_after=864000)
+# Don't install global cache - we'll use a session-based cache instead
+# This avoids SQLite threading issues in the web server
 
 class OpenAlexClient:
     """
@@ -18,6 +17,14 @@ class OpenAlexClient:
     """
     def __init__(self):
         self.headers = {'User-Agent': f'SciPathBench/1.0 (mailto:{OPENALEX_USER_EMAIL})'}
+        # Use a session-based cache with memory backend for thread safety
+        self.session = requests_cache.CachedSession(
+            'api_cache',
+            backend='memory',
+            expire_after=864000,  # 1 day
+            allowable_codes=[200, 404],
+            allowable_methods=['GET'],
+        )
 
     def _normalize_id(self, identifier: str) -> str:
         """
@@ -37,7 +44,7 @@ class OpenAlexClient:
                 params = {}
             params['mailto'] = OPENALEX_USER_EMAIL
 
-            response = requests.get(f"{OPENALEX_API_BASE_URL}{endpoint}", params=params, headers=self.headers)
+            response = self.session.get(f"{OPENALEX_API_BASE_URL}{endpoint}", params=params, headers=self.headers)
             response.raise_for_status()
             return response.json()
         except requests.exceptions.HTTPError as e:

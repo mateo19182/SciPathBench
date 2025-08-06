@@ -10,12 +10,30 @@ Inspired by [WikiBench](https://1thousandfaces.substack.com/p/wikibench-76-of-so
 # Modify config.py for LLM model and agent settings
 uv sync
 
+# Generate benchmark data (optional - web interface works without it)
+uv run src/generate_data.py
+
+# Launch web interface (recommended)
+uv run web.py
+
+# Or run command line versions:
 # Run LLM benchmark
 uv run main.py
 
 # Play interactively as a human
 uv run main.py --interactive
 ```
+
+## Web Interface
+
+The web interface provides a modern, user-friendly way to interact with SciPathBench:
+
+- **Interactive Mode**: Play the pathfinding game in your browser with a clean UI
+- **Live LLM Runs**: Watch AI agents solve challenges in real-time with live updates
+- **Leaderboard**: View performance metrics, compare models, and track progress
+- **Retro Styling**: Features a Counter Strike 1.6-inspired design using [cs16.css](https://cs16.samke.me/)
+
+Access at: `http://localhost:8001` after running `uv run web.py`
 
 ## How It Works
 

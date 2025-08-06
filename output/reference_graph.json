@@ -1,1339 +1,538 @@
 {
   "nodes": {
-    "W2618530766": {
-      "title": "ImageNet classification with deep convolutional neural networks",
-      "year": 2017,
+    "W4299608875": {
+      "title": "Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+      "year": 2018,
       "concepts": [
-        "Softmax function",
+        "Causal inference",
         "Computer science",
-        "Overfitting",
-        "Convolutional neural network",
-        "Pooling",
-        "Dropout (neural networks)",
         "Artificial intelligence",
-        "Pattern recognition (psychology)",
-        "Regularization (linguistics)",
-        "Convolution (computer science)",
-        "Deep neural networks",
-        "Word error rate",
-        "Deep learning",
-        "Artificial neural network",
-        "Machine learning"
+        "Machine learning",
+        "Causal model",
+        "Inference",
+        "Cognitive science",
+        "Psychology",
+        "Econometrics",
+        "Medicine",
+        "Pathology",
+        "Economics"
       ],
-      "doi": "https://doi.org/10.1145/3065386",
+      "doi": "https://doi.org/10.48550/arxiv.1801.04016",
       "node_type": "start"
     },
-    "W1995875735": {
-      "title": "A Mathematical Theory of Communication",
-      "year": 1948,
+    "W4206489165": {
+      "title": "The Structure of Scientific Revolutions",
+      "year": 2012,
       "concepts": [
-        "Bandwidth (computing)",
-        "Computer science",
-        "Nyquist–Shannon sampling theorem",
-        "Channel (broadcasting)",
-        "Communication theory",
-        "Mathematics",
-        "Algorithm",
-        "Theoretical computer science",
-        "Telecommunications",
-        "Statistics",
-        "Computer vision"
+        "Computer science"
       ],
-      "doi": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+      "doi": "https://doi.org/10.7208/chicago/9780226458144.001.0001",
       "node_type": "end"
     },
-    "W1499991161": {
-      "title": "Metric Learning for Large Scale Image Classification: Generalizing to New Classes at Near-Zero Cost",
-      "year": 2012,
+    "W4312550351": {
+      "title": "Formation of dynamic cause-and-effect relationships when controlling the behavior of an intelligent agent based on the multi-agent neurocognitive architectures formalism",
+      "year": 2022,
       "concepts": [
-        "Classifier (UML)",
-        "k-nearest neighbors algorithm",
-        "Artificial intelligence",
-        "Pattern recognition (psychology)",
-        "Computer science",
-        "Generalization",
-        "Metric (unit)",
-        "Training set",
-        "Machine learning",
-        "Zero (linguistics)",
-        "Support vector machine",
-        "Contextual image classification",
-        "Class (philosophy)",
-        "Image (mathematics)",
-        "Mathematics",
-        "Engineering",
-        "Linguistics",
-        "Philosophy",
-        "Mathematical analysis",
-        "Operations management"
-      ],
-      "doi": "https://doi.org/10.1007/978-3-642-33709-3_35",
-      "node_type": "referenced"
-    },
-    "W1573503290": {
-      "title": "Beyond Regression : \"New Tools for Prediction and Analysis in the Behavioral Sciences",
-      "year": 1974,
-      "concepts": [
-        "Regression analysis",
-        "Regression",
-        "Regression dilution",
+        "Neurocognitive",
+        "Formalism (music)",
         "Computer science",
         "Artificial intelligence",
-        "Statistics",
-        "Machine learning",
-        "Mathematics",
-        "Bayesian multivariate linear regression"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1576445103": {
-      "title": "Caltech-256 Object Category Dataset",
-      "year": 2007,
-      "concepts": [
-        "Clutter",
-        "Artificial intelligence",
-        "Benchmark (surveying)",
-        "Object (grammar)",
-        "Set (abstract data type)",
-        "Computer science",
-        "Object detection",
-        "Pattern recognition (psychology)",
-        "Matching (statistics)",
-        "Pyramid (geometry)",
-        "Image (mathematics)",
-        "Computer vision",
-        "Mathematics",
-        "Statistics",
-        "Geography",
-        "Cartography",
-        "Telecommunications",
-        "Radar",
-        "Geometry",
-        "Programming language"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1665214252": {
-      "title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
-      "year": 2010,
-      "concepts": [
-        "Boltzmann machine",
-        "Binary number",
-        "Sigmoid function",
-        "Computer science",
-        "Object (grammar)",
-        "Restricted Boltzmann machine",
-        "Artificial intelligence",
-        "Inference",
-        "Pattern recognition (psychology)",
-        "Feature (linguistics)",
-        "Cognitive neuroscience of visual object recognition",
-        "Algorithm",
-        "Mathematics",
-        "Computer vision",
-        "Deep learning",
-        "Arithmetic",
-        "Artificial neural network",
-        "Linguistics",
-        "Philosophy"
-      ],
-      "doi": "N/A",
-      "node_type": "agent_path"
-    },
-    "W1904365287": {
-      "title": "Improving neural networks by preventing co-adaptation of feature detectors",
-      "year": 2012,
-      "concepts": [
-        "Overfitting",
-        "Feature (linguistics)",
-        "Dropout (neural networks)",
-        "Computer science",
-        "Benchmark (surveying)",
-        "Adaptation (eye)",
-        "Context (archaeology)",
-        "Detector",
-        "Set (abstract data type)",
-        "Artificial intelligence",
-        "Artificial neural network",
-        "Pattern recognition (psychology)",
-        "Variety (cybernetics)",
-        "Feed forward",
-        "Feedforward neural network",
-        "Machine learning",
-        "Engineering",
         "Psychology",
-        "Telecommunications",
-        "Linguistics",
-        "Philosophy",
+        "Cognitive science",
+        "Cognition",
         "Neuroscience",
-        "Paleontology",
-        "Geodesy",
-        "Control engineering",
-        "Biology",
-        "Programming language",
-        "Geography"
-      ],
-      "doi": "https://doi.org/10.48550/arxiv.1207.0580",
-      "node_type": "referenced"
-    },
-    "W1994530392": {
-      "title": "Advances in neural information processing systems 1",
-      "year": 1989,
-      "concepts": [
-        "Computer science",
-        "Neural system",
-        "Information processing",
-        "Neuroscience",
-        "Psychology"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2015861736": {
-      "title": "Convolutional networks and applications in vision",
-      "year": 2010,
-      "concepts": [
-        "Computer science",
-        "Artificial intelligence",
-        "Pooling",
-        "Convolutional neural network",
-        "Cognitive neuroscience of visual object recognition",
-        "Perception",
-        "Invariant (physics)",
-        "Feature extraction",
-        "Object detection",
-        "Computer vision",
-        "Pattern recognition (psychology)",
-        "Mobile robot",
-        "Robot",
-        "Feature (linguistics)",
-        "Machine learning",
-        "Physics",
-        "Neuroscience",
-        "Mathematical physics",
-        "Biology",
-        "Linguistics",
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.1109/iscas.2010.5537907",
-      "node_type": "referenced"
-    },
-    "W2018435387": {
-      "title": "Taylor expansion of the accumulated rounding error",
-      "year": 1976,
-      "concepts": [
-        "Rounding",
-        "Taylor series",
-        "Round-off error",
-        "Applied mathematics",
-        "Mathematics",
-        "Order (exchange)",
-        "Computer science",
-        "Algorithm",
-        "Mathematical analysis",
-        "Finance",
-        "Economics",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1007/bf01931367",
-      "node_type": "referenced"
-    },
-    "W2026942141": {
-      "title": "Why is Real-World Visual Object Recognition Hard?",
-      "year": 2008,
-      "concepts": [
-        "Artificial intelligence",
-        "Computer science",
-        "Object (grammar)",
-        "Natural (archaeology)",
-        "Cognitive neuroscience of visual object recognition",
-        "Computer vision",
-        "Focus (optics)",
-        "Machine learning",
-        "Physics",
-        "Archaeology",
-        "Optics",
-        "History"
-      ],
-      "doi": "https://doi.org/10.1371/journal.pcbi.0040027",
-      "node_type": "referenced"
-    },
-    "W2053229256": {
-      "title": "High-dimensional signature compression for large-scale image classification",
-      "year": 2011,
-      "concepts": [
-        "Computer science",
-        "Curse of dimensionality",
-        "Hash function",
-        "Scalability",
-        "Dimensionality reduction",
-        "Lossy compression",
-        "Artificial intelligence",
-        "Classifier (UML)",
-        "Pattern recognition (psychology)",
-        "Kernel (algebra)",
-        "Image compression",
-        "Set (abstract data type)",
-        "Training set",
-        "Image (mathematics)",
-        "Image processing",
-        "Mathematics",
-        "Database",
-        "Computer security",
-        "Combinatorics",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.1109/cvpr.2011.5995504",
-      "node_type": "referenced"
-    },
-    "W2061212083": {
-      "title": "Lessons from the Netflix prize challenge",
-      "year": 2007,
-      "concepts": [
-        "Computer science",
-        "Data science"
-      ],
-      "doi": "https://doi.org/10.1145/1345448.1345465",
-      "node_type": "referenced"
-    },
-    "W2097117768": {
-      "title": "Going deeper with convolutions",
-      "year": 2015,
-      "concepts": [
-        "Computer science",
-        "Architecture",
-        "Convolutional neural network",
-        "Intuition",
-        "Artificial intelligence",
-        "Deep learning",
-        "Network architecture",
-        "Context (archaeology)",
-        "Artificial neural network",
-        "Scale (ratio)",
-        "Pattern recognition (psychology)",
-        "Machine learning",
-        "Computer network",
-        "Biology",
         "Art",
-        "Paleontology",
-        "Philosophy",
-        "Physics",
-        "Epistemology",
-        "Quantum mechanics",
+        "Musical",
         "Visual arts"
       ],
-      "doi": "https://doi.org/10.1109/cvpr.2015.7298594",
-      "node_type": "referenced"
+      "doi": "https://doi.org/10.35330/1991-6639-2022-5-109-73-80",
+      "node_type": "ground_truth"
     },
-    "W2097356275": {
-      "title": "High-Performance Neural Networks for Visual Object Classification",
-      "year": 2011,
-      "concepts": [
-        "MNIST database",
-        "Computer science",
-        "Convolutional neural network",
-        "Artificial intelligence",
-        "Pattern recognition (psychology)",
-        "Feature (linguistics)",
-        "Artificial neural network",
-        "Deep learning",
-        "Object (grammar)",
-        "Cognitive neuroscience of visual object recognition",
-        "Word error rate",
-        "Deep neural networks",
-        "Machine learning",
-        "Linguistics",
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.48550/arxiv.1102.0183",
-      "node_type": "referenced"
-    },
-    "W2101926813": {
-      "title": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
-      "year": 1980,
-      "concepts": [
-        "Neocognitron",
-        "Stimulus (psychology)",
-        "Hypercomplex number",
-        "Gestalt psychology",
-        "Artificial neural network",
-        "Computer science",
-        "Artificial intelligence",
-        "Lateral inhibition",
-        "Pattern recognition (psychology)",
-        "Modular design",
-        "Neuroscience",
-        "Time delay neural network",
-        "Psychology",
-        "Mathematics",
-        "Perception",
-        "Geometry",
-        "Psychotherapist",
-        "Quaternion",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1007/bf00344251",
-      "node_type": "referenced"
-    },
-    "W2108069432": {
-      "title": "Multi-column deep neural network for traffic sign classification",
-      "year": 2012,
-      "concepts": [
-        "Computer science",
-        "Traffic sign recognition",
-        "Benchmark (surveying)",
-        "Artificial neural network",
-        "Artificial intelligence",
-        "Column (typography)",
-        "Sign (mathematics)",
-        "Feature (linguistics)",
-        "Pattern recognition (psychology)",
-        "Deep neural networks",
-        "Contrast (vision)",
-        "Deep learning",
-        "Traffic sign",
-        "Mathematics",
-        "Telecommunications",
-        "Mathematical analysis",
-        "Linguistics",
-        "Philosophy",
-        "Geodesy",
-        "Frame (networking)",
-        "Geography"
-      ],
-      "doi": "https://doi.org/10.1016/j.neunet.2012.02.023",
-      "node_type": "referenced"
-    },
-    "W2108598243": {
-      "title": "ImageNet: A large-scale hierarchical image database",
-      "year": 2009,
-      "concepts": [
-        "Computer science",
-        "WordNet",
-        "Hierarchy",
-        "Cluster analysis",
-        "Artificial intelligence",
-        "Information retrieval",
-        "Scale (ratio)",
-        "Object (grammar)",
-        "Image (mathematics)",
-        "Ontology",
-        "Data mining",
-        "Machine learning",
-        "Pattern recognition (psychology)",
-        "Philosophy",
-        "Physics",
-        "Epistemology",
-        "Quantum mechanics",
-        "Economics",
-        "Market economy"
-      ],
-      "doi": "https://doi.org/10.1109/cvpr.2009.5206848",
-      "node_type": "referenced"
-    },
-    "W2110764733": {
-      "title": "LabelMe: A Database and Web-Based Tool for Image Annotation",
-      "year": 2007,
-      "concepts": [
-        "Computer science",
-        "Annotation",
-        "WordNet",
-        "Automatic image annotation",
-        "Object (grammar)",
-        "Ground truth",
-        "Artificial intelligence",
-        "Variety (cybernetics)",
-        "Image retrieval",
-        "Information retrieval",
-        "Image (mathematics)",
-        "Cognitive neuroscience of visual object recognition",
-        "Pattern recognition (psychology)"
-      ],
-      "doi": "https://doi.org/10.1007/s11263-007-0090-8",
-      "node_type": "referenced"
-    },
-    "W2130325614": {
-      "title": "Convolutional deep belief networks for scalable unsupervised learning of hierarchical representations",
-      "year": 2009,
-      "concepts": [
-        "Computer science",
-        "Artificial intelligence",
-        "Pooling",
-        "Inference",
-        "Deep belief network",
-        "Generative model",
-        "Deep learning",
-        "Probabilistic logic",
-        "Convolutional neural network",
-        "Pattern recognition (psychology)",
-        "Scalability",
-        "Unsupervised learning",
-        "Machine learning",
-        "Generative grammar",
-        "Database"
-      ],
-      "doi": "https://doi.org/10.1145/1553374.1553453",
-      "node_type": "referenced"
-    },
-    "W2134557905": {
-      "title": "Learning methods for generic object recognition with invariance to pose and lighting",
+    "W2017470614": {
+      "title": "Making things happen: a theory of causal explanation",
       "year": 2004,
       "concepts": [
-        "Artificial intelligence",
-        "Clutter",
-        "Computer science",
-        "Computer vision",
-        "Support vector machine",
-        "Pattern recognition (psychology)",
-        "Grayscale",
-        "Segmentation",
-        "Object detection",
-        "Cognitive neuroscience of visual object recognition",
-        "Pixel",
-        "Convolutional neural network",
-        "Object (grammar)",
-        "Radar",
-        "Telecommunications"
-      ],
-      "doi": "https://doi.org/10.1109/cvpr.2004.1315150",
-      "node_type": "referenced"
-    },
-    "W2141125852": {
-      "title": "Multi-column deep neural networks for image classification",
-      "year": 2012,
-      "concepts": [
-        "MNIST database",
-        "Computer science",
-        "Artificial intelligence",
-        "Benchmark (surveying)",
-        "Convolutional neural network",
-        "Deep learning",
-        "Handwriting",
-        "Artificial neural network",
-        "Pattern recognition (psychology)",
-        "Contextual image classification",
-        "Feature extraction",
-        "Handwriting recognition",
-        "Graphics",
-        "Traffic sign recognition",
-        "Machine learning",
-        "Image (mathematics)",
-        "Sign (mathematics)",
-        "Traffic sign",
-        "Mathematical analysis",
-        "Mathematics",
-        "Geodesy",
-        "Geography",
-        "Computer graphics (images)"
-      ],
-      "doi": "https://doi.org/10.1109/cvpr.2012.6248110",
-      "node_type": "referenced"
-    },
-    "W2144161366": {
-      "title": "A High-Throughput Screening Approach to Discovering Good Forms of Biologically Inspired Visual Representation",
-      "year": 2009,
-      "concepts": [
-        "Computer science",
-        "Pooling",
-        "Throughput",
+        "Causation",
+        "Appeal",
+        "Epistemology",
+        "Construct (python library)",
         "Variety (cybernetics)",
-        "Set (abstract data type)",
-        "Artificial intelligence",
-        "Normalization (sociology)",
-        "Representation (politics)",
-        "IBM",
-        "Machine learning",
-        "Theoretical computer science",
-        "Programming language",
-        "Politics",
-        "Political science",
-        "Telecommunications",
+        "Counterexample",
+        "Everyday life",
+        "Philosophy",
+        "Computer science",
         "Law",
-        "Wireless",
-        "Materials science",
-        "Sociology",
-        "Anthropology",
-        "Nanotechnology"
-      ],
-      "doi": "https://doi.org/10.1371/journal.pcbi.1000579",
-      "node_type": "referenced"
-    },
-    "W2154579312": {
-      "title": "Handwritten Digit Recognition with a Back-Propagation Network",
-      "year": 1989,
-      "concepts": [
-        "Numerical digit",
-        "Computer science",
-        "Preprocessor",
-        "Word error rate",
-        "Task (project management)",
-        "Speech recognition",
-        "Artificial intelligence",
-        "Postal service",
-        "Pattern recognition (psychology)",
-        "Arithmetic",
         "Mathematics",
-        "Engineering",
-        "Systems engineering",
-        "Public administration",
-        "Political science"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2156163116": {
-      "title": "Best practices for convolutional neural networks applied to visual document analysis",
-      "year": 2005,
-      "concepts": [
-        "MNIST database",
-        "Convolutional neural network",
-        "Computer science",
-        "Set (abstract data type)",
-        "Simple (philosophy)",
-        "Architecture",
-        "Artificial neural network",
-        "Artificial intelligence",
-        "Machine learning",
-        "Information retrieval",
-        "Art",
-        "Philosophy",
-        "Epistemology",
-        "Visual arts",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.1109/icdar.2003.1227801",
-      "node_type": "referenced"
-    },
-    "W2166049352": {
-      "title": "Learning generative visual models from few training examples: An incremental Bayesian approach tested on 101 object categories",
-      "year": 2007,
-      "concepts": [
-        "Artificial intelligence",
-        "Computer science",
-        "Object (grammar)",
-        "Machine learning",
-        "Bayesian probability",
-        "Generative model",
-        "Generative grammar",
-        "Pattern recognition (psychology)",
-        "Incremental learning",
-        "Cognitive neuroscience of visual object recognition",
-        "Process (computing)",
-        "Probabilistic logic",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1016/j.cviu.2005.09.012",
-      "node_type": "referenced"
-    },
-    "W2169805405": {
-      "title": "Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation",
-      "year": 2009,
-      "concepts": [
-        "Segmentation",
-        "Artificial intelligence",
-        "Computer science",
-        "Pattern recognition (psychology)",
-        "Graph",
-        "Image segmentation",
-        "Preprocessor",
-        "Graph partition",
-        "Image (mathematics)",
-        "Algorithm",
-        "Theoretical computer science"
-      ],
-      "doi": "https://doi.org/10.1162/neco.2009.10-08-881",
-      "node_type": "referenced"
-    },
-    "W145818128": {
-      "title": "Diffusion Networks, Products of Experts, and Factor Analysis",
-      "year": 2001,
-      "concepts": [
-        "Probabilistic logic",
-        "Product (mathematics)",
-        "Artificial intelligence",
-        "Factor (programming language)",
-        "Restricted Boltzmann machine",
-        "Computer science",
-        "Diffusion",
-        "Class (philosophy)",
-        "Artificial neural network",
-        "Boltzmann machine",
-        "Divergence (linguistics)",
-        "Component (thermodynamics)",
-        "Contrast (vision)",
-        "Machine learning",
-        "Mathematics",
-        "Theoretical computer science",
-        "Linguistics",
-        "Philosophy",
-        "Physics",
-        "Geometry",
-        "Thermodynamics",
-        "Programming language"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1509928947": {
-      "title": "Similarity Scores Based on Background Samples",
-      "year": 2010,
-      "concepts": [
-        "Discriminative model",
-        "Computer science",
-        "Artificial intelligence",
-        "Similarity (geometry)",
-        "Ranking (information retrieval)",
-        "Benchmark (surveying)",
-        "Pattern recognition (psychology)",
-        "Facial recognition system",
-        "Face (sociological concept)",
-        "Similarity measure",
-        "Image (mathematics)",
-        "Social science",
-        "Geodesy",
-        "Sociology",
-        "Geography"
-      ],
-      "doi": "https://doi.org/10.1007/978-3-642-12304-7_9",
-      "node_type": "referenced"
-    },
-    "W1782590233": {
-      "title": "Labeled Faces in the Wild: A Database forStudying Face Recognition in Unconstrained Environments",
-      "year": 2008,
-      "concepts": [
-        "Database",
-        "Facial recognition system",
-        "Computer science",
-        "Face (sociological concept)",
-        "Artificial intelligence",
-        "Three-dimensional face recognition",
-        "Computer vision",
-        "Pattern recognition (psychology)",
-        "Face detection",
-        "Social science",
-        "Sociology"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W1810424324": {
-      "title": "A Hierarchical Community of Experts",
-      "year": 1998,
-      "concepts": [
-        "Markov chain",
-        "Hierarchy",
-        "Binary number",
-        "Computer science",
-        "Gibbs sampling",
-        "Selection (genetic algorithm)",
-        "Sampling (signal processing)",
-        "Theoretical computer science",
-        "Algorithm",
-        "Mathematics",
-        "Artificial intelligence",
-        "Machine learning",
-        "Arithmetic",
-        "Bayesian probability",
-        "Filter (signal processing)",
-        "Economics",
-        "Market economy",
-        "Computer vision"
-      ],
-      "doi": "https://doi.org/10.1007/978-94-011-5014-9_17",
-      "node_type": "referenced"
-    },
-    "W1994197834": {
-      "title": "An empirical evaluation of deep architectures on problems with many factors of variation",
-      "year": 2007,
-      "concepts": [
-        "Computer science",
-        "Variation (astronomy)",
-        "Deep learning",
-        "Artificial intelligence",
-        "Machine learning",
-        "Artificial neural network",
-        "Series (stratigraphy)",
-        "Simple (philosophy)",
-        "Support vector machine",
-        "Philosophy",
-        "Epistemology",
-        "Biology",
-        "Physics",
-        "Astrophysics",
-        "Paleontology"
-      ],
-      "doi": "https://doi.org/10.1145/1273496.1273556",
-      "node_type": "referenced"
-    },
-    "W2064082346": {
-      "title": "Phone recognition using Restricted Boltzmann Machines",
-      "year": 2010,
-      "concepts": [
-        "TIMIT",
-        "Hidden Markov model",
-        "Computer science",
-        "Phone",
-        "Conditional independence",
-        "Boltzmann machine",
-        "Independence (probability theory)",
-        "Set (abstract data type)",
-        "Speech recognition",
-        "Generative model",
-        "Artificial intelligence",
-        "Restricted Boltzmann machine",
-        "Markov model",
-        "Generative grammar",
-        "Machine learning",
-        "Pattern recognition (psychology)",
-        "Markov chain",
-        "Artificial neural network",
-        "Mathematics",
-        "Philosophy",
-        "Linguistics",
-        "Statistics",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.1109/icassp.2010.5495651",
-      "node_type": "referenced"
-    },
-    "W2099866409": {
-      "title": "Restricted Boltzmann machines for collaborative filtering",
-      "year": 2007,
-      "concepts": [
-        "Restricted Boltzmann machine",
-        "Boltzmann machine",
-        "Computer science",
-        "Collaborative filtering",
-        "Graphical model",
-        "Inference",
-        "Set (abstract data type)",
-        "Class (philosophy)",
-        "Artificial intelligence",
-        "Data set",
-        "Machine learning",
-        "Layer (electronics)",
-        "Recommender system",
-        "Data mining",
-        "Deep learning",
-        "Chemistry",
-        "Organic chemistry",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.1145/1273496.1273596",
-      "node_type": "referenced"
-    },
-    "W2100002341": {
-      "title": "Replicated Softmax: an Undirected Topic Model",
-      "year": 2009,
-      "concepts": [
-        "Latent Dirichlet allocation",
-        "Softmax function",
-        "Computer science",
-        "Graphical model",
-        "Inference",
-        "Artificial intelligence",
-        "Topic model",
-        "Latent variable",
-        "Undirected graph",
-        "Dirichlet distribution",
-        "Theoretical computer science",
-        "Data mining",
-        "Machine learning",
-        "Algorithm",
-        "Graph",
-        "Deep learning",
-        "Mathematics",
-        "Mathematical analysis",
-        "Boundary value problem"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2100495367": {
-      "title": "Reducing the Dimensionality of Data with Neural Networks",
-      "year": 2006,
-      "concepts": [
-        "Autoencoder",
-        "Curse of dimensionality",
-        "Initialization",
-        "Gradient descent",
-        "Artificial neural network",
-        "Computer science",
-        "Principal component analysis",
-        "Artificial intelligence",
-        "Pattern recognition (psychology)",
-        "Layer (electronics)",
-        "High dimensional",
-        "Principal (computer security)",
-        "Algorithm",
-        "Materials science",
-        "Nanotechnology",
-        "Programming language",
-        "Operating system"
-      ],
-      "doi": "https://doi.org/10.1126/science.1127647",
-      "node_type": "referenced"
-    },
-    "W2114153178": {
-      "title": "Rate-coded Restricted Boltzmann Machines for Face Recognition",
-      "year": 2000,
-      "concepts": [
-        "Feature (linguistics)",
-        "Pattern recognition (psychology)",
-        "Artificial intelligence",
-        "Boltzmann machine",
-        "Computer science",
-        "Generative model",
-        "Facial recognition system",
-        "Face (sociological concept)",
-        "Restricted Boltzmann machine",
-        "Feature vector",
-        "Detector",
-        "Support vector machine",
-        "Generative grammar",
-        "Artificial neural network",
-        "Telecommunications",
-        "Social science",
-        "Philosophy",
-        "Linguistics",
-        "Sociology"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2115761837": {
-      "title": "Permitted and Forbidden Sets in Symmetric Threshold-Linear Networks",
-      "year": 2003,
-      "concepts": [
-        "Multistability",
-        "Mathematics",
-        "Fixed point",
-        "Attractor",
-        "Bounded function",
-        "Convergence (economics)",
-        "Set (abstract data type)",
-        "Matrix (chemical analysis)",
-        "Network dynamics",
+        "Political science",
         "Discrete mathematics",
-        "Topology (electrical circuits)",
-        "Applied mathematics",
-        "Nonlinear system",
-        "Combinatorics",
-        "Computer science",
-        "Mathematical analysis",
-        "Physics",
-        "Materials science",
-        "Quantum mechanics",
-        "Economics",
-        "Composite material",
-        "Programming language",
-        "Economic growth"
-      ],
-      "doi": "https://doi.org/10.1162/089976603321192103",
-      "node_type": "referenced"
-    },
-    "W2116064496": {
-      "title": "Training Products of Experts by Minimizing Contrastive Divergence",
-      "year": 2002,
-      "concepts": [
-        "Latent variable",
-        "Divergence (linguistics)",
-        "Inference",
-        "Computer science",
         "Artificial intelligence",
-        "Machine learning",
-        "Conditional independence",
-        "Latent variable model",
-        "Variable (mathematics)",
-        "Mathematics",
-        "Data mining",
-        "Mathematical analysis",
-        "Philosophy",
-        "Linguistics"
+        "Programming language"
       ],
-      "doi": "https://doi.org/10.1162/089976602760128018",
+      "doi": "https://doi.org/10.5860/choice.41-5840",
       "node_type": "referenced"
     },
-    "W2136922672": {
-      "title": "A Fast Learning Algorithm for Deep Belief Nets",
-      "year": 2006,
+    "W2148764920": {
+      "title": "The free-energy principle: a unified brain theory?",
+      "year": 2010,
       "concepts": [
+        "Surprise",
+        "Free energy principle",
+        "Energy (signal processing)",
         "Computer science",
-        "Associative property",
-        "Prior probability",
-        "Discriminative model",
-        "Generative model",
-        "Content-addressable memory",
-        "Artificial intelligence",
-        "Inference",
-        "Algorithm",
-        "Generative grammar",
-        "Pattern recognition (psychology)",
-        "Deep belief network",
-        "Artificial neural network",
-        "Mathematics",
-        "Bayesian probability",
-        "Pure mathematics"
-      ],
-      "doi": "https://doi.org/10.1162/neco.2006.18.7.1527",
-      "node_type": "referenced"
-    },
-    "W2149845449": {
-      "title": "Implicit Mixtures of Restricted Boltzmann Machines",
-      "year": 2008,
-      "concepts": [
-        "Boltzmann machine",
-        "MNIST database",
-        "Mixture model",
-        "Parameterized complexity",
-        "Computer science",
-        "Restricted Boltzmann machine",
+        "Free will",
+        "Complement (music)",
         "Function (biology)",
-        "Partition function (quantum field theory)",
-        "Boltzmann constant",
-        "Mixing (physics)",
-        "Feature (linguistics)",
-        "Artificial intelligence",
-        "Statistical physics",
-        "Theoretical computer science",
-        "Algorithm",
-        "Deep learning",
+        "Cognitive science",
+        "Key (lock)",
+        "Action (physics)",
+        "Value (mathematics)",
+        "Epistemology",
+        "Psychology",
         "Physics",
-        "Linguistics",
+        "Social psychology",
+        "Machine learning",
         "Philosophy",
-        "Quantum mechanics",
-        "Evolutionary biology",
-        "Biology",
-        "Thermodynamics"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2157364932": {
-      "title": "Learning a Similarity Metric Discriminatively, with Application to Face Verification",
-      "year": 2005,
-      "concepts": [
-        "Discriminative model",
-        "Artificial intelligence",
-        "Robustness (evolution)",
-        "Computer science",
-        "Pattern recognition (psychology)",
-        "Similarity (geometry)",
-        "Metric (unit)",
-        "Convolutional neural network",
-        "Face (sociological concept)",
-        "Computer vision",
-        "Image (mathematics)",
-        "Social science",
         "Biochemistry",
         "Chemistry",
-        "Operations management",
+        "Computer security",
+        "Quantum mechanics",
+        "Complementation",
+        "Gene",
+        "Phenotype",
+        "Evolutionary biology",
+        "Biology"
+      ],
+      "doi": "https://doi.org/10.1038/nrn2787",
+      "node_type": "referenced"
+    },
+    "W2516137114": {
+      "title": "Theory of Games and Economic Behavior",
+      "year": 1945,
+      "concepts": [
+        "Analogy",
+        "Epistemology",
+        "Philosophy of science",
+        "Maturity (psychological)",
         "Sociology",
-        "Economics",
-        "Gene"
-      ],
-      "doi": "https://doi.org/10.1109/cvpr.2005.202",
-      "node_type": "referenced"
-    },
-    "W2158164339": {
-      "title": "Modeling Human Motion Using Binary Latent Variables",
-      "year": 2007,
-      "concepts": [
-        "Latent variable",
-        "Binary number",
-        "Human motion",
-        "Latent variable model",
-        "Latent class model",
-        "Motion (physics)",
-        "Computer science",
-        "Artificial intelligence",
-        "Statistics",
-        "Mathematics",
-        "Arithmetic"
-      ],
-      "doi": "https://doi.org/10.7551/mitpress/7503.003.0173",
-      "node_type": "referenced"
-    },
-    "W2165225968": {
-      "title": "Unsupervised learning of distributions on binary vectors using two layer networks",
-      "year": 1991,
-      "concepts": [
-        "Restricted Boltzmann machine",
-        "Boltzmann machine",
-        "Algorithm",
-        "Unsupervised learning",
-        "Computer science",
-        "Artificial intelligence",
-        "Model selection",
-        "Projection pursuit",
-        "Gradient descent",
-        "Binary number",
-        "Artificial neural network",
-        "Mathematics",
-        "Pattern recognition (psychology)",
-        "Arithmetic"
-      ],
-      "doi": "N/A",
-      "node_type": "referenced"
-    },
-    "W2536626143": {
-      "title": "Attribute and simile classifiers for face verification",
-      "year": 2009,
-      "concepts": [
-        "Computer science",
-        "Artificial intelligence",
-        "Face (sociological concept)",
-        "Simile",
-        "Set (abstract data type)",
-        "Pattern recognition (psychology)",
-        "Similarity (geometry)",
-        "Image (mathematics)",
-        "Data set",
-        "Linguistics",
-        "Philosophy",
-        "Metaphor",
+        "Path (computing)",
         "Social science",
-        "Sociology",
+        "Computer science",
+        "Management science",
+        "Philosophy",
+        "Economics",
+        "Political science",
+        "Law",
         "Programming language"
       ],
-      "doi": "https://doi.org/10.1109/iccv.2009.5459250",
+      "doi": "https://doi.org/10.1086/286866",
       "node_type": "referenced"
     },
-    "W2546302380": {
-      "title": "What is the best multi-stage architecture for object recognition?",
-      "year": 2009,
+    "W2560229246": {
+      "title": "Surfing uncertainty: prediction, action and the embodied mind",
+      "year": 2016,
       "concepts": [
-        "Artificial intelligence",
+        "Embodied cognition",
+        "Action (physics)",
         "Computer science",
-        "Pattern recognition (psychology)",
-        "Pooling",
-        "MNIST database",
-        "Feature extraction",
-        "Normalization (sociology)",
-        "Filter (signal processing)",
-        "Word error rate",
-        "Feature (linguistics)",
-        "Cognitive neuroscience of visual object recognition",
-        "Filter bank",
-        "Computer vision",
-        "Artificial neural network",
-        "Linguistics",
-        "Philosophy",
-        "Sociology",
-        "Anthropology"
+        "Cognitive science",
+        "Psychology",
+        "Artificial intelligence",
+        "Physics",
+        "Quantum mechanics"
       ],
-      "doi": "https://doi.org/10.1109/iccv.2009.5459469",
+      "doi": "https://doi.org/10.1080/14794713.2016.1257478",
       "node_type": "referenced"
     },
-    "W2613634265": {
-      "title": "Scaling learning algorithms towards AI",
-      "year": 2007,
+    "W2811247218": {
+      "title": "Playing against Nature: causal discovery for decision making under uncertainty",
+      "year": 2018,
       "concepts": [
-        "Artificial intelligence",
         "Computer science",
-        "Machine learning",
-        "Kernel (algebra)",
-        "Curse of dimensionality",
-        "Kernel method",
-        "Algorithm",
-        "Support vector machine",
+        "Data science",
+        "Management science",
+        "Economics"
+      ],
+      "doi": "https://doi.org/10.48550/arxiv.1807.01268",
+      "node_type": "referenced"
+    },
+    "W2907329683": {
+      "title": "An Introduction to Decision Theory",
+      "year": 2017,
+      "concepts": [
+        "Decision theory",
+        "Computer science",
+        "Management science",
         "Mathematics",
-        "Combinatorics"
+        "Economics",
+        "Statistics"
+      ],
+      "doi": "https://doi.org/10.1201/9780203738641-11",
+      "node_type": "referenced"
+    },
+    "W2962681511": {
+      "title": "The Book of Why: The New Science of Cause and Effect",
+      "year": 2019,
+      "concepts": [
+        "Computer science"
+      ],
+      "doi": "https://doi.org/10.1090/noti1912",
+      "node_type": "referenced"
+    },
+    "W2963305465": {
+      "title": "Building machines that learn and think like people",
+      "year": 2016,
+      "concepts": [
+        "Computer science",
+        "Cognition",
+        "Cognitive science",
+        "Artificial intelligence",
+        "Principle of compositionality",
+        "Human intelligence",
+        "Artificial neural network",
+        "Object (grammar)",
+        "Data science",
+        "Psychology",
+        "Neuroscience"
+      ],
+      "doi": "https://doi.org/10.1017/s0140525x16001837",
+      "node_type": "referenced"
+    },
+    "W3015469787": {
+      "title": "The Foundations of Statistics.",
+      "year": 1955,
+      "concepts": [
+        "Statistics",
+        "Mathematics"
+      ],
+      "doi": "https://doi.org/10.2307/2343133",
+      "node_type": "referenced"
+    },
+    "W3038902067": {
+      "title": "Learning algorithm for an intelligent decision making system based on multi-agent neurocognitive architectures",
+      "year": 2020,
+      "concepts": [
+        "Neurocognitive",
+        "Computer science",
+        "Artificial intelligence",
+        "Architecture",
+        "Agent architecture",
+        "Intelligent decision support system",
+        "Intelligent agent",
+        "Machine learning",
+        "Algorithm",
+        "Knowledge management",
+        "Cognition",
+        "Psychology",
+        "Neuroscience",
+        "Art",
+        "Visual arts"
+      ],
+      "doi": "https://doi.org/10.1016/j.cogsys.2020.10.015",
+      "node_type": "referenced"
+    },
+    "W4302423442": {
+      "title": "Causation, Prediction, and Search",
+      "year": 2001,
+      "concepts": [
+        "Causation",
+        "Computer science",
+        "Philosophy",
+        "Epistemology"
+      ],
+      "doi": "https://doi.org/10.7551/mitpress/1754.001.0001",
+      "node_type": "ground_truth"
+    },
+    "W55028352": {
+      "title": "A disposition-based process-theory of causation",
+      "year": 2013,
+      "concepts": [
+        "Causation",
+        "Epistemology",
+        "Disposition",
+        "Terminology",
+        "Process (computing)",
+        "Section (typography)",
+        "Causality (physics)",
+        "Psychology",
+        "Computer science",
+        "Philosophy",
+        "Linguistics",
+        "Physics",
+        "Quantum mechanics",
+        "Operating system"
+      ],
+      "doi": "https://doi.org/10.1093/acprof:oso/9780199674527.003.0005",
+      "node_type": "ground_truth"
+    },
+    "W122531845": {
+      "title": "Universals and Scientific Realism",
+      "year": 1979,
+      "concepts": [
+        "Problem of universals",
+        "Nominalism",
+        "Realism",
+        "Philosophy",
+        "Scientific realism",
+        "Epistemology",
+        "Classics",
+        "History"
+      ],
+      "doi": "https://doi.org/10.2307/2219454",
+      "node_type": "referenced"
+    },
+    "W148464473": {
+      "title": "Events as Property Exemplifications",
+      "year": 1976,
+      "concepts": [
+        "Creatures",
+        "Property (philosophy)",
+        "Event (particle physics)",
+        "Doctrine",
+        "Epistemology",
+        "Natural (archaeology)",
+        "Philosophy",
+        "History",
+        "Physics",
+        "Theology",
+        "Archaeology",
+        "Quantum mechanics"
+      ],
+      "doi": "https://doi.org/10.1007/978-94-010-9074-2_9",
+      "node_type": "referenced"
+    },
+    "W1498990133": {
+      "title": "Philosophy of Mind and Cognition",
+      "year": 1996,
+      "concepts": [
+        "Cognition",
+        "Cognitive science",
+        "Philosophy of mind",
+        "Psychology",
+        "Epistemology",
+        "Philosophy",
+        "Cognitive psychology",
+        "Neuroscience",
+        "Metaphysics"
       ],
       "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1500458205": {
+      "title": "The Dappled World",
+      "year": 1999,
+      "concepts": [
+        "Empiricism",
+        "Natural (archaeology)",
+        "Epistemology",
+        "Natural science",
+        "Sociology",
+        "Social science",
+        "Philosophy",
+        "History",
+        "Archaeology"
+      ],
+      "doi": "https://doi.org/10.1017/cbo9781139167093",
+      "node_type": "referenced"
+    },
+    "W1501049079": {
+      "title": "General chemistry : an introduction to descriptive chemistry and modern chemical theory",
+      "year": 1947,
+      "concepts": [
+        "General chemistry",
+        "Chemistry",
+        "Organic chemistry"
+      ],
+      "doi": "N/A",
+      "node_type": "referenced"
+    },
+    "W1503147056": {
+      "title": null,
+      "year": 2000,
+      "concepts": [
+        "Novelty",
+        "Philosophy of science",
+        "Philosophy of language",
+        "Mathematics",
+        "Relation (database)",
+        "Metaphysics",
+        "Epistemology",
+        "Pure mathematics",
+        "Philosophy",
+        "Computer science",
+        "Theology",
+        "Database"
+      ],
+      "doi": "https://doi.org/10.1023/a:1005249907425",
+      "node_type": "referenced"
+    },
+    "W1506104239": {
+      "title": "Causation and Counterfactuals",
+      "year": 2004,
+      "concepts": [
+        "Causation",
+        "Counterfactual thinking",
+        "Counterfactual conditional",
+        "Epistemology",
+        "Transitive relation",
+        "Context (archaeology)",
+        "Philosophy",
+        "History",
+        "Mathematics",
+        "Archaeology",
+        "Combinatorics"
+      ],
+      "doi": "https://doi.org/10.7551/mitpress/1752.001.0001",
+      "node_type": "referenced"
+    },
+    "W1507131792": {
+      "title": "Philosophy and Logical Syntax.",
+      "year": 1935,
+      "concepts": [
+        "Syntax",
+        "Philosophy",
+        "Analytic philosophy",
+        "Epistemology",
+        "Linguistics",
+        "Contemporary philosophy",
+        "Computer science",
+        "Programming language"
+      ],
+      "doi": "https://doi.org/10.2307/2016355",
+      "node_type": "referenced"
+    },
+    "W1536114261": {
+      "title": "A Recent Appreciation of the Singular Dynamics at the Edge of Chaos",
+      "year": 2006,
+      "concepts": [
+        "Supercooling",
+        "Statistical physics",
+        "Edge of chaos",
+        "Iterated function",
+        "Relaxation (psychology)",
+        "Phase transition",
+        "Mathematics",
+        "Physics",
+        "Thermodynamics",
+        "Mathematical analysis",
+        "Psychology",
+        "Social psychology",
+        "Algorithm"
+      ],
+      "doi": "https://doi.org/10.1007/3-540-32023-7_19",
+      "node_type": "referenced"
+    },
+    "W1536344018": {
+      "title": "A Philosophical Guide to Conditionals",
+      "year": 2003,
+      "concepts": [
+        "Epistemology",
+        "Computer science",
+        "Possible world",
+        "Philosophy"
+      ],
+      "doi": "https://doi.org/10.1093/0199258872.001.0001",
       "node_type": "referenced"
     }
   },
   "edges": [
     {
-      "source": "W2618530766",
-      "target": "W1499991161"
+      "source": "W4299608875",
+      "target": "W4312550351"
     },
     {
-      "source": "W2618530766",
-      "target": "W1573503290"
+      "source": "W4312550351",
+      "target": "W2017470614"
     },
     {
-      "source": "W2618530766",
-      "target": "W1576445103"
+      "source": "W4312550351",
+      "target": "W2148764920"
     },
     {
-      "source": "W2618530766",
-      "target": "W1665214252"
+      "source": "W4312550351",
+      "target": "W2516137114"
     },
     {
-      "source": "W2618530766",
-      "target": "W1904365287"
+      "source": "W4312550351",
+      "target": "W2560229246"
     },
     {
-      "source": "W2618530766",
-      "target": "W1994530392"
+      "source": "W4312550351",
+      "target": "W2811247218"
     },
     {
-      "source": "W2618530766",
-      "target": "W2015861736"
+      "source": "W4312550351",
+      "target": "W2907329683"
     },
     {
-      "source": "W2618530766",
-      "target": "W2018435387"
+      "source": "W4312550351",
+      "target": "W2962681511"
     },
     {
-      "source": "W2618530766",
-      "target": "W2026942141"
+      "source": "W4312550351",
+      "target": "W2963305465"
     },
     {
-      "source": "W2618530766",
-      "target": "W2053229256"
+      "source": "W4312550351",
+      "target": "W3015469787"
     },
     {
-      "source": "W2618530766",
-      "target": "W2061212083"
+      "source": "W4312550351",
+      "target": "W3038902067"
     },
     {
-      "source": "W2618530766",
-      "target": "W2097117768"
+      "source": "W4312550351",
+      "target": "W4302423442"
     },
     {
-      "source": "W2618530766",
-      "target": "W2097356275"
+      "source": "W4302423442",
+      "target": "W55028352"
     },
     {
-      "source": "W2618530766",
-      "target": "W2101926813"
+      "source": "W55028352",
+      "target": "W122531845"
     },
     {
-      "source": "W2618530766",
-      "target": "W2108069432"
+      "source": "W55028352",
+      "target": "W148464473"
     },
     {
-      "source": "W2618530766",
-      "target": "W2108598243"
+      "source": "W55028352",
+      "target": "W1498990133"
     },
     {
-      "source": "W2618530766",
-      "target": "W2110764733"
+      "source": "W55028352",
+      "target": "W1500458205"
     },
     {
-      "source": "W2618530766",
-      "target": "W2130325614"
+      "source": "W55028352",
+      "target": "W1501049079"
     },
     {
-      "source": "W2618530766",
-      "target": "W2134557905"
+      "source": "W55028352",
+      "target": "W1503147056"
     },
     {
-      "source": "W2618530766",
-      "target": "W2141125852"
+      "source": "W55028352",
+      "target": "W1506104239"
     },
     {
-      "source": "W2618530766",
-      "target": "W2144161366"
+      "source": "W55028352",
+      "target": "W1507131792"
     },
     {
-      "source": "W2618530766",
-      "target": "W2154579312"
+      "source": "W55028352",
+      "target": "W1536114261"
     },
     {
-      "source": "W2618530766",
-      "target": "W2156163116"
+      "source": "W55028352",
+      "target": "W1536344018"
     },
     {
-      "source": "W2618530766",
-      "target": "W2166049352"
-    },
-    {
-      "source": "W2618530766",
-      "target": "W2169805405"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W145818128"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W1509928947"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W1782590233"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W1810424324"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W1994197834"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2064082346"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2099866409"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2100002341"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2100495367"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2114153178"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2115761837"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2116064496"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2134557905"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2136922672"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2149845449"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2157364932"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2158164339"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2165225968"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2536626143"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2546302380"
-    },
-    {
-      "source": "W1665214252",
-      "target": "W2613634265"
+      "source": "W55028352",
+      "target": "W4206489165"
     }
   ],
   "agent_path": [
-    "W2618530766",
-    "W1665214252"
+    "W4299608875"
   ]
 }

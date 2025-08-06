@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block title %}Leaderboard - SciPathBench{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="leaderboard-container">
+        <h2>Leaderboard</h2>
+        <p>Performance metrics for different models and players on SciPathBench.</p>
+        
+        <div class="stats-summary">
+            <div class="stat-card">
+                <h3 id="total-runs">0</h3>
+                <p>Total Runs</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="avg-success-rate">0%</h3>
+                <p>Average Success Rate</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="avg-optimality">0%</h3>
+                <p>Average Optimality</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="avg-runtime">0s</h3>
+                <p>Average Runtime</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="refresh-leaderboard" class="cs-btn">Refresh</button>
+            <div class="filter-controls">
+                <label for="model-filter">Filter by model:</label>
+                <select id="model-filter" class="cs-select">
+                    <option value="">All models</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="leaderboard-table-container">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Model</th>
+                        <th>Success</th>
+                        <th>Path Length</th>
+                        <th>Optimal Length</th>
+                        <th>Optimality</th>
+                        <th>Runtime</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-tbody">
+                    <tr>
+                        <td colspan="7" class="no-data">No data available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let ws = null;
+let clientId = 'leaderboard_' + Date.now();
+let leaderboardData = [];
+let filteredData = [];
+
+function connectWebSocket() {
+    ws = new WebSocket(`ws://localhost:8001/ws/${clientId}`);
+    
+    ws.onopen = function(event) {
+        console.log('WebSocket connected');
+        requestLeaderboardData();
+    };
+    
+    ws.onmessage = function(event) {
+        const message = JSON.parse(event.data);
+        handleWebSocketMessage(message);
+    };
+    
+    ws.onclose = function(event) {
+        console.log('WebSocket disconnected');
+        setTimeout(connectWebSocket, 3000);
+    };
+    
+    ws.onerror = function(error) {
+        console.error('WebSocket error:', error);
+    };
+}
+
+function handleWebSocketMessage(message) {
+    switch (message.type) {
+        case 'leaderboard_data':
+            handleLeaderboardData(message.data);
+            break;
+        case 'llm_run_completed':
+            // Add new entry and refresh
+            requestLeaderboardData();
+            break;
+    }
+}
+
+function handleLeaderboardData(data) {
+    leaderboardData = data;
+    applyFilters();
+    updateDisplay();
+    updateStats();
+    updateModelFilter();
+}
+
+function applyFilters() {
+    const modelFilter = document.getElementById('model-filter').value;
+    
+    filteredData = leaderboardData.filter(entry => {
+        if (modelFilter && entry.model !== modelFilter) {
+            return false;
+        }
+        return true;
+    });
+}
+
+function updateDisplay() {
+    const tbody = document.getElementById('leaderboard-tbody');
+    
+    if (filteredData.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="no-data">No data available</td></tr>';
+        return;
+    }
+    
+    tbody.innerHTML = '';
+    filteredData.forEach(entry => {
+        const row = createLeaderboardRow(entry);
+        tbody.appendChild(row);
+    });
+}
+
+function createLeaderboardRow(entry) {
+    const row = document.createElement('tr');
+    const successClass = entry.success ? 'success' : 'failed';
+    
+    row.innerHTML = `
+        <td>${entry.timestamp}</td>
+        <td>${entry.model}</td>
+        <td class="status ${successClass}">${entry.success ? 'SUCCESS' : 'FAILED'}</td>
+        <td>${entry.path_length}</td>
+        <td>${entry.optimal_length}</td>
+        <td class="optimality">${(entry.optimality * 100).toFixed(1)}%</td>
+        <td>${formatRuntime(entry.runtime * 1000)}</td>
+    `;
+    
+    return row;
+}
+
+function updateStats() {
+    if (filteredData.length === 0) {
+        document.getElementById('total-runs').textContent = '0';
+        document.getElementById('avg-success-rate').textContent = '0%';
+        document.getElementById('avg-optimality').textContent = '0%';
+        document.getElementById('avg-runtime').textContent = '0s';
+        return;
+    }
+    
+    const totalRuns = filteredData.length;
+    const successfulRuns = filteredData.filter(entry => entry.success);
+    const successRate = (successfulRuns.length / totalRuns) * 100;
+    
+    const avgOptimality = successfulRuns.length > 0 
+        ? (successfulRuns.reduce((sum, entry) => sum + entry.optimality, 0) / successfulRuns.length) * 100
+        : 0;
+    
+    const avgRuntime = filteredData.reduce((sum, entry) => sum + entry.runtime, 0) / totalRuns;
+    
+    document.getElementById('total-runs').textContent = totalRuns.toString();
+    document.getElementById('avg-success-rate').textContent = `${successRate.toFixed(1)}%`;
+    document.getElementById('avg-optimality').textContent = `${avgOptimality.toFixed(1)}%`;
+    document.getElementById('avg-runtime').textContent = formatRuntime(avgRuntime * 1000);
+}
+
+function updateModelFilter() {
+    const modelFilter = document.getElementById('model-filter');
+    const currentValue = modelFilter.value;
+    
+    // Get unique models
+    const models = [...new Set(leaderboardData.map(entry => entry.model))];
+    
+    // Rebuild options
+    modelFilter.innerHTML = '<option value="">All models</option>';
+    models.forEach(model => {
+        const option = document.createElement('option');
+        option.value = model;
+        option.textContent = model;
+        modelFilter.appendChild(option);
+    });
+    
+    // Restore previous selection if still valid
+    if (models.includes(currentValue)) {
+        modelFilter.value = currentValue;
+    }
+}
+
+function formatRuntime(milliseconds) {
+    const seconds = Math.floor(milliseconds / 1000);
+    const minutes = Math.floor(seconds / 60);
+    
+    if (minutes > 0) {
+        return `${minutes}m ${seconds % 60}s`;
+    } else {
+        return `${seconds}s`;
+    }
+}
+
+function requestLeaderboardData() {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({
+            type: 'get_leaderboard',
+            data: {}
+        }));
+    }
+}
+
+async function refreshLeaderboard() {
+    try {
+        const [leaderboardResponse, statsResponse] = await Promise.all([
+            fetch('/api/leaderboard'),
+            fetch('/api/statistics')
+        ]);
+        
+        const leaderboardData = await leaderboardResponse.json();
+        const statsData = await statsResponse.json();
+        
+        handleLeaderboardData(leaderboardData.data);
+        updateOverallStats(statsData);
+    } catch (error) {
+        console.error('Error fetching leaderboard:', error);
+    }
+}
+
+function updateOverallStats(stats) {
+    document.getElementById('total-runs').textContent = stats.total_runs.toString();
+    document.getElementById('avg-success-rate').textContent = `${(stats.success_rate * 100).toFixed(1)}%`;
+    document.getElementById('avg-optimality').textContent = `${(stats.average_optimality * 100).toFixed(1)}%`;
+    document.getElementById('avg-runtime').textContent = formatRuntime(stats.average_runtime * 1000);
+}
+
+// Event listeners
+document.getElementById('refresh-leaderboard').addEventListener('click', refreshLeaderboard);
+document.getElementById('model-filter').addEventListener('change', () => {
+    applyFilters();
+    updateDisplay();
+    updateStats();
+});
+
+// Initialize
+connectWebSocket();
+</script>
+{% endblock %}

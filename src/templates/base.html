@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SciPathBench{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+                <h1 class="red-title" onclick="window.location.href='/'">SciPathBench</h1>
+                <p class="small-header-text">Evaluating LLM agents on finding shortest citation paths between academic papers.</p>
+                <!-- <button class="cs-btn nav-btn" onclick="window.location.href='/'">Home</button>
+                <button class="cs-btn nav-btn" onclick="window.location.href='/interactive'">Interactive</button>
+                <button class="cs-btn nav-btn" onclick="window.location.href='/live'">Live Runs</button>
+                <button class="cs-btn nav-btn" onclick="window.location.href='/leaderboard'">Leaderboard</button> -->
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <script src="/static/app.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,377 @@
+{% extends "base.html" %}
+
+{% block title %}Interactive Mode - SciPathBench{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="game-container">
+        <h2>Interactive Mode</h2>
+        <p>Find the shortest path between academic papers through citation networks.</p>
+        
+        <div id="game-status" class="status-panel">
+            <div class="status-item">
+                <span class="label">Status:</span>
+                <span id="current-status">Ready to start</span>
+            </div>
+            <div class="status-item">
+                <span class="label">Turns:</span>
+                <span id="turn-count">0</span>
+            </div>
+        </div>
+        
+        <div id="game-controls" class="controls">
+            <button id="start-game" class="cs-btn">Start New Game</button>
+            <button id="reset-game" class="cs-btn" disabled>Reset</button>
+        </div>
+        
+        <div id="objective-panel" class="objective-panel" style="display: none;">
+            <h3>Objective</h3>
+            <div class="paper-info">
+                <div class="paper start-paper">
+                    <h4>Start Paper</h4>
+                    <div id="start-paper-title"></div>
+                    <div id="start-paper-year"></div>
+                    <div id="start-paper-concepts"></div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="paper end-paper">
+                    <h4>Target Paper</h4>
+                    <div id="end-paper-title"></div>
+                    <div id="end-paper-year"></div>
+                    <div id="end-paper-concepts"></div>
+                </div>
+            </div>
+            <div class="optimal-info">
+                <span class="label">Optimal path length:</span>
+                <span id="optimal-length">-</span> steps
+            </div>
+        </div>
+        
+        <div id="game-board" class="game-board" style="display: none;">
+            <div id="current-papers" class="papers-section">
+                <h4>Available Papers to Explore</h4>
+                <div id="papers-list" class="papers-list"></div>
+            </div>
+            
+            <div id="path-display" class="path-section">
+                <h4>Your Path</h4>
+                <div id="current-path" class="path-display"></div>
+            </div>
+        </div>
+        
+        <div id="result-panel" class="result-panel" style="display: none;">
+            <h3>Game Complete!</h3>
+            <div id="result-content"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let ws = null;
+let gameActive = false;
+let clientId = 'interactive_' + Date.now();
+
+function connectWebSocket() {
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const host = window.location.host;
+    
+    ws = new WebSocket(`${protocol}//${host}/ws/${clientId}`);
+    
+    ws.onopen = function(event) {
+        console.log('WebSocket connected');
+        updateStatus('Connected - Ready to start');
+    };
+    
+    ws.onmessage = function(event) {
+        try {
+            const message = JSON.parse(event.data);
+            handleWebSocketMessage(message);
+        } catch (error) {
+            console.error('Error parsing WebSocket message:', error);
+            updateStatus('Error parsing server message');
+        }
+    };
+    
+    ws.onclose = function(event) {
+        console.log('WebSocket disconnected');
+        updateStatus('Disconnected - Reconnecting...');
+        
+        // Re-enable buttons on disconnect
+        document.querySelectorAll('.paper-select-btn').forEach(btn => {
+            btn.disabled = false;
+            btn.textContent = 'Select This Paper';
+        });
+        
+        setTimeout(connectWebSocket, 3000); // Reconnect after 3 seconds
+    };
+    
+    ws.onerror = function(error) {
+        console.error('WebSocket error:', error);
+        updateStatus('Connection error');
+    };
+}
+
+function handleWebSocketMessage(message) {
+    switch (message.type) {
+        case 'game_initialized':
+            handleGameInitialized(message.data);
+            break;
+        case 'turn_complete':
+            handleTurnComplete(message.data);
+            break;
+        case 'game_complete':
+            handleGameComplete(message.data);
+            break;
+        case 'error':
+            handleError(message.data);
+            break;
+    }
+}
+
+function handleGameInitialized(data) {
+    gameActive = true;
+    updateStatus('Game active');
+    
+    // Show objective panel
+    document.getElementById('objective-panel').style.display = 'block';
+    document.getElementById('game-board').style.display = 'block';
+    
+    // Populate objective info
+    document.getElementById('start-paper-title').textContent = data.start_paper.title;
+    document.getElementById('start-paper-year').textContent = `(${data.start_paper.year})`;
+    document.getElementById('start-paper-concepts').textContent = 
+        data.start_paper.concepts.map(c => c.display_name).join(', ');
+    
+    document.getElementById('end-paper-title').textContent = data.end_paper.title;
+    document.getElementById('end-paper-year').textContent = `(${data.end_paper.year})`;
+    document.getElementById('end-paper-concepts').textContent = 
+        data.end_paper.concepts.map(c => c.display_name).join(', ');
+    
+    document.getElementById('optimal-length').textContent = data.optimal_length || 'Unknown';
+    
+    // Update turn counter
+    document.getElementById('turn-count').textContent = data.current_turn;
+    
+    // Display available papers
+    displayAvailablePapers(data.available_papers);
+    
+    // Update controls
+    document.getElementById('start-game').disabled = true;
+    document.getElementById('reset-game').disabled = false;
+}
+
+function handleTurnComplete(data) {
+    // Update turn counter
+    document.getElementById('turn-count').textContent = data.current_turn;
+    
+    // Update available papers
+    displayAvailablePapers(data.available_papers);
+    
+    // Update current path
+    displayCurrentPath(data.current_path);
+    
+    // Show feedback about the chosen paper
+    if (data.chosen_paper) {
+        updateStatus(`Turn ${data.current_turn} complete - Selected: "${data.chosen_paper.title}"`);
+    } else {
+        updateStatus(`Turn ${data.current_turn} complete`);
+    }
+}
+
+function handleGameComplete(data) {
+    gameActive = false;
+    
+    // Hide game board
+    document.getElementById('game-board').style.display = 'none';
+    
+    // Show result panel
+    const resultPanel = document.getElementById('result-panel');
+    const resultContent = document.getElementById('result-content');
+    
+    resultPanel.style.display = 'block';
+    
+    if (data.won) {
+        updateStatus('Game won!');
+        resultContent.innerHTML = `
+            <div class="result-success">
+                <h4>Congratulations! You found the path!</h4>
+                <div class="result-stats">
+                    <div class="stat">
+                        <span class="label">Your path length:</span>
+                        <span class="value">${data.path.length - 1} steps</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Optimal length:</span>
+                        <span class="value">${data.optimal_turns || 'Unknown'} steps</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Turns used:</span>
+                        <span class="value">${data.turns_used}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    } else {
+        updateStatus('Game over');
+        resultContent.innerHTML = `
+            <div class="result-failure">
+                <h4>Game Over</h4>
+                <p>Reason: ${data.reason || 'Unknown'}</p>
+                <div class="result-stats">
+                    <div class="stat">
+                        <span class="label">Turns used:</span>
+                        <span class="value">${data.turns_used}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Update controls
+    document.getElementById('start-game').disabled = false;
+    document.getElementById('reset-game').disabled = true;
+}
+
+function displayAvailablePapers(papers) {
+    const papersList = document.getElementById('papers-list');
+    
+    if (!papers || papers.length === 0) {
+        papersList.innerHTML = '<div class="no-papers">No papers available</div>';
+        return;
+    }
+    
+    papersList.innerHTML = '';
+    papers.forEach(paper => {
+        const paperElement = document.createElement('div');
+        paperElement.className = 'paper-option';
+        
+        // Handle authors properly - they should now be an array of strings
+        const authorsText = (paper.authors && paper.authors.length > 0) 
+            ? paper.authors.slice(0, 3).join(', ') 
+            : 'Unknown authors';
+            
+        // Handle concepts properly
+        const conceptsText = (paper.concepts && paper.concepts.length > 0)
+            ? paper.concepts.slice(0, 3).map(c => c.display_name || c).join(', ')
+            : 'No concepts available';
+        
+        paperElement.innerHTML = `
+            <div class="paper-header">
+                <h5 class="paper-title">${paper.title || 'Unknown Title'}</h5>
+                <span class="paper-year">(${paper.year || 'Unknown'})</span>
+            </div>
+            <div class="paper-details">
+                <div class="paper-authors">${authorsText}</div>
+                <div class="paper-concepts">${conceptsText}</div>
+                <div class="paper-citations">Cited by: ${paper.cited_by_count || 0}</div>
+            </div>
+            <button class="cs-btn paper-select-btn" onclick="selectPaper('${paper.id}')">
+                Select This Paper
+            </button>
+        `;
+        papersList.appendChild(paperElement);
+    });
+}
+
+function displayCurrentPath(path) {
+    const pathDisplay = document.getElementById('current-path');
+    
+    if (!path || path.length === 0) {
+        pathDisplay.innerHTML = '<div class="empty-path">No path yet</div>';
+        return;
+    }
+    
+    pathDisplay.innerHTML = '';
+    path.forEach((paper, index) => {
+        const pathItem = document.createElement('div');
+        pathItem.className = 'path-item';
+        pathItem.innerHTML = `
+            <div class="path-step">${index + 1}</div>
+            <div class="path-paper">
+                <div class="path-title">${paper.title}</div>
+                <div class="path-year">(${paper.year || 'Unknown'})</div>
+            </div>
+        `;
+        pathDisplay.appendChild(pathItem);
+        
+        if (index < path.length - 1) {
+            const arrow = document.createElement('div');
+            arrow.className = 'path-arrow';
+            arrow.textContent = '↓';
+            pathDisplay.appendChild(arrow);
+        }
+    });
+}
+
+function selectPaper(paperId) {
+    if (ws && ws.readyState === WebSocket.OPEN && gameActive) {
+        // Disable all paper selection buttons to prevent double-clicking
+        document.querySelectorAll('.paper-select-btn').forEach(btn => {
+            btn.disabled = true;
+            btn.textContent = 'Processing...';
+        });
+        
+        updateStatus('Processing your choice...');
+        
+        ws.send(JSON.stringify({
+            type: 'interactive_choice',
+            data: {
+                paper_id: paperId
+            }
+        }));
+    } else {
+        alert('Cannot select paper: game not active or connection lost');
+    }
+}
+
+function handleError(data) {
+    // Re-enable paper selection buttons
+    document.querySelectorAll('.paper-select-btn').forEach(btn => {
+        btn.disabled = false;
+        btn.textContent = 'Select This Paper';
+    });
+    
+    alert('Error: ' + data.message);
+    updateStatus('Error: ' + data.message);
+}
+
+function updateStatus(status) {
+    document.getElementById('current-status').textContent = status;
+}
+
+function startGame() {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({
+            type: 'start_interactive',
+            data: {}
+        }));
+    } else {
+        alert('WebSocket not connected. Please wait and try again.');
+    }
+}
+
+function resetGame() {
+    gameActive = false;
+    updateStatus('Ready to start');
+    
+    // Hide game panels
+    document.getElementById('objective-panel').style.display = 'none';
+    document.getElementById('game-board').style.display = 'none';
+    document.getElementById('result-panel').style.display = 'none';
+    
+    // Reset controls
+    document.getElementById('start-game').disabled = false;
+    document.getElementById('reset-game').disabled = true;
+    document.getElementById('turn-count').textContent = '0';
+}
+
+// Event listeners
+document.getElementById('start-game').addEventListener('click', startGame);
+document.getElementById('reset-game').addEventListener('click', resetGame);
+
+// Initialize WebSocket connection
+connectWebSocket();
+</script>
+{% endblock %}

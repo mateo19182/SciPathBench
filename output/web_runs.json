@@ -1,0 +1,49 @@
+{
+  "runs": [
+    {
+      "type": "test",
+      "model": "Test Model",
+      "success": 1,
+      "path_length": 3,
+      "optimal_length": 2,
+      "optimality": 0.6666666666666666,
+      "runtime": 1.5,
+      "timestamp": "2025-08-06 16:33:27",
+      "id": "run_1754490807379"
+    },
+    {
+      "type": "llm",
+      "model": "mistralai/ministral-8b",
+      "success": 0,
+      "path_length": 0,
+      "optimal_length": 4,
+      "optimality": 0,
+      "runtime": 21.06966733932495,
+      "precision": 0,
+      "recall": 0,
+      "reasoning_faithfulness": 0,
+      "task_start": "W4299608875",
+      "task_end": "W4206489165",
+      "timestamp": "2025-08-06 17:04:51",
+      "id": "run_1754492691421"
+    },
+    {
+      "type": "human",
+      "model": "Human Player",
+      "success": 0,
+      "path_length": 0,
+      "optimal_length": 3,
+      "optimality": 0,
+      "runtime": 53.13305068016052,
+      "turns_used": 10,
+      "task_start": "W2064675550",
+      "task_end": "W2046533349",
+      "timestamp": "2025-08-06 17:48:17",
+      "id": "run_1754495297017"
+    }
+  ],
+  "metadata": {
+    "created": "2025-08-06 16:33:27",
+    "version": "1.0"
+  }
+}
