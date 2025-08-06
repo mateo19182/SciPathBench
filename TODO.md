@@ -1,17 +1,16 @@
 
 # TODO
 
-- improve prompt, let them go abck to previous papers?
+- improve prompt, let them go back to previous papers? more info on paper?
 
-- speed up api calls
+- speed up api calls, parallelize
 - better cache
-
 - make resilient to error: "message":"Provider returned error","code":429,"
 - manage W4285719527 (Deleted Work)
 
 - cli interface?
-
-- get human baseline, ui?
+- web ui, play human, see agent in real time
+- get human baseline
 - get better dataset
 
 - actually verify agent path is correct

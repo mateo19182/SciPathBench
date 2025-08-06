@@ -1,17 +1,17 @@
 [
     {
         "task_index": 1,
-        "timestamp": "2025-08-02 23:42:20",
+        "timestamp": "2025-08-03 00:20:29",
         "benchmark_pair": {
-            "start_paper_id": "W2064675550",
-            "end_paper_id": "W2046533349"
+            "start_paper_id": "W2185907055",
+            "end_paper_id": "W4239510810"
         },
         "ground_truth": {
             "path": [
-                "W2064675550",
-                "W4285719527",
-                "W2100172689",
-                "W2046533349"
+                "W2185907055",
+                "W2092025391",
+                "W1996988468",
+                "W4239510810"
             ],
             "path_length": 3
         },

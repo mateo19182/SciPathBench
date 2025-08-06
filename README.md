@@ -9,7 +9,12 @@ Inspired by [WikiBench](https://1thousandfaces.substack.com/p/wikibench-76-of-so
 # Add OPENROUTER_API_KEY to .env file
 # Modify config.py for LLM model and agent settings
 uv sync
+
+# Run LLM benchmark
 uv run main.py
+
+# Play interactively as a human
+uv run main.py --interactive
 ```
 
 ## How It Works
@@ -17,6 +22,8 @@ uv run main.py
 **Data Generation**: `generate_benchmark_data.py` creates problems using Inciteful API to find shortest citation paths between papers found in `dataset.py`, with results saved to `benchmark_pairs.json`.
 
 **Evaluation**: `main.py` runs the benchmark. LLM agents navigate citation graphs turn-by-turn, scored on success and optimality vs ground truth.
+
+**Interactive Mode**: Human players can play the same pathfinding game using `--interactive` flag. Players choose which papers to expand each turn, trying to find the shortest path between academic papers through citation networks.
 
 **Graph Representation**: Uses a unified `PaperGraph` structure where each node represents a paper with consistent attributes (title, year, concepts, DOI, node_type). The agent's actual path is tracked directly without complex reconstruction.
 

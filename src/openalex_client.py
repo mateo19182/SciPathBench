@@ -4,11 +4,12 @@
 import requests
 import requests_cache
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL
 
 # Install a global cache for all requests. Responses will be cached for 1 day.
 # The cache will be stored in a file named 'api_cache.sqlite'.
-requests_cache.install_cache('api_cache', backend='sqlite', expire_after=86400)
+requests_cache.install_cache('api_cache', backend='sqlite', expire_after=864000)
 
 class OpenAlexClient:
     """
@@ -69,13 +70,33 @@ class OpenAlexClient:
         # Normalize each neighbor id to 'W...'
         return [self._normalize_id(r) for r in refs]
 
-    def get_many_papers(self, ids: list[str]) -> dict:
+    def get_many_papers(self, ids: list[str], max_workers: int = 10) -> dict:
         """
-        Fetch multiple works' metadata, leveraging cache. 
+        Fetch multiple works' metadata in parallel, leveraging cache. 
         Returns a mapping id -> JSON or None.
         """
+        if not ids:
+            return {}
+            
         results = {}
-        for pid in ids:
-            norm = self._normalize_id(pid)
-            results[norm] = self.get_paper_by_id(norm)
+        normalized_ids = [self._normalize_id(pid) for pid in ids]
+        
+        # Use ThreadPoolExecutor for parallel requests
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            # Submit all requests
+            future_to_id = {
+                executor.submit(self.get_paper_by_id, norm_id): norm_id 
+                for norm_id in normalized_ids
+            }
+            
+            # Collect results as they complete
+            for future in as_completed(future_to_id):
+                norm_id = future_to_id[future]
+                try:
+                    result = future.result()
+                    results[norm_id] = result
+                except Exception as e:
+                    logging.error(f"Failed to fetch paper {norm_id}: {e}")
+                    results[norm_id] = None
+                    
         return results

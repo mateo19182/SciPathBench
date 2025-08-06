@@ -67,14 +67,20 @@ class LLMAgent:
         
         # Expand start node automatically
         initial_neighbors = self.api_client.get_neighbors(start_id)
-        for neighbor_id in initial_neighbors:
-            self.graph.add_edge(start_id, neighbor_id)
-            if neighbor_id not in self.visited_nodes:
-                self.visited_nodes.add(neighbor_id)
-                neighbor_paper = self.api_client.get_paper_by_id(neighbor_id)
-                if neighbor_paper:
-                    self.graph.add_node(neighbor_id, neighbor_paper, "referenced")
-                    self.frontier[neighbor_id] = self.graph.get_node_metadata_for_llm(neighbor_id)
+        
+        # Get all neighbor papers in parallel
+        new_neighbor_ids = [n for n in initial_neighbors if n not in self.visited_nodes]
+        if new_neighbor_ids:
+            neighbor_papers = self.api_client.get_many_papers(new_neighbor_ids)
+            
+            for neighbor_id in initial_neighbors:
+                self.graph.add_edge(start_id, neighbor_id)
+                if neighbor_id not in self.visited_nodes:
+                    self.visited_nodes.add(neighbor_id)
+                    neighbor_paper = neighbor_papers.get(neighbor_id)
+                    if neighbor_paper:
+                        self.graph.add_node(neighbor_id, neighbor_paper, "referenced")
+                        self.frontier[neighbor_id] = self.graph.get_node_metadata_for_llm(neighbor_id)
 
         # Main search loop
         for turn in range(max_turns):
@@ -112,6 +118,14 @@ class LLMAgent:
             # Get neighbors of expanded paper
             neighbors = self.api_client.get_neighbors(paper_id_to_expand)
             logging.info(f"Found {len(neighbors)} neighbors")
+            
+            # Get all new neighbor papers in parallel
+            new_neighbor_ids = [n for n in neighbors if n not in self.visited_nodes and n != end_id]
+            if new_neighbor_ids:
+                neighbor_papers = self.api_client.get_many_papers(new_neighbor_ids)
+            else:
+                neighbor_papers = {}
+            
             for neighbor_id in neighbors:
                 self.graph.add_edge(paper_id_to_expand, neighbor_id)
                 
@@ -128,7 +142,7 @@ class LLMAgent:
                 # Add new neighbors to frontier
                 if neighbor_id not in self.visited_nodes:
                     self.visited_nodes.add(neighbor_id)
-                    neighbor_paper = self.api_client.get_paper_by_id(neighbor_id)
+                    neighbor_paper = neighbor_papers.get(neighbor_id)
                     if neighbor_paper:
                         self.graph.add_node(neighbor_id, neighbor_paper, "referenced")
                         self.frontier[neighbor_id] = self.graph.get_node_metadata_for_llm(neighbor_id)

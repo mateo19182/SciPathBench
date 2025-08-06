@@ -6,6 +6,7 @@ import json
 import time
 import random
 import statistics
+import argparse
 
 # Import configurations and utility functions
 import config
@@ -17,6 +18,7 @@ from src.visualization import create_vosviewer_files
 from src.openalex_client import OpenAlexClient
 from src.graph_search import GraphSearch
 from src.llm_agent import LLMAgent
+from src.human_agent import HumanAgent
 from src.eval import EvaluationHarness
 
 def get_benchmark_tasks():
@@ -87,13 +89,14 @@ def get_runtime_task():
     logging.error("Failed to generate a valid runtime task after multiple retries.")
     return None
 
-def run_single_task(task, task_index=1):
+def run_single_task(task, task_index=1, interactive_mode=False):
     """
     Executes the agent, evaluation, and visualization for a single benchmark task.
 
     Args:
         task (dict): A dictionary containing 'start_id', 'end_id', and 'ground_truth_path'.
         task_index (int): The index of the current task for logging and file naming.
+        interactive_mode (bool): Whether to use human interactive mode instead of LLM agent.
 
     Returns:
         dict: A dictionary containing the comprehensive results for this task.
@@ -102,9 +105,13 @@ def run_single_task(task, task_index=1):
     end_paper_id = task["end_id"]
     ground_truth = task["ground_truth_path"]
     
-    # 2. Run LLM Agent
+    # 2. Run Agent (LLM or Human)
     agent_client = OpenAlexClient()
-    agent = LLMAgent(api_client=agent_client, llm_provider=config.LLM_PROVIDER_MODEL)
+    
+    if interactive_mode:
+        agent = HumanAgent(api_client=agent_client)
+    else:
+        agent = LLMAgent(api_client=agent_client, llm_provider=config.LLM_PROVIDER_MODEL)
     
     # Get paper titles for logging
     start_paper = agent.api_client.get_paper_by_id(start_paper_id)
@@ -112,16 +119,17 @@ def run_single_task(task, task_index=1):
     start_paper_title = start_paper.get("title", "Unknown") if start_paper else "Unknown"
     end_paper_title = end_paper.get("title", "Unknown") if end_paper else "Unknown"
     
-    logging.info(f"Objective: Find shortest path between \"{start_paper_title}\" and \"{end_paper_title}\"")
-    
-    # Get ground truth titles for logging
-    ground_truth_titles = []
-    for paper_id in ground_truth:
-        paper = agent.api_client.get_paper_by_id(paper_id)
-        title = paper.get("title", "Unknown") if paper else "Unknown"
-        ground_truth_titles.append(title)
+    if not interactive_mode:
+        logging.info(f"Objective: Find shortest path between \"{start_paper_title}\" and \"{end_paper_title}\"")
         
-    logging.info(f"Ground Truth Path: {ground_truth_titles} (Length: {len(ground_truth)-1})")
+        # Get ground truth titles for logging
+        ground_truth_titles = []
+        for paper_id in ground_truth:
+            paper = agent.api_client.get_paper_by_id(paper_id)
+            title = paper.get("title", "Unknown") if paper else "Unknown"
+            ground_truth_titles.append(title)
+            
+        logging.info(f"Ground Truth Path: {ground_truth_titles} (Length: {len(ground_truth)-1})")
 
     
     agent_found_path, path = agent.find_path(
@@ -199,8 +207,48 @@ def log_summary(all_results):
     logging.info("==================================================")
     logging.info(json.dumps(summary, indent=4))
 
+def run_interactive_mode():
+    """Run the interactive mode for human players."""
+    print("🎮 Welcome to SciPathBench Interactive Mode!")
+    print("You'll be challenged to find the shortest path between two academic papers.")
+    
+    # Get a random task
+    tasks = get_benchmark_tasks()
+    if not tasks:
+        print("❌ Failed to load any benchmark tasks.")
+        return
+        
+    task = tasks[0]  # Use the first task
+    
+    try:
+        result = run_single_task(task, task_index=1, interactive_mode=True)
+        
+        if result:
+            print("\n📊 Your performance has been recorded!")
+        else:
+            print("\n🎯 Thanks for playing!")
+            
+    except KeyboardInterrupt:
+        print("\n\n👋 Game interrupted. Thanks for playing!")
+    except Exception as e:
+        print(f"\n❌ An error occurred: {e}")
+
 def main():
     """Main function to run the entire benchmark process for one or more tasks."""
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description="SciPathBench - Academic Paper Pathfinding Benchmark")
+    parser.add_argument(
+        "--interactive", 
+        action="store_true", 
+        help="Run in interactive mode for human players"
+    )
+    args = parser.parse_args()
+    
+    if args.interactive:
+        run_interactive_mode()
+        return
+        
+    # Standard benchmark mode
     setup_logging(config.LOG_FILE)
     logging.info("==================================================")
     logging.info(f"Starting New SciPathBench Run {time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -221,7 +269,7 @@ def main():
         task_num = i + 1
         logging.info(f"----------------- Running Task {task_num}/{len(tasks)} -----------------")
         try:
-            result = run_single_task(task, task_index=task_num)
+            result = run_single_task(task, task_index=task_num, interactive_mode=False)
             if result:
                 all_results.append(result)
         except Exception as e:
