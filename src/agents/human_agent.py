@@ -93,17 +93,22 @@ class HumanAgent:
             # Player expands this paper
             paper_title = self.frontier[paper_choice]['title']
             print(f"\n📖 Expanding: '{paper_title}'")
-            
-            # Add to agent path and update node type
-            self.graph.agent_path.append(paper_choice)
-            self.graph.nodes[paper_choice]["node_type"] = "agent_path"
-            
-            # Remove from frontier
-            del self.frontier[paper_choice]
-            
-            # Get neighbors of expanded paper
+
+            # Peek neighbors first; if dead end, allow retry within same turn
             neighbors = self.api_client.get_neighbors(paper_choice)
             print(f"   Found {len(neighbors)} connected papers")
+            if not neighbors:
+                # Mark as visited and remove from frontier, but do NOT consume the turn
+                self.visited_nodes.add(paper_choice)
+                del self.frontier[paper_choice]
+                print("   ⚠️ Dead end. Choose another paper this turn.")
+                # Re-run this same turn
+                continue
+
+            # Commit choice: add to path and update node type
+            self.graph.agent_path.append(paper_choice)
+            self.graph.nodes[paper_choice]["node_type"] = "agent_path"
+            del self.frontier[paper_choice]
             
             # Get all new neighbor papers in parallel
             new_neighbor_ids = [n for n in neighbors if n not in self.visited_nodes and n != end_id]
@@ -123,7 +128,7 @@ class HumanAgent:
                     self.graph.nodes[end_id]["node_type"] = "agent_path"
                     
                     # Show final path
-                    self._display_final_results(ground_truth_path)
+                    self._display_final_results(ground_truth_path, end_id)
                     
                     # Save graph and return success
                     self.graph.save_to_file("output/reference_graph.json")
@@ -139,7 +144,7 @@ class HumanAgent:
         
         # Player failed to find path within turn limit
         print(f"\n⏰ Turn limit reached! You didn't find the path in {max_turns} turns.")
-        self._display_final_results(ground_truth_path)
+        self._display_final_results(ground_truth_path, end_id)
         self.graph.save_to_file("output/reference_graph.json")
         return None, self.graph.agent_path
     
@@ -218,7 +223,7 @@ class HumanAgent:
         print("• Papers in similar research areas are more likely to be connected")
         print("="*60)
     
-    def _display_final_results(self, ground_truth_path=None):
+    def _display_final_results(self, ground_truth_path=None, end_id=None):
         """Display final game results."""
         print("\n" + "="*60)
         print("🏁 FINAL RESULTS")
@@ -232,14 +237,18 @@ class HumanAgent:
                 optimal_length = len(ground_truth_path) - 1
                 print(f"🎯 Optimal path length: {optimal_length} steps")
                 
-                if path_length == optimal_length:
-                    print("🏆 PERFECT! You found the optimal path!")
-                elif path_length <= optimal_length * 1.5:
-                    print("🥈 Great job! Very close to optimal.")
+                # Determine if the path ended at the target
+                path_found = bool(end_id) and self.graph.agent_path and self.graph.agent_path[-1] == end_id
+                if path_found:
+                    if path_length == optimal_length:
+                        print("🏆 PERFECT! You found the optimal path!")
+                    elif path_length <= optimal_length * 1.5:
+                        print("🥈 Great job! Very close to optimal.")
+                    else:
+                        print("🥉 Good effort! There's room for improvement.")
+                    efficiency = optimal_length / path_length if path_length > 0 else 0
                 else:
-                    print("🥉 Good effort! There's room for improvement.")
-                    
-                efficiency = optimal_length / path_length if path_length > 0 else 0
+                    efficiency = 0
                 print(f"📊 Efficiency: {efficiency:.2%}")
         else:
             print("❌ No path found")

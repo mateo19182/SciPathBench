@@ -90,62 +90,63 @@ class LLMAgent:
                 logging.warning("Frontier is empty. Agent cannot continue.")
                 break
 
-            # Get LLM decision
-            prompt = self._build_prompt(start_paper, end_paper)
-            llm_decision = self._get_llm_decision(prompt)
+            # Allow retry within the same turn if a dead-end (no citations) is chosen
+            while True:
+                prompt = self._build_prompt(start_paper, end_paper)
+                llm_decision = self._get_llm_decision(prompt)
 
-            if not llm_decision or "paper_id" not in llm_decision:
-                logging.warning("Agent failed to make a valid decision. Stopping.")
+                if not llm_decision or "paper_id" not in llm_decision:
+                    logging.warning("Agent failed to make a valid decision. Stopping.")
+                    break
+
+                paper_id_to_expand = llm_decision["paper_id"]
+
+                if paper_id_to_expand not in self.frontier:
+                    logging.error(f"Paper {paper_id_to_expand} not in the frontier. Agent is confused.")
+                    break
+
+                paper_title = self.frontier[paper_id_to_expand]['title']
+                logging.info(f"Agent expanding: '{paper_title}'")
+
+                neighbors = self.api_client.get_neighbors(paper_id_to_expand)
+                logging.info(f"Found {len(neighbors)} neighbors")
+
+                # Dead end: remove from frontier, mark visited, and retry within the same turn
+                if not neighbors:
+                    self.visited_nodes.add(paper_id_to_expand)
+                    del self.frontier[paper_id_to_expand]
+                    logging.info("Dead end encountered. Retrying within the same turn.")
+                    if not self.frontier:
+                        logging.warning("Frontier exhausted after dead end.")
+                        break
+                    continue
+
+                # Commit choice and proceed
+                self.graph.agent_path.append(paper_id_to_expand)
+                self.graph.nodes[paper_id_to_expand]["node_type"] = "agent_path"
+                del self.frontier[paper_id_to_expand]
+
+                new_neighbor_ids = [n for n in neighbors if n not in self.visited_nodes and n != end_id]
+                neighbor_papers = self.api_client.get_many_papers(new_neighbor_ids) if new_neighbor_ids else {}
+
+                for neighbor_id in neighbors:
+                    self.graph.add_edge(paper_id_to_expand, neighbor_id)
+
+                    if neighbor_id == end_id:
+                        logging.info("Path found! Target paper reached.")
+                        self.graph.agent_path.append(end_id)
+                        self.graph.nodes[end_id]["node_type"] = "agent_path"
+                        self.graph.save_to_file("output/reference_graph.json")
+                        return self.graph.agent_path, None
+
+                    if neighbor_id not in self.visited_nodes:
+                        self.visited_nodes.add(neighbor_id)
+                        neighbor_paper = neighbor_papers.get(neighbor_id)
+                        if neighbor_paper:
+                            self.graph.add_node(neighbor_id, neighbor_paper, "referenced")
+                            self.frontier[neighbor_id] = self.graph.get_node_metadata_for_llm(neighbor_id)
+
                 break
-
-            paper_id_to_expand = llm_decision["paper_id"]
-            
-            if paper_id_to_expand not in self.frontier:
-                logging.error(f"Paper {paper_id_to_expand} not in the frontier. Agent is confused.")
-                continue
-            
-            # Agent expands this paper
-            paper_title = self.frontier[paper_id_to_expand]['title']
-            logging.info(f"Agent expanding: '{paper_title}'")
-            
-            # Add to agent path and update node type
-            self.graph.agent_path.append(paper_id_to_expand)
-            self.graph.nodes[paper_id_to_expand]["node_type"] = "agent_path"
-            
-            # Remove from frontier
-            del self.frontier[paper_id_to_expand]
-
-            # Get neighbors of expanded paper
-            neighbors = self.api_client.get_neighbors(paper_id_to_expand)
-            logging.info(f"Found {len(neighbors)} neighbors")
-            
-            # Get all new neighbor papers in parallel
-            new_neighbor_ids = [n for n in neighbors if n not in self.visited_nodes and n != end_id]
-            if new_neighbor_ids:
-                neighbor_papers = self.api_client.get_many_papers(new_neighbor_ids)
-            else:
-                neighbor_papers = {}
-            
-            for neighbor_id in neighbors:
-                self.graph.add_edge(paper_id_to_expand, neighbor_id)
-                
-                # Check if we found the target
-                if neighbor_id == end_id:
-                    logging.info("Path found! Target paper reached.")
-                    self.graph.agent_path.append(end_id)
-                    self.graph.nodes[end_id]["node_type"] = "agent_path"
-                    
-                    # Save graph and return success
-                    self.graph.save_to_file("output/reference_graph.json")
-                    return self.graph.agent_path, None
-                
-                # Add new neighbors to frontier
-                if neighbor_id not in self.visited_nodes:
-                    self.visited_nodes.add(neighbor_id)
-                    neighbor_paper = neighbor_papers.get(neighbor_id)
-                    if neighbor_paper:
-                        self.graph.add_node(neighbor_id, neighbor_paper, "referenced")
-                        self.frontier[neighbor_id] = self.graph.get_node_metadata_for_llm(neighbor_id)
         
         # Agent failed to find path
         logging.info("Agent failed to find a path within the turn limit.")

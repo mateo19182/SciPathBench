@@ -153,21 +153,39 @@ class WebHumanAgent:
         try:
             self.current_turn += 1
             
-            # Add to agent path and update node type
+            # Peek neighbors first; if dead end, allow retry within same turn (do not consume turn)
+            chosen_paper_metadata = self.frontier[paper_id]
+            loop = asyncio.get_event_loop()
+            neighbors = await loop.run_in_executor(self.executor, self.api_client.get_neighbors, paper_id)
+            logging.info(f"Found {len(neighbors)} neighbors for paper {paper_id}")
+
+            if not neighbors:
+                # Mark visited and remove from frontier, but don't commit to path or consume turn
+                self.visited_nodes.add(paper_id)
+                del self.frontier[paper_id]
+                # Prepare updated frontier for display
+                available_papers = list(self.frontier.values())
+                current_path = []
+                for pid in self.graph.agent_path:
+                    if pid in self.graph.nodes:
+                        paper_data = self.graph.nodes[pid]
+                        current_path.append({'id': pid, 'title': paper_data.get('title', 'Unknown Title'), 'year': paper_data.get('year', 'Unknown')})
+                return {
+                    "success": True,
+                    "game_complete": False,
+                    "dead_end": True,
+                    "message": "Dead end. Choose another paper this turn.",
+                    "current_turn": self.current_turn,
+                    "available_papers": available_papers,
+                    "current_path": current_path,
+                }
+
+            # Commit choice: add to path and update node type
             self.graph.agent_path.append(paper_id)
             if paper_id in self.graph.nodes:
                 self.graph.nodes[paper_id]["node_type"] = "agent_path"
-            
             # Remove from frontier
-            chosen_paper_metadata = self.frontier[paper_id]
             del self.frontier[paper_id]
-            
-            # Get neighbors of expanded paper (run in executor to avoid blocking)
-            loop = asyncio.get_event_loop()
-            neighbors = await loop.run_in_executor(
-                self.executor, self.api_client.get_neighbors, paper_id
-            )
-            logging.info(f"Found {len(neighbors)} neighbors for paper {paper_id}")
             
             # Check if we found the target
             if self.end_id in neighbors:
