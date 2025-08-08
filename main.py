@@ -9,17 +9,17 @@ import statistics
 import argparse
 
 # Import configurations and utility functions
-import config
+from src import config
 from src.utils import setup_logging
-from src.dataset import LANDMARK_PAPERS
+from src.data.dataset import LANDMARK_PAPERS
 
 # Import core logic classes
-from src.visualization import create_vosviewer_files
-from src.openalex_client import OpenAlexClient
-from src.graph_search import GraphSearch
-from src.llm_agent import LLMAgent
-from src.human_agent import HumanAgent
-from src.eval import EvaluationHarness
+from src.visualization.visualization import create_vosviewer_files
+from src.services.openalex_client import OpenAlexClient
+from src.core.graph_search import GraphSearch
+from src.agents.llm_agent import LLMAgent
+from src.agents.human_agent import HumanAgent
+from src.core.eval import EvaluationHarness
 
 def get_benchmark_tasks():
     """

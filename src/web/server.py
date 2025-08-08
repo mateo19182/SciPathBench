@@ -14,13 +14,13 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import uvicorn
 
-from src.openalex_client import OpenAlexClient
-from src.llm_agent import LLMAgent
-from src.web_human_agent import WebHumanAgent
-from src.eval import EvaluationHarness
+from src.services.openalex_client import OpenAlexClient
+from src.agents.llm_agent import LLMAgent
+from src.agents.web_human_agent import WebHumanAgent
+from src.core.eval import EvaluationHarness
 from src.utils import setup_logging
-from src.persistence import storage, format_run_for_storage
-import config
+from src.services.persistence import storage, format_run_for_storage
+from src import config
 
 app = FastAPI(title="SciPathBench Web Interface")
 

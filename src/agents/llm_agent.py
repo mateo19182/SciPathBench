@@ -5,9 +5,9 @@ import requests
 import json
 import logging
 import re
-from src.openalex_client import OpenAlexClient
-from src.paper_graph import PaperGraph
-from config import OPENROUTER_API_KEY, OPENROUTER_API_BASE_URL
+from src.services.openalex_client import OpenAlexClient
+from src.core.paper_graph import PaperGraph
+from src.config import OPENROUTER_API_KEY, OPENROUTER_API_BASE_URL
 
 class LLMAgent:
     """The LLM-powered agent that finds a path using a forward-only search."""
@@ -131,7 +131,7 @@ class LLMAgent:
                 
                 # Check if we found the target
                 if neighbor_id == end_id:
-                    logging.info(f"Path found! Target paper reached.")
+                    logging.info("Path found! Target paper reached.")
                     self.graph.agent_path.append(end_id)
                     self.graph.nodes[end_id]["node_type"] = "agent_path"
                     

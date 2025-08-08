@@ -10,6 +10,7 @@
 - manage W4285719527 (Deleted Work)
 - no papers available on first step!
   - im not really getting all of the citations
+  - manage  Error: 429 openalex rate limit
 
 - cli interface?
 - web ui, play human, see agent in real time

@@ -3,10 +3,10 @@
 
 import logging
 import asyncio
-from typing import Dict, List, Optional, Callable
+from typing import Callable
 from concurrent.futures import ThreadPoolExecutor
-from src.openalex_client import OpenAlexClient
-from src.paper_graph import PaperGraph
+from src.services.openalex_client import OpenAlexClient
+from src.core.paper_graph import PaperGraph
 
 
 class WebHumanAgent:

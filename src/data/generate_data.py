@@ -8,8 +8,8 @@ import itertools
 import requests
 import time
 from tqdm import tqdm
-from dataset import LANDMARK_PAPERS
-from utils import setup_logging
+from src.data.dataset import LANDMARK_PAPERS
+from src.utils import setup_logging
 
 # This is the correct API endpoint that returns the path data.
 INCITEFUL_CONNECTOR_API_URL = "https://api.inciteful.xyz/connector"

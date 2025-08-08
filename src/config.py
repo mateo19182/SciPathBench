@@ -1,16 +1,15 @@
-# config.py
-# Central configuration file for the SciPathBench project.
+"""Central configuration file for the SciPathBench project."""
 
-import os
 import logging
+import os
+from dotenv import load_dotenv
 
 # --- API Configurations ---
 OPENALEX_API_BASE_URL = "https://api.openalex.org"
 OPENALEX_USER_EMAIL = "mateoamadoares@gmail.com"  # OpenAlex kindly requests an email for high-volume users
 OPENCITATIONS_API_KEY = os.getenv("OPENCITATIONS_API_KEY")  # Default key for OpenCitations
-# --- OpenRouter Configuration ---
-from dotenv import load_dotenv
 
+# --- OpenRouter Configuration ---
 load_dotenv()
 # IMPORTANT: Set your OpenRouter API key from .env file
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")

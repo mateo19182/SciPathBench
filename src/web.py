@@ -3,16 +3,13 @@
 Web interface launcher for SciPathBench
 """
 
-import os
 import sys
-import logging
 from pathlib import Path
 
 # Add src to path so we can import modules
-sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from src.web_server import app, setup_logging
-import config
+from src.utils import setup_logging
+from src import config
 import uvicorn
 
 def main():
@@ -29,7 +26,7 @@ def main():
     benchmark_file = Path(config.BENCHMARK_DATA_FILE)
     if not benchmark_file.exists():
         print(f"⚠️  Warning: Benchmark data file not found at {config.BENCHMARK_DATA_FILE}")
-        print("   You may need to run: uv run src/generate_data.py")
+        print("   You may need to run: uv run src/data/generate_data.py")
         print("   The web interface will still work but may have limited functionality.")
         print()
     
@@ -47,7 +44,7 @@ def main():
     
     try:
         uvicorn.run(
-            "src.web_server:app",
+            "src.web.server:app",
             host="0.0.0.0",
             port=8001,
             reload=False,  # Set to True for development

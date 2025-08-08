@@ -3,8 +3,8 @@
 
 import logging
 from collections import deque
-from src.openalex_client import OpenAlexClient
-from config import BFS_MAX_DEPTH
+from src.services.openalex_client import OpenAlexClient
+from src.config import BFS_MAX_DEPTH
 
 
 class GraphSearch:

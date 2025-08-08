@@ -5,7 +5,7 @@ import requests
 import requests_cache
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL, OPENCITATIONS_API_KEY
+from src.config import OPENALEX_API_BASE_URL, OPENALEX_USER_EMAIL, OPENCITATIONS_API_KEY
 
 class OpenAlexClient:
     """
@@ -120,7 +120,7 @@ class OpenAlexClient:
             # Normalize each neighbor id to 'W...'
             return [self._normalize_id(r) for r in refs]
         else:
-            logging.error(f"Invalid or missing id/doi.")
+            logging.error("Invalid or missing id/doi.")
             return []
         
     def get_many_papers(self, ids: list[str], max_workers: int = 10) -> dict:

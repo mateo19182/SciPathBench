@@ -1,9 +1,8 @@
 # human_agent.py
 # Interactive human agent that allows users to play the pathfinding game manually.
 
-import logging
-from src.openalex_client import OpenAlexClient
-from src.paper_graph import PaperGraph
+from src.services.openalex_client import OpenAlexClient
+from src.core.paper_graph import PaperGraph
 
 
 class HumanAgent:
@@ -34,7 +33,7 @@ class HumanAgent:
         self.graph.add_node(end_id, end_paper, "end")
         
         # Show game objective
-        print(f"\n🎯 OBJECTIVE:")
+        print("\n🎯 OBJECTIVE:")
         print(f"   START: '{start_paper.get('title')}' ({start_paper.get('publication_year')})")
         print(f"   END:   '{end_paper.get('title')}' ({end_paper.get('publication_year')})")
         
@@ -69,7 +68,7 @@ class HumanAgent:
         
         # Main game loop
         for turn in range(max_turns):
-            print(f"\n" + "-"*60)
+            print("\n" + "-"*60)
             print(f"🎮 TURN {turn + 1}/{max_turns}")
             print("-"*60)
             
@@ -119,7 +118,7 @@ class HumanAgent:
                 
                 # Check if we found the target
                 if neighbor_id == end_id:
-                    print(f"\n🎉 SUCCESS! You found the target paper!")
+                    print("\n🎉 SUCCESS! You found the target paper!")
                     self.graph.agent_path.append(end_id)
                     self.graph.nodes[end_id]["node_type"] = "agent_path"
                     

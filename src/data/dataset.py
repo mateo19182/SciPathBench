@@ -2,7 +2,7 @@
 # A curated list of landmark academic papers (using their OpenAlex IDs)
 # to be used as a pool for generating benchmark pairs.
 
-from src.openalex_client import OpenAlexClient
+from src.services.openalex_client import OpenAlexClient
 import logging
 
 LANDMARK_PAPERS = [
@@ -29,6 +29,7 @@ LANDMARK_PAPERS = [
 DOI_PAPERS = [
     # "10.1038/nature12373",
     "10.1186/1756-8722-6-59",
+    
 ]
 
 
