@@ -24,6 +24,10 @@ uv run main.py
 
 # Play interactively as a human
 uv run main.py --interactive
+
+# Add papers to dataset
+uv run python -m src.data.get_dois --top 75 --since 2010 --out output/landmark_papers.json
+
 ```
 
 ## Web Interface

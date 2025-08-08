@@ -1,0 +1,127 @@
+[
+  {
+    "openalex_id": "W2194775991",
+    "title": "Deep Residual Learning for Image Recognition",
+    "doi": "https://doi.org/10.1109/cvpr.2016.90"
+  },
+  {
+    "openalex_id": "W2159011576",
+    "title": "Diagnostic and Statistical Manual of Mental Disorders",
+    "doi": "https://doi.org/10.1093/acrefore/9780199975839.013.104"
+  },
+  {
+    "openalex_id": "W4247665917",
+    "title": "Diagnostic and Statistical Manual of Mental Disorders",
+    "doi": "https://doi.org/10.1176/appi.books.9780890425596"
+  },
+  {
+    "openalex_id": "W3128646645",
+    "title": "Global Cancer Statistics 2020: GLOBOCAN Estimates of Incidence and Mortality Worldwide for 36 Cancers in 185 Countries",
+    "doi": "https://doi.org/10.3322/caac.21660"
+  },
+  {
+    "openalex_id": "W2179438025",
+    "title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+    "doi": "https://doi.org/10.1186/s13059-014-0550-8"
+  },
+  {
+    "openalex_id": "W2889646458",
+    "title": "Global cancer statistics 2018: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries",
+    "doi": "https://doi.org/10.3322/caac.21492"
+  },
+  {
+    "openalex_id": "W1901129140",
+    "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "doi": "https://doi.org/10.1007/978-3-319-24574-4_28"
+  },
+  {
+    "openalex_id": "W1951724000",
+    "title": "Fitting Linear Mixed-Effects Models Using<b>lme4</b>",
+    "doi": "https://doi.org/10.18637/jss.v067.i01"
+  },
+  {
+    "openalex_id": "W2919115771",
+    "title": "Deep learning",
+    "doi": "https://doi.org/10.1038/nature14539"
+  },
+  {
+    "openalex_id": "W2117692326",
+    "title": "Hallmarks of Cancer: The Next Generation",
+    "doi": "https://doi.org/10.1016/j.cell.2011.02.013"
+  },
+  {
+    "openalex_id": "W2167279371",
+    "title": "Fiji: an open-source platform for biological-image analysis",
+    "doi": "https://doi.org/10.1038/nmeth.2019"
+  },
+  {
+    "openalex_id": "W4385245566",
+    "title": "Attention Is All You Need",
+    "doi": "https://doi.org/10.48550/arxiv.1706.03762"
+  },
+  {
+    "openalex_id": "W2132905138",
+    "title": "CRC Handbook of Chemistry and Physics",
+    "doi": "https://doi.org/10.1201/b17118"
+  },
+  {
+    "openalex_id": "W2099540110",
+    "title": "NIH Image to ImageJ: 25 years of image analysis",
+    "doi": "https://doi.org/10.1038/nmeth.2089"
+  },
+  {
+    "openalex_id": "W2131271579",
+    "title": "Trimmomatic: a flexible trimmer for Illumina sequence data",
+    "doi": "https://doi.org/10.1093/bioinformatics/btu170"
+  },
+  {
+    "openalex_id": "W2106787323",
+    "title": "Global cancer statistics",
+    "doi": "https://doi.org/10.3322/caac.20107"
+  },
+  {
+    "openalex_id": "W3118615836",
+    "title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews",
+    "doi": "https://doi.org/10.1136/bmj.n71"
+  },
+  {
+    "openalex_id": "W2964121744",
+    "title": "Adam: A Method for Stochastic Optimization",
+    "doi": "https://doi.org/10.48550/arxiv.1412.6980"
+  },
+  {
+    "openalex_id": "W2170551349",
+    "title": "Fast gapped-read alignment with Bowtie 2",
+    "doi": "https://doi.org/10.1038/nmeth.1923"
+  },
+  {
+    "openalex_id": "W3001118548",
+    "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China",
+    "doi": "https://doi.org/10.1016/s0140-6736(20)30183-5"
+  },
+  {
+    "openalex_id": "W2018289835",
+    "title": "Short-Term Effects of Nose-Only Cigarette Smoke Exposure on Glutathione Redox Homeostasis, Cytochrome P450 1A1/2 and Respiratory Enzyme Activities in Mice Tissues",
+    "doi": "https://doi.org/10.1159/000350087"
+  },
+  {
+    "openalex_id": "W2092157292",
+    "title": "A consistent and accurate<i>ab initio</i>parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu",
+    "doi": "https://doi.org/10.1063/1.3382344"
+  },
+  {
+    "openalex_id": "W639708223",
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+    "doi": "https://doi.org/10.1109/tpami.2016.2577031"
+  },
+  {
+    "openalex_id": "W2152207030",
+    "title": "MEGA6: Molecular Evolutionary Genetics Analysis Version 6.0",
+    "doi": "https://doi.org/10.1093/molbev/mst197"
+  },
+  {
+    "openalex_id": "W2169456326",
+    "title": "STAR: ultrafast universal RNA-seq aligner",
+    "doi": "https://doi.org/10.1093/bioinformatics/bts635"
+  }
+]

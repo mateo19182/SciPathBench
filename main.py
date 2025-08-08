@@ -77,12 +77,25 @@ def get_runtime_task():
         logging.info(f"Attempting to generate runtime task: {start_id} -> {end_id}")
 
         bfs_client = OpenAlexClient()
+
+        # Resolve DOIs or URLs to OpenAlex IDs for BFS
+        start_work = bfs_client.get_paper_by_id(start_id)
+        end_work = bfs_client.get_paper_by_id(end_id)
+        if not start_work or not end_work:
+            logging.warning("Failed to resolve start or end paper. Retrying...")
+            continue
+        start_id_norm = (start_work.get("id") or "").split("/")[-1]
+        end_id_norm = (end_work.get("id") or "").split("/")[-1]
+        if not start_id_norm or not end_id_norm:
+            logging.warning("Could not normalize OpenAlex IDs from works. Retrying...")
+            continue
+
         bfs_search = GraphSearch(api_client=bfs_client)
-        ground_truth, _ = bfs_search.find_shortest_path_bfs(start_id, end_id)
+        ground_truth, _ = bfs_search.find_shortest_path_bfs(start_id_norm, end_id_norm)
 
         if ground_truth:
             logging.info("Successfully found a path for the runtime task.")
-            return {"start_id": start_id, "end_id": end_id, "ground_truth_path": ground_truth}
+            return {"start_id": start_id_norm, "end_id": end_id_norm, "ground_truth_path": ground_truth}
         else:
             logging.warning("Failed to find a path for the random pair. Retrying...")
     
