@@ -12,11 +12,11 @@ import argparse
 from src import config
 from src.utils import setup_logging
 from src.data.dataset import LANDMARK_PAPERS
+from src.data.generate_data import get_path_from_inciteful
 
 # Import core logic classes
 from src.visualization.visualization import create_vosviewer_files
 from src.services.openalex_client import OpenAlexClient
-from src.core.graph_search import GraphSearch
 from src.agents.llm_agent import LLMAgent
 from src.agents.human_agent import HumanAgent
 from src.core.eval import EvaluationHarness
@@ -90,8 +90,9 @@ def get_runtime_task():
             logging.warning("Could not normalize OpenAlex IDs from works. Retrying...")
             continue
 
-        bfs_search = GraphSearch(api_client=bfs_client)
-        ground_truth, _ = bfs_search.find_shortest_path_bfs(start_id_norm, end_id_norm)
+        # Use Inciteful connector API to fetch the shortest path
+        path_ids, _ = get_path_from_inciteful(start_id_norm, end_id_norm)
+        ground_truth = path_ids
 
         if ground_truth:
             logging.info("Successfully found a path for the runtime task.")

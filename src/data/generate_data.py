@@ -10,9 +10,9 @@ import time
 from tqdm import tqdm
 from src.data.dataset import LANDMARK_PAPERS
 from src.utils import setup_logging
+from src.config import INCITEFUL_CONNECTOR_API_URL
 
-# This is the correct API endpoint that returns the path data.
-INCITEFUL_CONNECTOR_API_URL = "https://api.inciteful.xyz/connector"
+"""Uses the central INCITEFUL_CONNECTOR_API_URL from config."""
 
 
 def get_path_from_inciteful(start_id: str, end_id: str):

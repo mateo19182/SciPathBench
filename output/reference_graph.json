@@ -1,344 +1,97 @@
 {
   "nodes": {
-    "W2001771035": {
-      "title": "I.—COMPUTING MACHINERY AND INTELLIGENCE",
-      "year": 1950,
-      "concepts": [
-        "Computer science",
-        "Cognitive science",
-        "Psychology"
-      ],
-      "doi": "https://doi.org/10.1093/mind/lix.236.433",
-      "node_type": "start"
+    "W2152207030": {
+      "title": "Unknown",
+      "year": "Unknown",
+      "concepts": [],
+      "doi": "10.1093/molbev/mst197",
+      "node_type": "agent_path"
     },
-    "W2949650786": {
-      "title": "Deep Residual Learning for Image Recognition",
-      "year": 2015,
-      "concepts": [
-        "Residual",
-        "Computer science",
-        "Coco",
-        "Artificial intelligence",
-        "Segmentation",
-        "Pattern recognition (psychology)",
-        "Deep learning",
-        "Layer (electronics)",
-        "Object detection",
-        "Set (abstract data type)",
-        "Task (project management)",
-        "Machine learning",
-        "Image (mathematics)",
-        "Artificial neural network",
-        "Algorithm",
-        "Chemistry",
-        "Management",
-        "Organic chemistry",
-        "Economics",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.48550/arxiv.1512.03385",
+    "W2919115771": {
+      "title": "Unknown",
+      "year": "Unknown",
+      "concepts": [],
+      "doi": "10.1038/nature14539",
       "node_type": "end"
     },
-    "W1490170747": {
-      "title": "Calculating Instruments and Machines",
-      "year": 1951,
-      "concepts": [
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1049/sqj.1951.0031",
-      "node_type": "referenced"
+    "W1544205958": {
+      "title": "Unknown",
+      "year": "Unknown",
+      "concepts": [],
+      "doi": "N/A",
+      "node_type": "ground_truth"
     },
-    "W1991116412": {
-      "title": "The Mind of Mechanical Man",
-      "year": 1949,
-      "concepts": [
-        "Psychology",
-        "Psychoanalysis"
-      ],
-      "doi": "https://doi.org/10.1136/bmj.1.4616.1105",
-      "node_type": "agent_path"
+    "W4285719527": {
+      "title": "Unknown",
+      "year": "Unknown",
+      "concepts": [],
+      "doi": "N/A",
+      "node_type": "ground_truth"
     },
-    "W2023778211": {
-      "title": "General recursive functions of natural numbers",
-      "year": 1936,
-      "concepts": [
-        "Mathematics",
-        "Natural number",
-        "Natural (archaeology)",
-        "Algebra over a field",
-        "Pure mathematics",
-        "Discrete mathematics",
-        "Archaeology",
-        "History"
-      ],
-      "doi": "https://doi.org/10.1007/bf01565439",
-      "node_type": "agent_path"
-    },
-    "W2026269721": {
-      "title": "A History of Western Philosophy.",
-      "year": 1946,
-      "concepts": [
-        "Skepticism",
-        "Western philosophy",
-        "Scholarship",
-        "Contemporary philosophy",
-        "Philosophy",
-        "Philosophy of history",
-        "Philosophy education",
-        "Modern philosophy",
-        "Philosophy of sport",
-        "History of philosophy",
-        "Eastern philosophy",
-        "Epistemology",
-        "Classics",
-        "Environmental ethics",
-        "History",
-        "Political science",
-        "Law"
-      ],
-      "doi": "https://doi.org/10.2307/2181652",
-      "node_type": "agent_path"
-    },
-    "W2114804254": {
-      "title": "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I",
-      "year": 2006,
-      "concepts": [
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.1007/s00605-006-0423-7",
-      "node_type": "agent_path"
-    },
-    "W2126160338": {
-      "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
-      "year": 1937,
-      "concepts": [
-        "Turing",
-        "Computer science",
-        "Citation",
-        "Turing machine",
-        "Mathematics",
-        "Information retrieval",
-        "Library science",
-        "Algorithm",
-        "Programming language",
-        "Computation"
-      ],
-      "doi": "https://doi.org/10.1112/plms/s2-42.1.230",
-      "node_type": "agent_path"
-    },
-    "W2323777246": {
-      "title": "An Unsolvable Problem of Elementary Number Theory",
-      "year": 1936,
-      "concepts": [
-        "Mathematics",
-        "Elementary theory",
-        "Number theory",
-        "Algebra over a field",
-        "Elementary proof",
-        "Pure mathematics",
-        "Calculus (dental)",
-        "Computer science",
-        "Medicine",
-        "Dentistry",
-        "Programming language"
-      ],
-      "doi": "https://doi.org/10.2307/2371045",
-      "node_type": "agent_path"
-    },
-    "W2325612495": {
-      "title": "A Theory of Positive Integers in Formal Logic. Part II",
-      "year": 1935,
-      "concepts": [
-        "Mathematics",
-        "Discrete mathematics",
-        "Algebra over a field",
-        "Pure mathematics"
-      ],
-      "doi": "https://doi.org/10.2307/2371199",
-      "node_type": "referenced"
-    },
-    "W2798528344": {
-      "title": "A History of Western Philosophy",
-      "year": 2024,
-      "concepts": [
-        "History",
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.2307/jj.18908619.8",
-      "node_type": "agent_path"
-    },
-    "W4246081148": {
-      "title": "A Theory of Positive Integers in Formal Logic. Part I",
-      "year": 1935,
-      "concepts": [
-        "Mathematics",
-        "Arithmetic",
-        "Algebra over a field",
-        "Discrete mathematics",
-        "Pure mathematics"
-      ],
-      "doi": "https://doi.org/10.2307/2372027",
-      "node_type": "agent_path"
-    },
-    "W4256369010": {
-      "title": "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I",
-      "year": 1931,
-      "concepts": [
-        "Philosophy",
-        "Programming language",
-        "Computer science"
-      ],
-      "doi": "https://doi.org/10.1007/bf01700692",
-      "node_type": "agent_path"
-    },
-    "W2070909821": {
-      "title": "Über den Zusammenhang der verschiedenen Begriffe der rekursiven Funktion",
-      "year": 1935,
-      "concepts": [
-        "Mathematics",
-        "Humanities",
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.1007/bf01448046",
-      "node_type": "referenced"
-    },
-    "W2075188242": {
-      "title": "Zum Hilbertschen Aufbau der reellen Zahlen",
-      "year": 1928,
-      "concepts": [
-        "Mathematics",
-        "Humanities",
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.1007/bf01459088",
-      "node_type": "agent_path"
-    },
-    "W2082187221": {
-      "title": "Zur Hilbertschen Beweistheorie",
-      "year": 1927,
-      "concepts": [
-        "Mathematics",
-        "Humanities",
-        "Pure mathematics",
-        "Art"
-      ],
-      "doi": "https://doi.org/10.1007/bf01475439",
-      "node_type": "referenced"
-    },
-    "W2331346174": {
-      "title": "Die Vollständigkeit der Axiome des logischen Funktionenkalküls",
-      "year": 1930,
-      "concepts": [
-        "Philosophy"
-      ],
-      "doi": "https://doi.org/10.1007/bf01696781",
-      "node_type": "referenced"
-    },
-    "W2060878518": {
-      "title": "Über das Unendliche",
-      "year": 1926,
-      "concepts": [
-        "Mathematics",
-        "Humanities",
-        "Art"
-      ],
-      "doi": "https://doi.org/10.1007/bf01206605",
-      "node_type": "referenced"
+    "W2613000917": {
+      "title": "Unknown",
+      "year": "Unknown",
+      "concepts": [],
+      "doi": "N/A",
+      "node_type": "ground_truth"
     }
   },
   "edges": [
     {
-      "source": "W2001771035",
-      "target": "W1490170747"
+      "source": "W2152207030",
+      "target": "W1544205958"
     },
     {
-      "source": "W2001771035",
-      "target": "W1991116412"
+      "source": "W1544205958",
+      "target": "W4285719527"
     },
     {
-      "source": "W2001771035",
-      "target": "W2023778211"
+      "source": "W4285719527",
+      "target": "W2613000917"
     },
     {
-      "source": "W2001771035",
-      "target": "W2026269721"
+      "source": "W2613000917",
+      "target": "W2919115771"
     },
     {
-      "source": "W2001771035",
-      "target": "W2114804254"
+      "source": "W2152207030",
+      "target": "W4361807868"
     },
     {
-      "source": "W2001771035",
-      "target": "W2126160338"
+      "source": "W2152207030",
+      "target": "W2152207030"
     },
     {
-      "source": "W2001771035",
-      "target": "W2323777246"
+      "source": "W2152207030",
+      "target": "W2096230176"
     },
     {
-      "source": "W2001771035",
-      "target": "W2325612495"
+      "source": "W2152207030",
+      "target": "W2121552166"
     },
     {
-      "source": "W2001771035",
-      "target": "W2798528344"
+      "source": "W2152207030",
+      "target": "W2016518608"
     },
     {
-      "source": "W2001771035",
-      "target": "W4246081148"
+      "source": "W2152207030",
+      "target": "W2132632499"
     },
     {
-      "source": "W2001771035",
-      "target": "W4256369010"
+      "source": "W2152207030",
+      "target": "W1992566665"
     },
     {
-      "source": "W2023778211",
-      "target": "W2070909821"
+      "source": "W2152207030",
+      "target": "W1969102846"
     },
     {
-      "source": "W2023778211",
-      "target": "W2075188242"
-    },
-    {
-      "source": "W2023778211",
-      "target": "W2114804254"
-    },
-    {
-      "source": "W2023778211",
-      "target": "W4256369010"
-    },
-    {
-      "source": "W2126160338",
-      "target": "W2323777246"
-    },
-    {
-      "source": "W4256369010",
-      "target": "W2082187221"
-    },
-    {
-      "source": "W2114804254",
-      "target": "W2082187221"
-    },
-    {
-      "source": "W2114804254",
-      "target": "W2331346174"
-    },
-    {
-      "source": "W2075188242",
-      "target": "W2060878518"
+      "source": "W2152207030",
+      "target": "W2097403532"
     }
   ],
   "agent_path": [
-    "W2001771035",
-    "W2023778211",
-    "W2126160338",
-    "W2026269721",
-    "W4246081148",
-    "W1991116412",
-    "W4256369010",
-    "W2114804254",
-    "W2798528344",
-    "W2075188242",
-    "W2323777246"
+    "W2152207030",
+    "W2152207030"
   ]
 }

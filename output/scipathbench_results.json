@@ -1,19 +1,20 @@
 [
     {
         "task_index": 1,
-        "timestamp": "2025-08-08 17:52:28",
+        "timestamp": "2025-08-09 00:45:39",
         "benchmark_pair": {
-            "start_paper_id": "W2618530766",
-            "end_paper_id": "W1995875735"
+            "start_paper_id": "W2152207030",
+            "end_paper_id": "W2919115771"
         },
         "ground_truth": {
             "path": [
-                "W2618530766",
-                "W2734776202",
-                "W1545791100",
-                "W1995875735"
+                "W2152207030",
+                "W1544205958",
+                "W4285719527",
+                "W2613000917",
+                "W2919115771"
             ],
-            "path_length": 3
+            "path_length": 4
         },
         "agent_run": {
             "model": "mistralai/ministral-8b",

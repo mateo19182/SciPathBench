@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 OPENALEX_API_BASE_URL = "https://api.openalex.org"
 OPENALEX_USER_EMAIL = "mateoamadoares@gmail.com"  # OpenAlex kindly requests an email for high-volume users
 OPENCITATIONS_API_KEY = os.getenv("OPENCITATIONS_API_KEY")  # Default key for OpenCitations
+INCITEFUL_CONNECTOR_API_URL = "https://api.inciteful.xyz/connector"
 
 # --- HTTP Caching (persistent) ---
 # Persistent cache for HTTP GET responses (OpenAlex, OpenCitations, etc.)
@@ -42,8 +43,9 @@ LANDMARK_ID_PREFERENCE = "openalex"  # "openalex" or "doi"
 # --- Benchmark Execution Configuration ---
 # 'precalculated': Use a pair from BENCHMARK_DATA_FILE.
 # 'runtime': Generate a random pair from the dataset.py list and find the path at runtime.
-BENCHMARK_MODE = "precalculated"
+BENCHMARK_MODE = "runtime"
 BENCHMARK_DATA_FILE = "output/benchmark_pairs.json"
 NUMBER_OF_BENCHMARK_TASKS = 1  # Number of tasks to run in benchmark mode
+MAX_RUNTIME_RETRIES = 3
 
 logging.info(f"Configuration loaded: {LLM_PROVIDER_MODEL}, {AGENT_MAX_TURNS}")
